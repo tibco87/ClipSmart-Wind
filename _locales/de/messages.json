@@ -1,0 +1,433 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "Der Name der Erweiterung"
+  },
+  "appDescription": {
+    "message": "Verlieren Sie nie wieder kopierten Text. Zwischenablage-Manager mit 15-Sprachen-Übersetzer, Suche, Tags. 20 kostenlos, Pro unbegrenzt.",
+    "description": "Die Beschreibung der Erweiterung"
+  },
+  "recent": {
+    "message": "Zuletzt",
+    "description": "Zuletzt Tab"
+  },
+  "pinned": {
+    "message": "Angeheftet",
+    "description": "Angeheftet Tab"
+  },
+  "settings": {
+    "message": "Einstellungen",
+    "description": "Einstellungen Tab"
+  },
+  "searchPlaceholder": {
+    "message": "Zwischenablage durchsuchen...",
+    "description": "Suchfeld Platzhalter"
+  },
+  "noClipboardItems": {
+    "message": "Noch keine Zwischenablageeinträge",
+    "description": "Leerer Zustand Titel"
+  },
+  "copyToGetStarted": {
+    "message": "Kopieren Sie etwas, um zu beginnen!",
+    "description": "Leerer Zustand Untertitel"
+  },
+  "noPinnedItems": {
+    "message": "Keine angehefteten Einträge",
+    "description": "Keine angehefteten Einträge Nachricht"
+  },
+  "pinFavorites": {
+    "message": "Heften Sie Ihre Favoriten für schnellen Zugriff an",
+    "description": "Favoriten anheften Nachricht"
+  },
+  "appearance": {
+    "message": "Aussehen",
+    "description": "Aussehen Einstellungen"
+  },
+  "theme": {
+    "message": "Thema",
+    "description": "Thema Einstellung"
+  },
+  "language": {
+    "message": "Sprache",
+    "description": "Sprache Einstellung"
+  },
+  "interfaceLanguage": {
+    "message": "UI-Sprache",
+    "description": "UI-Sprache Einstellung"
+  },
+  "storage": {
+    "message": "Speicher",
+    "description": "Speicher Einstellungen"
+  },
+  "autoDeleteAfter": {
+    "message": "Elemente automatisch löschen nach",
+    "description": "Automatisch löschen Einstellung"
+  },
+  "never": {
+    "message": "Nie",
+    "description": "Nie Option"
+  },
+  "clearAllItems": {
+    "message": "Alle Einträge löschen",
+    "description": "Alle löschen Button"
+  },
+  "translation": {
+    "message": "Übersetzung",
+    "description": "Übersetzung Einstellungen"
+  },
+  "defaultLanguages": {
+    "message": "Standardsprachen",
+    "description": "Standard Übersetzungssprachen"
+  },
+  "translationsUsed": {
+    "message": "Verwendete Übersetzungen",
+    "description": "Verwendete Übersetzungen Label"
+  },
+  "thisMonth": {
+    "message": "diesen Monat",
+    "description": "Diesen Monat Text"
+  },
+  "about": {
+    "message": "Über",
+    "description": "Über Abschnitt"
+  },
+  "privacyPolicy": {
+    "message": "Datenschutzrichtlinie",
+    "description": "Datenschutzrichtlinie Link"
+  },
+  "support": {
+    "message": "Support",
+    "description": "Support Link"
+  },
+  "upgradePro": {
+    "message": "Pro-Version freischalten",
+    "description": "Upgrade Pro Button-Beschriftung"
+  },
+  "copied": {
+    "message": "In die Zwischenablage kopiert!",
+    "description": "Kopieren Erfolgsmeldung"
+  },
+  "translationCopied": {
+    "message": "Übersetzung kopiert!",
+    "description": "Übersetzung kopiert Erfolg"
+  },
+  "moreItemsAvailable": {
+    "message": "weitere Einträge verfügbar",
+    "description": "Mehr Einträge Nachricht"
+  },
+  "unlimitedTranslations": {
+    "message": "Unbegrenzte Übersetzungen",
+    "description": "Unbegrenzte Übersetzungen Feature"
+  },
+  "reachedTranslationLimit": {
+    "message": "Sie haben das kostenlose Übersetzungslimit erreicht. Upgrade auf Pro für unbegrenzte Übersetzungen!",
+    "description": "Übersetzungslimit Nachricht"
+  },
+  "confirmClearAll": {
+    "message": "Sind Sie sicher, dass Sie alle Zwischenablageeinträge löschen möchten?",
+    "description": "Alle löschen Bestätigung"
+  },
+  "characters": {
+    "message": "Zeichen",
+    "description": "Zeichenanzahl"
+  },
+  "justNow": {
+    "message": "Gerade eben",
+    "description": "Gerade eben Zeit"
+  },
+  "minutesAgo": {
+    "message": "vor $MINUTES$m",
+    "description": "Vor Minuten",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "vor $HOURS$h",
+    "description": "Vor Stunden",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "vor $DAYS$d",
+    "description": "Vor Tagen",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Übersetzen",
+    "description": "Übersetzen Button"
+  },
+  "pin": {
+    "message": "Anheften",
+    "description": "Anheften Button"
+  },
+  "unpin": {
+    "message": "Lösen",
+    "description": "Lösen Button"
+  },
+  "copy": {
+    "message": "Kopieren",
+    "description": "Kopieren Button"
+  },
+  "delete": {
+    "message": "Löschen",
+    "description": "Löschen Button"
+  },
+  "translating": {
+    "message": "Übersetzen...",
+    "description": "Übersetzen Lade-Text"
+  },
+  "translationFailed": {
+    "message": "Übersetzung fehlgeschlagen.",
+    "description": "Übersetzung fehlgeschlagen Nachricht"
+  },
+  "saveToClipSmart": {
+    "message": "In ClipSmart speichern",
+    "description": "Kontextmenü Eintrag"
+  },
+  "openClipSmart": {
+    "message": "ClipSmart öffnen",
+    "description": "Befehl Beschreibung"
+  },
+  "copyLastItem": {
+    "message": "Letzten Zwischenablageeintrag kopieren",
+    "description": "Befehl Beschreibung"
+  },
+  "items": {
+    "message": "Elemente",
+    "description": "Label für Anzahl der Elemente"
+  },
+  "sortBy": {
+    "message": "Sortieren nach:",
+    "description": "Sortierlabel"
+  },
+  "newest": {
+    "message": "Neueste",
+    "description": "Sortieroption"
+  },
+  "oldest": {
+    "message": "Älteste",
+    "description": "Sortieroption"
+  },
+  "az": {
+    "message": "Alphabetisch A-Z",
+    "description": "Sortieroption"
+  },
+  "za": {
+    "message": "Alphabetisch Z-A",
+    "description": "Sortieroption"
+  },
+  "longest": {
+    "message": "Meiste Zeichen",
+    "description": "Sortieroption"
+  },
+  "shortest": {
+    "message": "Wenigste Zeichen",
+    "description": "Sortieroption"
+  },
+  "premiumFeatures": {
+    "message": "Premium-Funktionen",
+    "description": "Premium Funktionen Abschnittstitel"
+  },
+  "enablePremium": {
+    "message": "Premium-Modus aktivieren",
+    "description": "Premium-Modus aktivieren Label"
+  },
+  "premiumModeActive": {
+    "message": "Premium-Modus aktiv",
+    "description": "Premium-Modus aktiv Label"
+  },
+  "premiumIncludes": {
+    "message": "Premium-Funktionen beinhalten:",
+    "description": "Premium-Funktionen beinhalten Label"
+  },
+  "unlimitedHistory": {
+    "message": "Unbegrenzter Verlauf",
+    "description": "Unbegrenzter Verlauf Feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Export nach TXT/CSV/PDF",
+    "description": "Export Feature"
+  },
+  "advancedTagging": {
+    "message": "Erweitertes Tagging",
+    "description": "Erweitertes Tagging Feature"
+  },
+  "tooltipTranslate": {
+    "message": "Übersetzen",
+    "description": "Tooltip für Übersetzen-Button"
+  },
+  "tooltipPin": {
+    "message": "Anheften",
+    "description": "Tooltip für Anheften-Button"
+  },
+  "tooltipUnpin": {
+    "message": "Lösen",
+    "description": "Tooltip für unpin button"
+  },
+  "tooltipCopy": {
+    "message": "Kopieren",
+    "description": "Tooltip für Kopieren-Button"
+  },
+  "tooltipDelete": {
+    "message": "Löschen",
+    "description": "Tooltip für Löschen-Button"
+  },
+  "tooltipExport": {
+    "message": "Exportieren",
+    "description": "Tooltip für Exportieren-Button"
+  },
+  "toggleTheme": {
+    "message": "Design wechseln",
+    "description": "Tooltip für Theme-Umschalter"
+  },
+  "themeAuto": {
+    "message": "Automatisch",
+    "description": "Theme Option Auto"
+  },
+  "themeLight": {
+    "message": "Hell",
+    "description": "Theme Option Light"
+  },
+  "themeDark": {
+    "message": "Dunkel",
+    "description": "Theme Option Dark"
+  },
+  "oneDay": {
+    "message": "1 Tag",
+    "description": "Auto-Löschen 1 Tag"
+  },
+  "sevenDays": {
+    "message": "7 Tage",
+    "description": "Auto-Löschen 7 Tage"
+  },
+  "thirtyDays": {
+    "message": "30 Tage",
+    "description": "Auto-Löschen 30 Tage"
+  },
+  "upgradePro": {
+    "message": "Auf Pro upgraden",
+    "description": "Auf Pro upgraden Button Text"
+  },
+  "manageSubscription": {
+    "message": "Abonnement verwalten",
+    "description": "Abonnement verwalten Button Text für Pro-Benutzer"
+  },
+  "upgradeProTooltip": {
+    "message": "Auf Pro upgraden für unbegrenzte Funktionen",
+    "description": "Tooltip für Upgrade-Button"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Ihr Pro-Abonnement verwalten",
+    "description": "Tooltip für Abonnement verwalten Button"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Unbegrenzte Übersetzungen mit Pro!",
+    "description": "Banner oder Button für unbegrenzte Übersetzungen mit Pro-Version"
+  },
+  "items": {
+    "message": "Elemente",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 Erweitern",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Einklappen",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Alles als PDF exportieren",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "Als TXT exportieren",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "Als CSV exportieren",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "Als PDF exportieren",
+    "description": "Export as PDF option"
+  },
+  "pdfExportSuccess": {
+    "message": "PDF-Export erfolgreich!",
+    "description": "PDF-Export Erfolgsbenachrichtigung"
+  },
+  "selectTranslationLanguage": {
+    "message": "Übersetzungssprache auswählen:",
+    "description": "Übersetzungssprache auswählen Label"
+  },
+  "subscriptionDetails": {
+    "message": "Abonnement-Details",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Jahresplan",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Monatsplan", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Plan",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Preis",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Status",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Aktiv",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Ersparnis",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 pro Jahr!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/Jahr",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/Monat",
+    "description": "Monthly plan price"
+  }
+} 

@@ -1,0 +1,205 @@
+{
+  "appName": { "message": "ClipSmart", "description": "확장 프로그램 이름" },
+  "appDescription": { "message": "복사한 텍스트를 다시는 잃지 마세요. 15개 언어 번역기, 검색, 태그가 있는 클립보드 매니저. 무료 20개, Pro 무제한.", "description": "확장 프로그램 설명" },
+  "recent": { "message": "최근", "description": "최근 탭" },
+  "pinned": { "message": "고정됨", "description": "고정됨 탭" },
+  "settings": { "message": "설정", "description": "설정 탭" },
+  "searchPlaceholder": { "message": "클립보드 검색...", "description": "검색 입력 자리표시자" },
+  "noClipboardItems": { "message": "아직 클립보드 항목이 없습니다", "description": "빈 상태 제목" },
+  "copyToGetStarted": { "message": "시작하려면 무언가를 복사하세요!", "description": "빈 상태 부제목" },
+  "noPinnedItems": { "message": "고정된 항목 없음", "description": "고정된 항목 없음 메시지" },
+  "pinFavorites": { "message": "즐겨찾는 클립을 고정하여 빠르게 접근하세요", "description": "즐겨찾기 고정 메시지" },
+  "appearance": { "message": "외관", "description": "외관 설정" },
+  "theme": { "message": "테마", "description": "테마 설정" },
+  "language": { "message": "언어", "description": "언어 설정" },
+  "interfaceLanguage": { "message": "인터페이스 언어", "description": "인터페이스 언어 설정" },
+  "storage": { "message": "저장소", "description": "저장소 설정" },
+  "autoDeleteAfter": { "message": "자동 삭제 시간", "description": "자동 삭제 설정" },
+  "never": { "message": "안 함", "description": "안 함 옵션" },
+  "clearAllItems": { "message": "모든 항목 지우기", "description": "모두 지우기 버튼" },
+  "translation": { "message": "번역", "description": "번역 설정" },
+  "defaultLanguages": { "message": "기본 언어", "description": "기본 번역 언어" },
+  "translationsUsed": { "message": "사용된 번역", "description": "사용된 번역 레이블" },
+  "thisMonth": { "message": "이번 달", "description": "이번 달 텍스트" },
+  "about": { "message": "정보", "description": "정보 섹션" },
+  "privacyPolicy": { "message": "개인정보 처리방침", "description": "개인정보 처리방침 링크" },
+  "support": { "message": "지원", "description": "지원 링크" },
+  "upgradePro": { "message": "프로 버전으로 업그레이드", "description": "프로 버전 업그레이드 버튼 레이블" },
+  "manageSubscription": { "message": "구독 관리", "description": "프로 사용자용 구독 관리 버튼" },
+  "upgradeProTooltip": { "message": "무제한 기능을 위해 프로 버전으로 업그레이드", "description": "업그레이드 버튼 툴팁" },
+  "manageSubscriptionTooltip": { "message": "프로 구독 관리", "description": "구독 관리 버튼 툴팁" },
+  "copied": { "message": "클립보드에 복사되었습니다!", "description": "복사 성공 메시지" },
+  "translationCopied": { "message": "번역이 복사되었습니다!", "description": "번역 복사 성공" },
+  "moreItemsAvailable": { "message": "더 많은 항목 사용 가능", "description": "더 많은 항목 메시지" },
+  "unlimitedTranslations": { "message": "프로 버전으로 무제한 번역!", "description": "프로 번역 메시지" },
+  "reachedTranslationLimit": { "message": "무료 번역 한도에 도달했습니다. 무제한 번역을 위해 프로 버전으로 업그레이드하세요!", "description": "번역 한도 메시지" },
+  "confirmClearAll": { "message": "모든 클립보드 항목을 지우시겠습니까?", "description": "모두 지우기 확인" },
+  "characters": { "message": "자", "description": "문자 수" },
+  "justNow": { "message": "방금", "description": "방금 시간" },
+  "minutesAgo": { "message": "$MINUTES$분 전", "description": "분 전", "placeholders": { "minutes": { "content": "$1" } } },
+  "hoursAgo": { "message": "$HOURS$시간 전", "description": "시간 전", "placeholders": { "hours": { "content": "$1" } } },
+  "daysAgo": { "message": "$DAYS$일 전", "description": "일 전", "placeholders": { "days": { "content": "$1" } } },
+  "translate": { "message": "번역", "description": "번역 버튼" },
+  "pin": { "message": "고정", "description": "고정 버튼" },
+  "unpin": { "message": "고정 해제", "description": "고정 해제 버튼" },
+  "copy": { "message": "복사", "description": "복사 버튼" },
+  "delete": { "message": "삭제", "description": "삭제 버튼" },
+  "translating": { "message": "번역 중...", "description": "번역 로딩" },
+  "translationFailed": { "message": "번역 실패. 다시 시도해 주세요.", "description": "번역 오류" },
+  "saveToClipSmart": { "message": "ClipSmart에 저장", "description": "컨텍스트 메뉴 항목" },
+  "openClipSmart": { "message": "ClipSmart 열기", "description": "명령 설명" },
+  "copyLastItem": { "message": "마지막 클립보드 항목 복사", "description": "명령 설명" },
+  "items": {
+    "message": "항목",
+    "description": "Items label"
+  },
+  "expand": {
+    "message": "📄 펼치기",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 접기",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "모두 PDF로 내보내기",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "TXT로 내보내기",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "CSV로 내보내기",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "PDF로 내보내기",
+    "description": "Export as PDF option"
+  },
+  "sortBy": { "message": "정렬 기준:", "description": "정렬 레이블" },
+  "newest": { "message": "최신순", "description": "정렬 옵션" },
+  "oldest": { "message": "오래된순", "description": "정렬 옵션" },
+  "az": { "message": "가나다순 A-Z", "description": "정렬 옵션" },
+  "za": { "message": "가나다순 Z-A", "description": "정렬 옵션" },
+  "longest": { "message": "문자 수 많은순", "description": "정렬 옵션" },
+  "shortest": { "message": "문자 수 적은순", "description": "정렬 옵션" },
+  "premiumFeatures": { "message": "프리미엄 기능", "description": "프리미엄 기능 섹션 제목" },
+  "enablePremium": { "message": "프리미엄 모드 활성화", "description": "프리미엄 모드 활성화 레이블" },
+  "premiumIncludes": { "message": "프리미엄 기능 포함:", "description": "프리미엄 기능 포함 레이블" },
+  "unlimitedHistory": { "message": "무제한 기록", "description": "무제한 기록 기능" },
+  "exportTxtCsvPdf": { "message": "TXT/CSV/PDF로 내보내기", "description": "내보내기 기능" },
+  "advancedTagging": { "message": "고급 태깅", "description": "고급 태깅 기능" },
+  "unlimitedTranslationsPro": {
+    "message": "프로 버전으로 무제한 번역!",
+    "description": "프로 버전 무제한 번역 배너 또는 버튼"
+  },
+  "tooltipTranslate": { "message": "번역", "description": "번역 버튼 툴팁" },
+  "tooltipPin": { "message": "고정", "description": "고정 버튼 툴팁" },
+  "tooltipUnpin": {
+    "message": "고정 해제",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": { "message": "복사", "description": "복사 버튼 툴팁" },
+  "tooltipDelete": { "message": "삭제", "description": "삭제 버튼 툴팁" },
+  "tooltipExport": { "message": "내보내기", "description": "내보내기 버튼 툴팁" },
+  "toggleTheme": { "message": "테마 전환", "description": "테마 전환 툴팁" },
+  "pdfExportSuccess": { "message": "PDF 내보내기 성공!", "description": "PDF 내보내기 성공 알림" },
+  "selectTranslationLanguage": { "message": "번역 언어 선택:", "description": "번역 언어 선택 라벨" },
+  "translating": { "message": "번역 중...", "description": "번역 로딩 텍스트" },
+  "translationFailed": { "message": "번역에 실패했습니다.", "description": "번역 실패 메시지" },
+  "themeAuto": { "message": "자동", "description": "테마 옵션 자동" },
+  "themeLight": { "message": "라이트", "description": "테마 옵션 라이트" },
+  "themeDark": { "message": "다크", "description": "테마 옵션 다크" },
+  "oneDay": { "message": "1일", "description": "자동 삭제 1일" },
+  "sevenDays": { "message": "7일", "description": "자동 삭제 7일" },
+  "thirtyDays": { "message": "30일", "description": "자동 삭제 30일" },
+  "subscriptionDetails": {
+    "message": "구독 세부정보",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "연간 플랜",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "월간 플랜", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "플랜",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "가격",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "상태",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "활성",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "절약",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "연간 €17,89 절약!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/년",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/월",
+    "description": "Monthly plan price"
+  },
+  "premiumFeatures": {
+    "message": "프리미엄 기능",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "프리미엄 모드 활성화",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "프리미엄 모드 활성",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "프리미엄 기능에는 다음이 포함됩니다:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "무제한 기록",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "TXT/CSV/PDF로 내보내기",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "고급 태그 지정",
+    "description": "Advanced tagging feature"
+  }
+} 

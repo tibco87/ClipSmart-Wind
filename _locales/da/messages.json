@@ -1,0 +1,441 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "Udvidelsens navn"
+  },
+  "appDescription": {
+    "message": "Tab aldrig kopieret tekst igen. Udklipsholder med 15-sprogs oversætter, søgning, tags. 20 gratis, Pro ubegrænset.",
+    "description": "Udvidelsens beskrivelse"
+  },
+  "recent": {
+    "message": "Seneste",
+    "description": "Seneste fane"
+  },
+  "pinned": {
+    "message": "Fastgjort",
+    "description": "Fastgjort fane"
+  },
+  "settings": {
+    "message": "Indstillinger",
+    "description": "Indstillinger fane"
+  },
+  "searchPlaceholder": {
+    "message": "Søg i udklipsholder...",
+    "description": "Søgeinput pladsholder"
+  },
+  "noClipboardItems": {
+    "message": "Ingen udklipsholder-elementer endnu",
+    "description": "Tom tilstand titel"
+  },
+  "copyToGetStarted": {
+    "message": "Kopier noget for at komme i gang!",
+    "description": "Tom tilstand undertitel"
+  },
+  "noPinnedItems": {
+    "message": "Ingen fastgjorte elementer",
+    "description": "Ingen fastgjorte elementer besked"
+  },
+  "pinFavorites": {
+    "message": "Fastgør dine yndlingsklip for hurtig adgang",
+    "description": "Fastgør yndlinger besked"
+  },
+  "appearance": {
+    "message": "Udseende",
+    "description": "Udseende indstillinger"
+  },
+  "theme": {
+    "message": "Tema",
+    "description": "Tema indstilling"
+  },
+  "language": {
+    "message": "Sprog",
+    "description": "Sprog indstilling"
+  },
+  "interfaceLanguage": {
+    "message": "Grænseflade sprog",
+    "description": "Grænseflade sprog indstilling"
+  },
+  "storage": {
+    "message": "Lager",
+    "description": "Lager indstillinger"
+  },
+  "autoDeleteAfter": {
+    "message": "Slet elementer automatisk efter",
+    "description": "Automatisk sletning indstilling"
+  },
+  "never": {
+    "message": "Aldrig",
+    "description": "Aldrig mulighed"
+  },
+  "clearAllItems": {
+    "message": "Ryd alle elementer",
+    "description": "Ryd alt knap"
+  },
+  "translation": {
+    "message": "Oversættelse",
+    "description": "Oversættelse indstillinger"
+  },
+  "defaultLanguages": {
+    "message": "Standardsprog",
+    "description": "Standard oversættelse sprog"
+  },
+  "translationsUsed": {
+    "message": "Brugte oversættelser",
+    "description": "Brugte oversættelser etiket"
+  },
+  "thisMonth": {
+    "message": "denne måned",
+    "description": "Denne måned tekst"
+  },
+  "about": {
+    "message": "Om",
+    "description": "Om sektion"
+  },
+  "privacyPolicy": {
+    "message": "Privatlivspolitik",
+    "description": "Privatlivspolitik link"
+  },
+  "support": {
+    "message": "Support",
+    "description": "Support link"
+  },
+  "upgradePro": {
+    "message": "Opgrader til Pro",
+    "description": "Opgrader til Pro knap tekst"
+  },
+  "manageSubscription": {
+    "message": "Administrer abonnement",
+    "description": "Administrer abonnement knap tekst for Pro brugere"
+  },
+  "upgradeProTooltip": {
+    "message": "Opgrader til Pro for ubegrænsede funktioner",
+    "description": "Tooltip for opgradering knap"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Administrer dit Pro abonnement",
+    "description": "Tooltip for administrer abonnement knap"
+  },
+  "copied": {
+    "message": "Kopieret til udklipsholder!",
+    "description": "Kopiering succes besked"
+  },
+  "translationCopied": {
+    "message": "Oversættelse kopieret!",
+    "description": "Oversættelse kopiering succes"
+  },
+  "moreItemsAvailable": {
+    "message": "flere elementer tilgængelige",
+    "description": "Flere elementer besked"
+  },
+  "unlimitedTranslations": {
+    "message": "Ubegrænsede oversættelser med Pro!",
+    "description": "Pro oversættelser besked"
+  },
+  "reachedTranslationLimit": {
+    "message": "Du har nået den gratis oversættelse grænse. Opgrader til Pro for ubegrænsede oversættelser!",
+    "description": "Oversættelse grænse besked"
+  },
+  "confirmClearAll": {
+    "message": "Er du sikker på, at du vil rydde alle udklipsholder-elementer?",
+    "description": "Ryd alt bekræftelse"
+  },
+  "characters": {
+    "message": "tegn",
+    "description": "Tegn tælling"
+  },
+  "justNow": {
+    "message": "Lige nu",
+    "description": "Lige nu tid"
+  },
+  "minutesAgo": {
+    "message": "$MINUTES$m siden",
+    "description": "Minutter siden",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "$HOURS$t siden",
+    "description": "Timer siden",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "$DAYS$d siden",
+    "description": "Dage siden",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Oversæt",
+    "description": "Oversæt knap"
+  },
+  "pin": {
+    "message": "Fastgør",
+    "description": "Fastgør knap"
+  },
+  "unpin": {
+    "message": "Fjern fastgørelse",
+    "description": "Fjern fastgørelse knap"
+  },
+  "copy": {
+    "message": "Kopier",
+    "description": "Kopier knap"
+  },
+  "delete": {
+    "message": "Slet",
+    "description": "Slet knap"
+  },
+  "translating": {
+    "message": "Oversætter...",
+    "description": "Oversættelse indlæser"
+  },
+  "translationFailed": {
+    "message": "Oversættelse mislykkedes. Prøv venligst igen.",
+    "description": "Oversættelse fejl"
+  },
+  "saveToClipSmart": {
+    "message": "Gem til ClipSmart",
+    "description": "Kontekstmenu element"
+  },
+  "openClipSmart": {
+    "message": "Åbn ClipSmart",
+    "description": "Kommando beskrivelse"
+  },
+  "copyLastItem": {
+    "message": "Kopier sidste udklipsholder-element",
+    "description": "Kommando beskrivelse"
+  },
+  "items": {
+    "message": "elementer",
+    "description": "Etiket for antal elementer"
+  },
+  "sortBy": {
+    "message": "Sortér efter:",
+    "description": "Sortér etiket"
+  },
+  "newest": {
+    "message": "Nyeste",
+    "description": "Sortér mulighed"
+  },
+  "oldest": {
+    "message": "Ældste",
+    "description": "Sortér mulighed"
+  },
+  "az": {
+    "message": "Alfabetisk A-Z",
+    "description": "Sortér mulighed"
+  },
+  "za": {
+    "message": "Alfabetisk Z-A",
+    "description": "Sortér mulighed"
+  },
+  "longest": {
+    "message": "Flest tegn",
+    "description": "Sortér mulighed"
+  },
+  "shortest": {
+    "message": "Færrest tegn",
+    "description": "Sortér mulighed"
+  },
+  "premiumFeatures": {
+    "message": "Premium funktioner",
+    "description": "Premium funktioner sektion titel"
+  },
+  "enablePremium": {
+    "message": "Aktiver Premium tilstand",
+    "description": "Aktiver premium tilstand etiket"
+  },
+  "premiumModeActive": {
+    "message": "Premium tilstand aktiv",
+    "description": "Premium tilstand aktiv etiket"
+  },
+  "premiumIncludes": {
+    "message": "Premium funktioner inkluderer:",
+    "description": "Premium funktioner inkluderer etiket"
+  },
+  "unlimitedHistory": {
+    "message": "Ubegrænset historik",
+    "description": "Ubegrænset historik funktion"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Eksporter til TXT/CSV/PDF",
+    "description": "Eksport funktion"
+  },
+  "advancedTagging": {
+    "message": "Avanceret tagning",
+    "description": "Avanceret tagning funktion"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Ubegrænsede oversættelser med Pro!",
+    "description": "Banner eller knap for ubegrænsede oversættelser med Pro version"
+  },
+  "tooltipTranslate": {
+    "message": "Oversæt",
+    "description": "Tooltip for oversæt knap"
+  },
+  "tooltipPin": {
+    "message": "Fastgør",
+    "description": "Tooltip for fastgør knap"
+  },
+  "tooltipUnpin": {
+    "message": "Løsne",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "Kopier",
+    "description": "Tooltip for kopier knap"
+  },
+  "tooltipDelete": {
+    "message": "Slet",
+    "description": "Tooltip for slet knap"
+  },
+  "tooltipExport": {
+    "message": "Eksporter",
+    "description": "Tooltip for eksporter knap"
+  },
+  "toggleTheme": {
+    "message": "Skift tema",
+    "description": "Tooltip for tema skift knap"
+  },
+  "themeAuto": {
+    "message": "Auto",
+    "description": "Tema mulighed auto"
+  },
+  "themeLight": {
+    "message": "Lys",
+    "description": "Tema mulighed lys"
+  },
+  "themeDark": {
+    "message": "Mørk",
+    "description": "Tema mulighed mørk"
+  },
+  "oneDay": {
+    "message": "1 dag",
+    "description": "Auto sletning 1 dag"
+  },
+  "sevenDays": {
+    "message": "7 dage",
+    "description": "Auto sletning 7 dage"
+  },
+  "thirtyDays": {
+    "message": "30 dage",
+    "description": "Auto sletning 30 dage"
+  },
+  "close": {
+    "message": "Luk",
+    "description": "Luk oversættelse knap"
+  },
+  "items": {
+    "message": "elementer",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 Udvid",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Sammenfold",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Eksporter alt til PDF",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "Eksporter som TXT",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "Eksporter som CSV",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "Eksporter som PDF",
+    "description": "Export as PDF option"
+  },
+  "pdfExportSuccess": {
+    "message": "PDF eksport succesfuld!",
+    "description": "PDF eksport succes notifikation"
+  },
+  "selectTranslationLanguage": {
+    "message": "Vælg oversættelsessprog:",
+    "description": "Vælg oversættelsessprog etiket"
+  },
+  "translating": {
+    "message": "Oversætter...",
+    "description": "Oversættelse indlæsning tekst"
+  },
+  "translationFailed": {
+    "message": "Oversættelse mislykkedes.",
+    "description": "Oversættelse fejl besked"
+  },
+  "subscriptionDetails": {
+    "message": "Abonnement detaljer",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Årlig plan",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Månedlig plan", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Plan",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Pris",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Status",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Aktiv",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Besparelser",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 om året!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/år",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/måned",
+    "description": "Monthly plan price"
+  }
+} 

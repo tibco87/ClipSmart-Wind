@@ -1,0 +1,433 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "The name of the extension"
+  },
+  "appDescription": {
+    "message": "Jangan pernah kehilangan teks yang disalin lagi. Manajer clipboard dengan penerjemah 24 bahasa, pencarian, tag. 20 gratis, Pro tidak terbatas.",
+    "description": "The description of the extension"
+  },
+  "recent": {
+    "message": "Terbaru",
+    "description": "Recent tab"
+  },
+  "pinned": {
+    "message": "Disematkan",
+    "description": "Pinned tab"
+  },
+  "settings": {
+    "message": "Pengaturan",
+    "description": "Settings tab"
+  },
+  "searchPlaceholder": {
+    "message": "Cari clipboard...",
+    "description": "Search input placeholder"
+  },
+  "noClipboardItems": {
+    "message": "Belum ada item clipboard",
+    "description": "Empty state title"
+  },
+  "copyToGetStarted": {
+    "message": "Salin sesuatu untuk memulai!",
+    "description": "Empty state subtitle"
+  },
+  "noPinnedItems": {
+    "message": "Tidak ada item yang disematkan",
+    "description": "No pinned items message"
+  },
+  "pinFavorites": {
+    "message": "Sematkan klip favorit Anda untuk akses cepat",
+    "description": "Pin favorites message"
+  },
+  "appearance": {
+    "message": "Tampilan",
+    "description": "Appearance settings"
+  },
+  "theme": {
+    "message": "Tema",
+    "description": "Theme setting"
+  },
+  "language": {
+    "message": "Bahasa",
+    "description": "Language setting"
+  },
+  "interfaceLanguage": {
+    "message": "Bahasa Antarmuka",
+    "description": "Interface language setting"
+  },
+  "storage": {
+    "message": "Penyimpanan",
+    "description": "Storage settings"
+  },
+  "autoDeleteAfter": {
+    "message": "Hapus otomatis item setelah",
+    "description": "Auto-delete setting"
+  },
+  "never": {
+    "message": "Tidak pernah",
+    "description": "Never option"
+  },
+  "clearAllItems": {
+    "message": "Hapus Semua Item",
+    "description": "Clear all button"
+  },
+  "translation": {
+    "message": "Terjemahan",
+    "description": "Translation settings"
+  },
+  "defaultLanguages": {
+    "message": "Bahasa default",
+    "description": "Default translation languages"
+  },
+  "translationsUsed": {
+    "message": "Terjemahan yang digunakan",
+    "description": "Translations used label"
+  },
+  "thisMonth": {
+    "message": "bulan ini",
+    "description": "This month text"
+  },
+  "about": {
+    "message": "Tentang",
+    "description": "About section"
+  },
+  "privacyPolicy": {
+    "message": "Kebijakan Privasi",
+    "description": "Privacy policy link"
+  },
+  "support": {
+    "message": "Dukungan",
+    "description": "Support link"
+  },
+  "items": {
+    "message": "item",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 Perluas",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Ciutkan",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Ekspor semua ke PDF",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "Ekspor sebagai TXT",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "Ekspor sebagai CSV",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "Ekspor sebagai PDF",
+    "description": "Export as PDF option"
+  },
+  "upgradePro": {
+    "message": "Upgrade Pro",
+    "description": "Upgrade to Pro button text"
+  },
+  "manageSubscription": {
+    "message": "Kelola Langganan",
+    "description": "Manage subscription button text for Pro users"
+  },
+  "upgradeProTooltip": {
+    "message": "Upgrade ke Pro untuk fitur tak terbatas",
+    "description": "Tooltip for upgrade button"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Kelola langganan Pro Anda",
+    "description": "Tooltip for manage subscription button"
+  },
+  "copied": {
+    "message": "Disalin ke clipboard!",
+    "description": "Copy success message"
+  },
+  "translationCopied": {
+    "message": "Terjemahan disalin!",
+    "description": "Translation copy success"
+  },
+  "moreItemsAvailable": {
+    "message": "lebih banyak item tersedia",
+    "description": "More items message"
+  },
+  "unlimitedTranslations": {
+    "message": "Terjemahan tak terbatas dengan Pro!",
+    "description": "Pro translations message"
+  },
+  "reachedTranslationLimit": {
+    "message": "Anda telah mencapai batas terjemahan gratis. Upgrade ke Pro untuk terjemahan tak terbatas!",
+    "description": "Translation limit message"
+  },
+  "confirmClearAll": {
+    "message": "Apakah Anda yakin ingin menghapus semua item clipboard?",
+    "description": "Clear all confirmation"
+  },
+  "characters": {
+    "message": "karakter",
+    "description": "Characters count"
+  },
+  "justNow": {
+    "message": "Baru saja",
+    "description": "Just now time"
+  },
+  "minutesAgo": {
+    "message": "$MINUTES$ menit yang lalu",
+    "description": "Minutes ago",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "$HOURS$ jam yang lalu",
+    "description": "Hours ago",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "$DAYS$ hari yang lalu",
+    "description": "Days ago",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Terjemahkan",
+    "description": "Translate button"
+  },
+  "pin": {
+    "message": "Sematkan",
+    "description": "Pin button"
+  },
+  "unpin": {
+    "message": "Lepas sematan",
+    "description": "Unpin button"
+  },
+  "copy": {
+    "message": "Salin",
+    "description": "Copy button"
+  },
+  "delete": {
+    "message": "Hapus",
+    "description": "Delete button"
+  },
+  "translating": {
+    "message": "Menerjemahkan...",
+    "description": "Translating loading"
+  },
+  "translationFailed": {
+    "message": "Terjemahan gagal. Silakan coba lagi.",
+    "description": "Translation error"
+  },
+  "saveToClipSmart": {
+    "message": "Simpan ke ClipSmart",
+    "description": "Context menu item"
+  },
+  "openClipSmart": {
+    "message": "Buka ClipSmart",
+    "description": "Command description"
+  },
+  "copyLastItem": {
+    "message": "Salin item clipboard terakhir",
+    "description": "Command description"
+  },
+  "sortBy": {
+    "message": "Urutkan berdasarkan:",
+    "description": "Sort label"
+  },
+  "newest": {
+    "message": "Terbaru",
+    "description": "Sort option"
+  },
+  "oldest": {
+    "message": "Terlama",
+    "description": "Sort option"
+  },
+  "az": {
+    "message": "Alfabetis A-Z",
+    "description": "Sort option"
+  },
+  "za": {
+    "message": "Alfabetis Z-A",
+    "description": "Sort option"
+  },
+  "longest": {
+    "message": "Karakter terbanyak",
+    "description": "Sort option"
+  },
+  "shortest": {
+    "message": "Karakter tersedikit",
+    "description": "Sort option"
+  },
+  "premiumFeatures": {
+    "message": "Fitur Premium",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "Aktifkan Mode Premium",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "Mode Premium Aktif",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "Fitur premium meliputi:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "Riwayat tak terbatas",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Ekspor ke TXT/CSV/PDF",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "Penandaan lanjutan",
+    "description": "Advanced tagging feature"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Terjemahan tak terbatas dengan Pro!",
+    "description": "Banner or button for unlimited translations with Pro version"
+  },
+  "tooltipTranslate": {
+    "message": "Terjemahkan",
+    "description": "Tooltip for translate button"
+  },
+  "tooltipPin": {
+    "message": "Sematkan",
+    "description": "Tooltip for pin button"
+  },
+  "tooltipUnpin": {
+    "message": "Lepas sematan",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "Salin",
+    "description": "Tooltip for copy button"
+  },
+  "tooltipDelete": {
+    "message": "Hapus",
+    "description": "Tooltip for delete button"
+  },
+  "tooltipExport": {
+    "message": "Ekspor",
+    "description": "Tooltip for export button"
+  },
+  "toggleTheme": {
+    "message": "Beralih tema",
+    "description": "Tooltip for theme toggle button"
+  },
+  "themeAuto": {
+    "message": "Otomatis",
+    "description": "Theme option auto"
+  },
+  "themeLight": {
+    "message": "Terang",
+    "description": "Theme option light"
+  },
+  "themeDark": {
+    "message": "Gelap",
+    "description": "Theme option dark"
+  },
+  "oneDay": {
+    "message": "1 hari",
+    "description": "Auto-delete 1 day"
+  },
+  "sevenDays": {
+    "message": "7 hari",
+    "description": "Auto-delete 7 days"
+  },
+  "thirtyDays": {
+    "message": "30 hari",
+    "description": "Auto-delete 30 days"
+  },
+  "close": {
+    "message": "Tutup",
+    "description": "Close translation button"
+  },
+  "pdfExportSuccess": {
+    "message": "Ekspor PDF berhasil!",
+    "description": "PDF export success notification"
+  },
+  "selectTranslationLanguage": {
+    "message": "Pilih bahasa terjemahan:",
+    "description": "Select translation language label"
+  },
+  "translationFailed": {
+    "message": "Terjemahan gagal.",
+    "description": "Translation failed message"
+  },
+  "subscriptionDetails": {
+    "message": "Detail Langganan",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Paket Tahunan",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Paket Bulanan", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Paket",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Harga",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Status",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Aktif",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Penghematan",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 per tahun!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/tahun",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/bulan",
+    "description": "Monthly plan price"
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "The name of the extension"
+  },
+  "appDescription": {
+    "message": "Nikdy už nestratíte skopírovaný text. Správca schránky s prekladateľom pre 18 jazykov, vyhľadávanie, štítky. 20 zadarmo, Pro neobmedzene.",
+    "description": "The description of the extension"
+  },
+  "recent": {
+    "message": "Nedávne",
+    "description": "Recent tab"
+  },
+  "pinned": {
+    "message": "Pripnuté",
+    "description": "Pinned tab"
+  },
+  "settings": {
+    "message": "Nastavenia",
+    "description": "Settings tab"
+  },
+  "searchPlaceholder": {
+    "message": "Hľadať v schránke...",
+    "description": "Search input placeholder"
+  },
+  "noClipboardItems": {
+    "message": "Zatiaľ žiadne položky v schránke",
+    "description": "Empty state title"
+  },
+  "copyToGetStarted": {
+    "message": "Skopírujte niečo pre začiatok!",
+    "description": "Empty state subtitle"
+  },
+  "noPinnedItems": {
+    "message": "Žiadne pripnuté položky",
+    "description": "No pinned items message"
+  },
+  "pinFavorites": {
+    "message": "Pripnite si obľúbené pre rýchly prístup",
+    "description": "Pin favorites message"
+  },
+  "appearance": {
+    "message": "Vzhľad",
+    "description": "Appearance settings"
+  },
+  "theme": {
+    "message": "Téma",
+    "description": "Theme setting"
+  },
+  "language": {
+    "message": "Jazyk",
+    "description": "Language setting"
+  },
+  "interfaceLanguage": {
+    "message": "Jazyk rozhrania",
+    "description": "Interface language setting"
+  },
+  "storage": {
+    "message": "Úložisko",
+    "description": "Storage settings"
+  },
+  "autoDeleteAfter": {
+    "message": "Automaticky mazať položky po",
+    "description": "Auto-delete setting"
+  },
+  "never": {
+    "message": "Nikdy",
+    "description": "Never option"
+  },
+  "clearAllItems": {
+    "message": "Vymazať všetky položky",
+    "description": "Clear all button"
+  },
+  "translation": {
+    "message": "Preklad",
+    "description": "Translation settings"
+  },
+  "defaultLanguages": {
+    "message": "Predvolené jazyky",
+    "description": "Default translation languages"
+  },
+  "translationsUsed": {
+    "message": "Použité preklady",
+    "description": "Translations used label"
+  },
+  "thisMonth": {
+    "message": "tento mesiac",
+    "description": "This month text"
+  },
+  "about": {
+    "message": "O aplikácii",
+    "description": "About section"
+  },
+  "privacyPolicy": {
+    "message": "Zásady ochrany osobných údajov",
+    "description": "Privacy policy link"
+  },
+  "support": {
+    "message": "Podpora",
+    "description": "Support link"
+  },
+  "items": {
+    "message": "položiek",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 Rozbaliť",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Zbaliť",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Exportovať všetko do PDF",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "Exportovať ako TXT",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "Exportovať ako CSV",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "Exportovať ako PDF",
+    "description": "Export as PDF option"
+  },
+  "upgradePro": {
+    "message": "Upgrade na Pro",
+    "description": "Upgrade to Pro button text"
+  },
+  "manageSubscription": {
+    "message": "Spravovať predplatné",
+    "description": "Manage subscription button text for Pro users"
+  },
+  "upgradeProTooltip": {
+    "message": "Upgrade na Pro pre neobmedzené funkcie",
+    "description": "Tooltip for upgrade button"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Spravovať vaše Pro predplatné",
+    "description": "Tooltip for manage subscription button"
+  },
+  "copied": {
+    "message": "Skopírované do schránky!",
+    "description": "Copy success message"
+  },
+  "translationCopied": {
+    "message": "Preklad skopírovaný!",
+    "description": "Translation copy success"
+  },
+  "moreItemsAvailable": {
+    "message": "ďalších položiek dostupných",
+    "description": "More items message"
+  },
+  "unlimitedTranslations": {
+    "message": "Neobmedzené preklady s Pro!",
+    "description": "Pro translations message"
+  },
+  "reachedTranslationLimit": {
+    "message": "Dosiahli ste limit bezplatných prekladov. Prejdite na Pro pre neobmedzené preklady!",
+    "description": "Translation limit message"
+  },
+  "confirmClearAll": {
+    "message": "Naozaj chcete vymazať všetky položky schránky?",
+    "description": "Clear all confirmation"
+  },
+  "characters": {
+    "message": "znakov",
+    "description": "Characters count"
+  },
+  "justNow": {
+    "message": "Práve teraz",
+    "description": "Just now time"
+  },
+  "minutesAgo": {
+    "message": "pred $MINUTES$m",
+    "description": "Minutes ago",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "pred $HOURS$h",
+    "description": "Hours ago",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "pred $DAYS$d",
+    "description": "Days ago",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Preložiť",
+    "description": "Translate button"
+  },
+  "pin": {
+    "message": "Pripnúť",
+    "description": "Pin button"
+  },
+  "unpin": {
+    "message": "Odpnúť",
+    "description": "Unpin button"
+  },
+  "copy": {
+    "message": "Kopírovať",
+    "description": "Copy button"
+  },
+  "delete": {
+    "message": "Vymazať",
+    "description": "Delete button"
+  },
+  "translating": {
+    "message": "Prekladám...",
+    "description": "Translating loading"
+  },
+  "translationFailed": {
+    "message": "Preklad zlyhal. Skúste to znova.",
+    "description": "Translation error"
+  },
+  "saveToClipSmart": {
+    "message": "Uložiť do ClipSmart",
+    "description": "Context menu item"
+  },
+  "openClipSmart": {
+    "message": "Otvoriť ClipSmart",
+    "description": "Command description"
+  },
+  "copyLastItem": {
+    "message": "Kopírovať poslednú položku schránky",
+    "description": "Command description"
+  },
+  "sortBy": {
+    "message": "Zoradiť podľa:",
+    "description": "Sort label"
+  },
+  "newest": {
+    "message": "Najnovšie",
+    "description": "Sort option"
+  },
+  "oldest": {
+    "message": "Najstaršie",
+    "description": "Sort option"
+  },
+  "az": {
+    "message": "Abecedne A-Z",
+    "description": "Sort option"
+  },
+  "za": {
+    "message": "Abecedne Z-A",
+    "description": "Sort option"
+  },
+  "longest": {
+    "message": "Najviac znakov",
+    "description": "Sort option"
+  },
+  "shortest": {
+    "message": "Najmenej znakov",
+    "description": "Sort option"
+  },
+  "premiumFeatures": {
+    "message": "Prémiové funkcie",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "Aktivovať režim Premium",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "Premium režim aktívny",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "Prémiové funkcie zahŕňajú:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "Neobmedzená história",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Exportovať do TXT/CSV/PDF",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "Pokročilé označovanie",
+    "description": "Advanced tagging feature"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Neobmedzené preklady s Pro!",
+    "description": "Banner or button for unlimited translations with Pro version"
+  },
+  "tooltipTranslate": {
+    "message": "Preložiť",
+    "description": "Tooltip for translate button"
+  },
+  "tooltipPin": {
+    "message": "Pripnúť",
+    "description": "Tooltip for pin button"
+  },
+  "tooltipUnpin": {
+    "message": "Odopnúť",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "Kopírovať",
+    "description": "Tooltip for copy button"
+  },
+  "tooltipDelete": {
+    "message": "Vymazať",
+    "description": "Tooltip for delete button"
+  },
+  "tooltipExport": {
+    "message": "Exportovať",
+    "description": "Tooltip for export button"
+  },
+  "toggleTheme": {
+    "message": "Prepnúť tému",
+    "description": "Tooltip for theme toggle button"
+  },
+  "themeAuto": {
+    "message": "Automaticky",
+    "description": "Theme option auto"
+  },
+  "themeLight": {
+    "message": "Svetlá",
+    "description": "Theme option light"
+  },
+  "themeDark": {
+    "message": "Tmavá",
+    "description": "Theme option dark"
+  },
+  "oneDay": {
+    "message": "1 deň",
+    "description": "Auto-delete 1 day"
+  },
+  "sevenDays": {
+    "message": "7 dní",
+    "description": "Auto-delete 7 days"
+  },
+  "thirtyDays": {
+    "message": "30 dní",
+    "description": "Auto-delete 30 days"
+  },
+  "close": {
+    "message": "Zatvoriť",
+    "description": "Close translation button"
+  },
+  "pdfExportSuccess": {
+    "message": "PDF export úspešný!",
+    "description": "PDF export success notification"
+  },
+  "selectTranslationLanguage": {
+    "message": "Vyberte jazyk prekladu:",
+    "description": "Select translation language label"
+  },
+  "translationFailed": {
+    "message": "Preklad zlyhal.",
+    "description": "Translation failed message"
+  },
+  "subscriptionDetails": {
+    "message": "Detaily predplatného",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Ročný plán",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Mesačný plán", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Plán",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Cena",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Stav",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Aktívne",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Úspora",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 ročne!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/rok",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/mesiac",
+    "description": "Monthly plan price"
+  }
+}

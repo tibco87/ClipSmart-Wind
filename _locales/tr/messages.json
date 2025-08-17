@@ -1,0 +1,441 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "Uzantının adı"
+  },
+  "appDescription": {
+    "message": "Kopyalanan metni bir daha asla kaybetmeyin. 18 dilli çevirici, arama, etiketler ile pano yöneticisi. 20 ücretsiz, Pro sınırsız.",
+    "description": "Uzantının açıklaması"
+  },
+  "recent": {
+    "message": "Son",
+    "description": "Son sekme"
+  },
+  "pinned": {
+    "message": "Sabitlenmiş",
+    "description": "Sabitlenmiş sekme"
+  },
+  "settings": {
+    "message": "Ayarlar",
+    "description": "Ayarlar sekmesi"
+  },
+  "searchPlaceholder": {
+    "message": "Panoda ara...",
+    "description": "Arama girişi yer tutucusu"
+  },
+  "noClipboardItems": {
+    "message": "Henüz pano öğesi yok",
+    "description": "Boş durum başlığı"
+  },
+  "copyToGetStarted": {
+    "message": "Başlamak için bir şeyler kopyalayın!",
+    "description": "Boş durum alt başlığı"
+  },
+  "noPinnedItems": {
+    "message": "Sabitlenmiş öğe yok",
+    "description": "Sabitlenmiş öğe yok mesajı"
+  },
+  "pinFavorites": {
+    "message": "Hızlı erişim için favori kliplerinizi sabitleyin",
+    "description": "Favori sabitleme mesajı"
+  },
+  "appearance": {
+    "message": "Görünüm",
+    "description": "Görünüm ayarları"
+  },
+  "theme": {
+    "message": "Tema",
+    "description": "Tema ayarı"
+  },
+  "language": {
+    "message": "Dil",
+    "description": "Dil ayarı"
+  },
+  "interfaceLanguage": {
+    "message": "Arayüz Dili",
+    "description": "Arayüz dili ayarı"
+  },
+  "storage": {
+    "message": "Depolama",
+    "description": "Depolama ayarları"
+  },
+  "autoDeleteAfter": {
+    "message": "Öğeleri şu süre sonra otomatik sil",
+    "description": "Otomatik silme ayarı"
+  },
+  "never": {
+    "message": "Asla",
+    "description": "Asla seçeneği"
+  },
+  "clearAllItems": {
+    "message": "Tüm Öğeleri Temizle",
+    "description": "Tümünü temizle düğmesi"
+  },
+  "translation": {
+    "message": "Çeviri",
+    "description": "Çeviri ayarları"
+  },
+  "defaultLanguages": {
+    "message": "Varsayılan diller",
+    "description": "Varsayılan çeviri dilleri"
+  },
+  "translationsUsed": {
+    "message": "Kullanılan çeviriler",
+    "description": "Kullanılan çeviriler etiketi"
+  },
+  "thisMonth": {
+    "message": "bu ay",
+    "description": "Bu ay metni"
+  },
+  "about": {
+    "message": "Hakkında",
+    "description": "Hakkında bölümü"
+  },
+  "privacyPolicy": {
+    "message": "Gizlilik Politikası",
+    "description": "Gizlilik politikası bağlantısı"
+  },
+  "support": {
+    "message": "Destek",
+    "description": "Destek bağlantısı"
+  },
+  "upgradePro": {
+    "message": "Pro'ya Yükselt",
+    "description": "Pro'ya yükselt düğmesi metni"
+  },
+  "manageSubscription": {
+    "message": "Aboneliği Yönet",
+    "description": "Pro kullanıcıları için abonelik yönetimi düğmesi metni"
+  },
+  "upgradeProTooltip": {
+    "message": "Sınırsız özellikler için Pro'ya yükselt",
+    "description": "Yükseltme düğmesi için ipucu"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Pro aboneliğinizi yönetin",
+    "description": "Abonelik yönetimi düğmesi için ipucu"
+  },
+  "copied": {
+    "message": "Panoya kopyalandı!",
+    "description": "Kopyalama başarı mesajı"
+  },
+  "translationCopied": {
+    "message": "Çeviri kopyalandı!",
+    "description": "Çeviri kopyalama başarısı"
+  },
+  "moreItemsAvailable": {
+    "message": "daha fazla öğe mevcut",
+    "description": "Daha fazla öğe mesajı"
+  },
+  "unlimitedTranslations": {
+    "message": "Pro ile sınırsız çeviri!",
+    "description": "Pro çeviri mesajı"
+  },
+  "reachedTranslationLimit": {
+    "message": "Ücretsiz çeviri limitine ulaştınız. Sınırsız çeviri için Pro'ya yükseltin!",
+    "description": "Çeviri limit mesajı"
+  },
+  "confirmClearAll": {
+    "message": "Tüm pano öğelerini temizlemek istediğinizden emin misiniz?",
+    "description": "Tümünü temizle onayı"
+  },
+  "characters": {
+    "message": "karakter",
+    "description": "Karakter sayısı"
+  },
+  "justNow": {
+    "message": "Az önce",
+    "description": "Az önce zamanı"
+  },
+  "minutesAgo": {
+    "message": "$MINUTES$d önce",
+    "description": "Dakika önce",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "$HOURS$s önce",
+    "description": "Saat önce",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "$DAYS$g önce",
+    "description": "Gün önce",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Çevir",
+    "description": "Çevir düğmesi"
+  },
+  "pin": {
+    "message": "Sabitle",
+    "description": "Sabitle düğmesi"
+  },
+  "unpin": {
+    "message": "Sabitlemeyi Kaldır",
+    "description": "Sabitlemeyi kaldır düğmesi"
+  },
+  "copy": {
+    "message": "Kopyala",
+    "description": "Kopyala düğmesi"
+  },
+  "delete": {
+    "message": "Sil",
+    "description": "Sil düğmesi"
+  },
+  "translating": {
+    "message": "Çeviriliyor...",
+    "description": "Çeviri yükleniyor"
+  },
+  "translationFailed": {
+    "message": "Çeviri başarısız. Lütfen tekrar deneyin.",
+    "description": "Çeviri hatası"
+  },
+  "saveToClipSmart": {
+    "message": "ClipSmart'a Kaydet",
+    "description": "Bağlam menüsü öğesi"
+  },
+  "openClipSmart": {
+    "message": "ClipSmart'ı Aç",
+    "description": "Komut açıklaması"
+  },
+  "copyLastItem": {
+    "message": "Son pano öğesini kopyala",
+    "description": "Komut açıklaması"
+  },
+  "items": {
+    "message": "öğe",
+    "description": "Öğe sayısı etiketi"
+  },
+  "sortBy": {
+    "message": "Sırala:",
+    "description": "Sıralama etiketi"
+  },
+  "newest": {
+    "message": "En Yeni",
+    "description": "Sıralama seçeneği"
+  },
+  "oldest": {
+    "message": "En Eski",
+    "description": "Sıralama seçeneği"
+  },
+  "az": {
+    "message": "Alfabetik A-Z",
+    "description": "Sıralama seçeneği"
+  },
+  "za": {
+    "message": "Alfabetik Z-A",
+    "description": "Sıralama seçeneği"
+  },
+  "longest": {
+    "message": "En Çok Karakter",
+    "description": "Sıralama seçeneği"
+  },
+  "shortest": {
+    "message": "En Az Karakter",
+    "description": "Sıralama seçeneği"
+  },
+  "premiumFeatures": {
+    "message": "Premium Özellikler",
+    "description": "Premium özellikler bölüm başlığı"
+  },
+  "enablePremium": {
+    "message": "Premium Modunu Etkinleştir",
+    "description": "Premium modu etkinleştir etiketi"
+  },
+  "premiumModeActive": {
+    "message": "Premium Modu Aktif",
+    "description": "Premium modu aktif etiketi"
+  },
+  "premiumIncludes": {
+    "message": "Premium özellikler şunları içerir:",
+    "description": "Premium özellikler dahil etiketi"
+  },
+  "unlimitedHistory": {
+    "message": "Sınırsız geçmiş",
+    "description": "Sınırsız geçmiş özelliği"
+  },
+  "exportTxtCsvPdf": {
+    "message": "TXT/CSV/PDF'ye Dışa Aktar",
+    "description": "Dışa aktarma özelliği"
+  },
+  "advancedTagging": {
+    "message": "Gelişmiş etiketleme",
+    "description": "Gelişmiş etiketleme özelliği"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Pro ile sınırsız çeviri!",
+    "description": "Pro sürümü ile sınırsız çeviri için banner veya düğme"
+  },
+  "items": {
+    "message": "öğe",
+    "description": "Items label"
+  },
+  "expand": {
+    "message": "📄 Genişlet",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Daralt",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Hepsini PDF'e Aktar",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "TXT olarak Aktar",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "CSV olarak Aktar",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "PDF olarak Aktar",
+    "description": "Export as PDF option"
+  },
+  "tooltipTranslate": {
+    "message": "Çevir",
+    "description": "Çevir düğmesi için ipucu"
+  },
+  "tooltipPin": {
+    "message": "Sabitle",
+    "description": "Sabitle düğmesi için ipucu"
+  },
+  "tooltipUnpin": {
+    "message": "Çıkar",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "Kopyala",
+    "description": "Kopyala düğmesi için ipucu"
+  },
+  "tooltipDelete": {
+    "message": "Sil",
+    "description": "Sil düğmesi için ipucu"
+  },
+  "tooltipExport": {
+    "message": "Dışa Aktar",
+    "description": "Dışa aktar düğmesi için ipucu"
+  },
+  "toggleTheme": {
+    "message": "Temayı değiştir",
+    "description": "Tema değiştirme düğmesi için ipucu"
+  },
+  "themeAuto": {
+    "message": "Otomatik",
+    "description": "Tema seçeneği otomatik"
+  },
+  "themeLight": {
+    "message": "Açık",
+    "description": "Tema seçeneği açık"
+  },
+  "themeDark": {
+    "message": "Koyu",
+    "description": "Tema seçeneği koyu"
+  },
+  "oneDay": {
+    "message": "1 gün",
+    "description": "Otomatik silme 1 gün"
+  },
+  "sevenDays": {
+    "message": "7 gün",
+    "description": "Otomatik silme 7 gün"
+  },
+  "thirtyDays": {
+    "message": "30 gün",
+    "description": "Otomatik silme 30 gün"
+  },
+  "close": {
+    "message": "Kapat",
+    "description": "Çeviri kapatma düğmesi"
+  },
+  "pdfExportSuccess": {
+    "message": "PDF dışa aktarma başarılı!",
+    "description": "PDF dışa aktarma başarı bildirimi"
+  },
+  "selectTranslationLanguage": {
+    "message": "Çeviri dilini seçin:",
+    "description": "Çeviri dili seç etiketi"
+  },
+  "translating": {
+    "message": "Çeviriliyor...",
+    "description": "Çeviri yükleme metni"
+  },
+  "translationFailed": {
+    "message": "Çeviri başarısız oldu.",
+    "description": "Çeviri hata mesajı"
+  },
+  "subscriptionDetails": {
+    "message": "Abonelik detayları",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Yıllık plan",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Aylık plan", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Plan",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Fiyat",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Durum",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Aktif",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Tasarruf",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "Yılda €17,89 tasarruf!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/yıl",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/ay",
+    "description": "Monthly plan price"
+  }
+} 
