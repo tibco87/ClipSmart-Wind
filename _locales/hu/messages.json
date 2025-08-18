@@ -1,0 +1,433 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "The name of the extension"
+  },
+  "appDescription": {
+    "message": "Soha ne veszítsd el a másolt szöveget. Vágólapkezelő 18 nyelvi fordítóval, kereséssel, címkékkel. 20 ingyenes, Pro korlátlan.",
+    "description": "The description of the extension"
+  },
+  "recent": {
+    "message": "Legutóbbi",
+    "description": "Recent tab"
+  },
+  "pinned": {
+    "message": "Rögzített",
+    "description": "Pinned tab"
+  },
+  "settings": {
+    "message": "Beállítások",
+    "description": "Settings tab"
+  },
+  "searchPlaceholder": {
+    "message": "Keresés a vágólapon...",
+    "description": "Search input placeholder"
+  },
+  "noClipboardItems": {
+    "message": "Még nincsenek vágólap elemek",
+    "description": "Empty state title"
+  },
+  "copyToGetStarted": {
+    "message": "Másolj valamit a kezdéshez!",
+    "description": "Empty state subtitle"
+  },
+  "noPinnedItems": {
+    "message": "Nincsenek rögzített elemek",
+    "description": "No pinned items message"
+  },
+  "pinFavorites": {
+    "message": "Rögzítsd a kedvenc elemeket gyors hozzáféréshez",
+    "description": "Pin favorites message"
+  },
+  "appearance": {
+    "message": "Megjelenés",
+    "description": "Appearance settings"
+  },
+  "theme": {
+    "message": "Téma",
+    "description": "Theme setting"
+  },
+  "language": {
+    "message": "Nyelv",
+    "description": "Language setting"
+  },
+  "interfaceLanguage": {
+    "message": "Felület nyelve",
+    "description": "Interface language setting"
+  },
+  "storage": {
+    "message": "Tárolás",
+    "description": "Storage settings"
+  },
+  "autoDeleteAfter": {
+    "message": "Elemek automatikus törlése után",
+    "description": "Auto-delete setting"
+  },
+  "never": {
+    "message": "Soha",
+    "description": "Never option"
+  },
+  "clearAllItems": {
+    "message": "Összes elem törlése",
+    "description": "Clear all button"
+  },
+  "translation": {
+    "message": "Fordítás",
+    "description": "Translation settings"
+  },
+  "defaultLanguages": {
+    "message": "Alapértelmezett nyelvek",
+    "description": "Default translation languages"
+  },
+  "translationsUsed": {
+    "message": "Használt fordítások",
+    "description": "Translations used label"
+  },
+  "thisMonth": {
+    "message": "ezen a hónapon",
+    "description": "This month text"
+  },
+  "about": {
+    "message": "Névjegy",
+    "description": "About section"
+  },
+  "privacyPolicy": {
+    "message": "Adatvédelmi irányelvek",
+    "description": "Privacy policy link"
+  },
+  "support": {
+    "message": "Támogatás",
+    "description": "Support link"
+  },
+  "items": {
+    "message": "elemek",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 Kibontás",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Összecsukás",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Minden exportálása PDF-be",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "Exportálás TXT-ként",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "Exportálás CSV-ként",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "Exportálás PDF-ként",
+    "description": "Export as PDF option"
+  },
+  "upgradePro": {
+    "message": "Pro frissítés",
+    "description": "Upgrade to Pro button text"
+  },
+  "manageSubscription": {
+    "message": "Előfizetés kezelése",
+    "description": "Manage subscription button text for Pro users"
+  },
+  "upgradeProTooltip": {
+    "message": "Frissíts Pro-ra korlátlan funkciókért",
+    "description": "Tooltip for upgrade button"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Pro előfizetésed kezelése",
+    "description": "Tooltip for manage subscription button"
+  },
+  "copied": {
+    "message": "Vágólapra másolva!",
+    "description": "Copy success message"
+  },
+  "translationCopied": {
+    "message": "Fordítás másolva!",
+    "description": "Translation copy success"
+  },
+  "moreItemsAvailable": {
+    "message": "további elem elérhető",
+    "description": "More items message"
+  },
+  "unlimitedTranslations": {
+    "message": "Korlátlan fordítás Pro-val!",
+    "description": "Pro translations message"
+  },
+  "reachedTranslationLimit": {
+    "message": "Elérted az ingyenes fordítási limitet. Frissíts Pro-ra korlátlan fordításért!",
+    "description": "Translation limit message"
+  },
+  "confirmClearAll": {
+    "message": "Biztosan törölni szeretnéd az összes vágólap elemet?",
+    "description": "Clear all confirmation"
+  },
+  "characters": {
+    "message": "karakter",
+    "description": "Characters count"
+  },
+  "justNow": {
+    "message": "Most",
+    "description": "Just now time"
+  },
+  "minutesAgo": {
+    "message": "perccel ezelőtt",
+    "description": "Minutes ago",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "órával ezelőtt",
+    "description": "Hours ago",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "nappal ezelőtt",
+    "description": "Days ago",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Fordítás",
+    "description": "Translate button"
+  },
+  "pin": {
+    "message": "Rögzítés",
+    "description": "Pin button"
+  },
+  "unpin": {
+    "message": "Rögzítés feloldása",
+    "description": "Unpin button"
+  },
+  "copy": {
+    "message": "Másolás",
+    "description": "Copy button"
+  },
+  "delete": {
+    "message": "Törlés",
+    "description": "Delete button"
+  },
+  "translating": {
+    "message": "Fordítás...",
+    "description": "Translating loading"
+  },
+  "translationFailed": {
+    "message": "A fordítás sikertelen. Próbáld újra.",
+    "description": "Translation error"
+  },
+  "saveToClipSmart": {
+    "message": "Mentés ClipSmart-ba",
+    "description": "Context menu item"
+  },
+  "openClipSmart": {
+    "message": "ClipSmart megnyitása",
+    "description": "Command description"
+  },
+  "copyLastItem": {
+    "message": "Utolsó vágólap elem másolása",
+    "description": "Command description"
+  },
+  "sortBy": {
+    "message": "Rend.",
+    "description": "Sort label"
+  },
+  "newest": {
+    "message": "Legújabb",
+    "description": "Sort option"
+  },
+  "oldest": {
+    "message": "Legrégebbi",
+    "description": "Sort option"
+  },
+  "az": {
+    "message": "ABC sorrend A-Z",
+    "description": "Sort option"
+  },
+  "za": {
+    "message": "ABC sorrend Z-A",
+    "description": "Sort option"
+  },
+  "longest": {
+    "message": "Legtöbb karakter",
+    "description": "Sort option"
+  },
+  "shortest": {
+    "message": "Legkevesebb karakter",
+    "description": "Sort option"
+  },
+  "premiumFeatures": {
+    "message": "Prémium funkciók",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "Prémium mód engedélyezése",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "Prémium mód aktív",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "A prémium funkciók tartalmazzák:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "Korlátlan előzmények",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Exportálás TXT/CSV/PDF-be",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "Fejlett címkézés",
+    "description": "Advanced tagging feature"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Korlátlan fordítás Pro-val!",
+    "description": "Banner or button for unlimited translations with Pro version"
+  },
+  "tooltipTranslate": {
+    "message": "Fordítás",
+    "description": "Tooltip for translate button"
+  },
+  "tooltipPin": {
+    "message": "Rögzítés",
+    "description": "Tooltip for pin button"
+  },
+  "tooltipUnpin": {
+    "message": "Kifűzés",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "Másolás",
+    "description": "Tooltip for copy button"
+  },
+  "tooltipDelete": {
+    "message": "Törlés",
+    "description": "Tooltip for delete button"
+  },
+  "tooltipExport": {
+    "message": "Exportálás",
+    "description": "Tooltip for export button"
+  },
+  "toggleTheme": {
+    "message": "Téma váltás",
+    "description": "Tooltip for theme toggle button"
+  },
+  "themeAuto": {
+    "message": "Automatikus",
+    "description": "Theme option auto"
+  },
+  "themeLight": {
+    "message": "Világos",
+    "description": "Theme option light"
+  },
+  "themeDark": {
+    "message": "Sötét",
+    "description": "Theme option dark"
+  },
+  "oneDay": {
+    "message": "1 nap",
+    "description": "Auto-delete 1 day"
+  },
+  "sevenDays": {
+    "message": "7 nap",
+    "description": "Auto-delete 7 days"
+  },
+  "thirtyDays": {
+    "message": "30 nap",
+    "description": "Auto-delete 30 days"
+  },
+  "close": {
+    "message": "Bezárás",
+    "description": "Close translation button"
+  },
+  "pdfExportSuccess": {
+    "message": "PDF exportálás sikeres!",
+    "description": "PDF export success notification"
+  },
+  "selectTranslationLanguage": {
+    "message": "Fordítási nyelv kiválasztása:",
+    "description": "Select translation language label"
+  },
+  "translationFailed": {
+    "message": "A fordítás sikertelen.",
+    "description": "Translation failed message"
+  },
+  "subscriptionDetails": {
+    "message": "Előfizetés részletei",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Éves csomag",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Havi csomag", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Csomag",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Ár",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Állapot",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Aktív",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Megtakarítás",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 évente!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/év",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/hónap",
+    "description": "Monthly plan price"
+  }
+}

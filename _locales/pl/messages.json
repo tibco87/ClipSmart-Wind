@@ -1,0 +1,180 @@
+{
+  "appName": { "message": "ClipSmart", "description": "Nazwa rozszerzenia" },
+  "appDescription": { "message": "Nigdy więcej nie zgub skopiowanego tekstu. Menedżer schowka z tłumaczem 18 języków, wyszukiwanie, tagi. 20 za darmo, Pro bez limitu.", "description": "Opis rozszerzenia" },
+  "recent": { "message": "Ostatnie", "description": "Zakładka ostatnie" },
+  "pinned": { "message": "Przypięte", "description": "Zakładka przypięte" },
+  "settings": { "message": "Ustawienia", "description": "Zakładka ustawienia" },
+  "searchPlaceholder": { "message": "Szukaj w schowku...", "description": "Placeholder wyszukiwania" },
+  "noClipboardItems": { "message": "Brak elementów w schowku", "description": "Tytuł pustego stanu" },
+  "copyToGetStarted": { "message": "Skopiuj coś, aby rozpocząć!", "description": "Podtytuł pustego stanu" },
+  "noPinnedItems": { "message": "Brak przypiętych elementów", "description": "Brak przypiętych elementów" },
+  "pinFavorites": { "message": "Przypnij ulubione dla szybkiego dostępu", "description": "Przypnij ulubione komunikat" },
+  "appearance": { "message": "Wygląd", "description": "Ustawienia wyglądu" },
+  "theme": { "message": "Motyw", "description": "Ustawienie motywu" },
+  "language": { "message": "Język", "description": "Ustawienie języka" },
+  "interfaceLanguage": { "message": "Język interfejsu", "description": "Ustawienie języka interfejsu" },
+  "storage": { "message": "Pamięć", "description": "Ustawienia pamięci" },
+  "autoDeleteAfter": { "message": "Automatyczne usuwanie po", "description": "Ustawienie auto-usuwania" },
+  "never": { "message": "Nigdy", "description": "Opcja nigdy" },
+  "clearAllItems": { "message": "Wyczyść wszystko", "description": "Przycisk wyczyść wszystko" },
+  "translation": { "message": "Tłumaczenie", "description": "Ustawienia tłumaczenia" },
+  "defaultLanguages": { "message": "Domyślne języki", "description": "Domyślne języki tłumaczenia" },
+  "translationsUsed": { "message": "Użyte tłumaczenia", "description": "Etykieta użytych tłumaczeń" },
+  "thisMonth": { "message": "w tym miesiącu", "description": "Tekst ten miesiąc" },
+  "about": { "message": "O programie", "description": "Sekcja o programie" },
+  "privacyPolicy": { "message": "Polityka prywatności", "description": "Link polityka prywatności" },
+  "support": { "message": "Wsparcie", "description": "Link wsparcie" },
+  "upgradePro": { "message": "Ulepsz do Pro", "description": "Przycisk ulepsz do Pro" },
+  "manageSubscription": { "message": "Zarządzaj subskrypcją", "description": "Przycisk zarządzania subskrypcją dla użytkowników Pro" },
+  "upgradeProTooltip": { "message": "Ulepsz do Pro dla nieograniczonych funkcji", "description": "Tooltip dla przycisku ulepszenia" },
+  "manageSubscriptionTooltip": { "message": "Zarządzaj swoją subskrypcją Pro", "description": "Tooltip dla przycisku zarządzania subskrypcją" },
+  "copied": { "message": "Skopiowano do schowka!", "description": "Komunikat sukces kopiowania" },
+  "translationCopied": { "message": "Tłumaczenie skopiowane!", "description": "Sukces kopiowania tłumaczenia" },
+  "moreItemsAvailable": { "message": "więcej dostępnych elementów", "description": "Komunikat więcej elementów" },
+  "unlimitedTranslations": { "message": "Nieograniczone tłumaczenia z Pro!", "description": "Komunikat tłumaczenia Pro" },
+  "reachedTranslationLimit": { "message": "Osiągnięto limit darmowych tłumaczeń. Ulepsz do Pro, aby mieć nieograniczone tłumaczenia!", "description": "Komunikat limit tłumaczeń" },
+  "confirmClearAll": { "message": "Czy na pewno chcesz wyczyścić wszystkie elementy schowka?", "description": "Potwierdzenie wyczyszczenia wszystkiego" },
+  "characters": { "message": "znaków", "description": "Liczba znaków" },
+  "justNow": { "message": "Przed chwilą", "description": "Czas przed chwilą" },
+  "minutesAgo": { "message": "$MINUTES$m temu", "description": "Minut temu", "placeholders": { "minutes": { "content": "$1" } } },
+  "hoursAgo": { "message": "$HOURS$h temu", "description": "Godzin temu", "placeholders": { "hours": { "content": "$1" } } },
+  "daysAgo": { "message": "$DAYS$d temu", "description": "Dni temu", "placeholders": { "days": { "content": "$1" } } },
+  "translate": { "message": "Tłumacz", "description": "Przycisk tłumacz" },
+  "pin": { "message": "Przypnij", "description": "Przycisk przypnij" },
+  "unpin": { "message": "Odepnij", "description": "Przycisk odepnij" },
+  "copy": { "message": "Kopiuj", "description": "Przycisk kopiuj" },
+  "delete": { "message": "Usuń", "description": "Przycisk usuń" },
+  "translating": { "message": "Tłumaczenie...", "description": "Ładowanie tłumaczenia" },
+  "translationFailed": { "message": "Tłumaczenie nie powiodło się. Spróbuj ponownie.", "description": "Błąd tłumaczenia" },
+  "saveToClipSmart": { "message": "Zapisz do ClipSmart", "description": "Element menu kontekstowego" },
+  "openClipSmart": { "message": "Otwórz ClipSmart", "description": "Opis polecenia" },
+  "copyLastItem": { "message": "Kopiuj ostatni element schowka", "description": "Opis polecenia" },
+  "items": { "message": "elementów", "description": "Etykieta liczby elementów" },
+  "sortBy": { "message": "Sortuj według:", "description": "Etykieta sortowania" },
+  "newest": { "message": "Najnowsze", "description": "Opcja sortowania" },
+  "oldest": { "message": "Najstarsze", "description": "Opcja sortowania" },
+  "az": { "message": "Alfabetycznie A-Z", "description": "Opcja sortowania" },
+  "za": { "message": "Alfabetycznie Z-A", "description": "Opcja sortowania" },
+  "longest": { "message": "Najwięcej znaków", "description": "Opcja sortowania" },
+  "shortest": { "message": "Najmniej znaków", "description": "Opcja sortowania" },
+  "premiumFeatures": { "message": "Funkcje Premium", "description": "Tytuł sekcji premium" },
+  "enablePremium": { "message": "Włącz tryb Premium", "description": "Etykieta włącz premium" },
+  "premiumModeActive": { "message": "Tryb Premium aktywny", "description": "Etykieta aktywnego trybu premium" },
+  "premiumIncludes": { "message": "Funkcje premium obejmują:", "description": "Etykieta funkcje premium" },
+  "unlimitedHistory": { "message": "Nieograniczona historia", "description": "Funkcja nieograniczonej historii" },
+  "exportTxtCsvPdf": { "message": "Eksportuj do TXT/CSV/PDF", "description": "Funkcja eksportu" },
+  "advancedTagging": { "message": "Zaawansowane tagowanie", "description": "Funkcja zaawansowanego tagowania" },
+  "unlimitedTranslations": { "message": "Nieograniczone tłumaczenia", "description": "Funkcja nieograniczonych tłumaczeń" },
+  "tooltipTranslate": { "message": "Tłumacz", "description": "Tooltip przycisk tłumacz" },
+  "tooltipPin": { "message": "Przypnij", "description": "Tooltip przycisk przypnij" },
+  "tooltipUnpin": {
+    "message": "Odpiń",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": { "message": "Kopiuj", "description": "Tooltip przycisk kopiuj" },
+  "tooltipDelete": { "message": "Usuń", "description": "Tooltip przycisk usuń" },
+  "tooltipExport": { "message": "Eksportuj", "description": "Tooltip przycisk eksportuj" },
+  "toggleTheme": { "message": "Przełącz motyw", "description": "Tooltip przełącz motyw" },
+  "pdfExportSuccess": { "message": "Eksport PDF udany!", "description": "Powiadomienie o udanym eksporcie PDF" },
+  "selectTranslationLanguage": { "message": "Wybierz język tłumaczenia:", "description": "Wybierz język tłumaczenia etykieta" },
+  "translating": { "message": "Tłumaczenie...", "description": "Tekst ładowania tłumaczenia" },
+  "translationFailed": { "message": "Tłumaczenie nie powiodło się.", "description": "Komunikat o błędzie tłumaczenia" },
+  "themeAuto": { "message": "Auto", "description": "Opcja motyw auto" },
+  "themeLight": { "message": "Jasny", "description": "Opcja motyw jasny" },
+  "themeDark": { "message": "Ciemny", "description": "Opcja motyw ciemny" },
+  "oneDay": { "message": "1 dzień", "description": "Auto-usuwanie 1 dzień" },
+  "sevenDays": { "message": "7 dni", "description": "Auto-usuwanie 7 dni" },
+  "thirtyDays": { "message": "30 dni", "description": "Auto-usuwanie 30 dni" },
+  "unlimitedTranslationsPro": {
+    "message": "Nieograniczone tłumaczenia z Pro!",
+    "description": "Baner lub przycisk dla nieograniczonych tłumaczeń w wersji Pro"
+  },
+  "items": {
+    "message": "elementy",
+    "description": "Items label"
+  },
+  "expand": {
+    "message": "📄 Rozwiń",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Zwiń",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Eksportuj wszystko do PDF",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "Eksportuj jako TXT",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "Eksportuj jako CSV",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "Eksportuj jako PDF",
+    "description": "Export as PDF option"
+  },
+  "subscriptionDetails": {
+    "message": "Szczegóły subskrypcji",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Plan roczny",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Plan miesięczny", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Plan",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Cena",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Status",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Aktywny",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Oszczędności",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 rocznie!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/rok",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/miesiąc",
+    "description": "Monthly plan price"
+  }
+} 

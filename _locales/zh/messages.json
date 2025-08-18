@@ -1,0 +1,201 @@
+{
+  "appName": { "message": "ClipSmart", "description": "扩展名称" },
+  "appDescription": { "message": "永不丢失复制的文本。剪贴板管理器带24种语言翻译器、搜索、标签。免费20项，专业版无限。", "description": "扩展描述" },
+  "recent": { "message": "最近", "description": "最近标签" },
+  "pinned": { "message": "已固定", "description": "已固定标签" },
+  "settings": { "message": "设置", "description": "设置标签" },
+  "searchPlaceholder": { "message": "搜索剪贴板...", "description": "搜索输入占位符" },
+  "noClipboardItems": { "message": "暂无剪贴板项目", "description": "空状态标题" },
+  "copyToGetStarted": { "message": "复制一些内容开始使用！", "description": "空状态副标题" },
+  "noPinnedItems": { "message": "没有固定项目", "description": "无固定项目消息" },
+  "pinFavorites": { "message": "固定您喜欢的片段以便快速访问", "description": "固定收藏消息" },
+  "appearance": { "message": "外观", "description": "外观设置" },
+  "theme": { "message": "主题", "description": "主题设置" },
+  "language": { "message": "语言", "description": "语言设置" },
+  "interfaceLanguage": { "message": "界面语言", "description": "界面语言设置" },
+  "storage": { "message": "存储", "description": "存储设置" },
+  "autoDeleteAfter": { "message": "自动删除时间", "description": "自动删除设置" },
+  "never": { "message": "永不", "description": "永不选项" },
+  "clearAllItems": { "message": "清除所有项目", "description": "清除所有按钮" },
+  "translation": { "message": "翻译", "description": "翻译设置" },
+  "defaultLanguages": { "message": "默认语言", "description": "默认翻译语言" },
+  "translationsUsed": { "message": "已使用翻译", "description": "已使用翻译标签" },
+  "thisMonth": { "message": "本月", "description": "本月文本" },
+  "about": { "message": "关于", "description": "关于部分" },
+  "privacyPolicy": { "message": "隐私政策", "description": "隐私政策链接" },
+  "support": { "message": "支持", "description": "支持链接" },
+  "upgradePro": { "message": "升级专业版", "description": "升级专业版按钮标签" },
+  "manageSubscription": { "message": "管理订阅", "description": "专业版用户订阅管理按钮" },
+  "upgradeProTooltip": { "message": "升级到专业版获得无限功能", "description": "升级按钮提示" },
+  "manageSubscriptionTooltip": { "message": "管理您的专业版订阅", "description": "订阅管理按钮提示" },
+  "copied": { "message": "已复制到剪贴板！", "description": "复制成功消息" },
+  "translationCopied": { "message": "翻译已复制！", "description": "翻译复制成功" },
+  "moreItemsAvailable": { "message": "更多可用项目", "description": "更多项目消息" },
+  "unlimitedTranslationsBanner": { "message": "专业版无限翻译！", "description": "专业版翻译横幅消息" },
+  "reachedTranslationLimit": { "message": "您已达到免费翻译限制。升级到专业版获得无限翻译！", "description": "翻译限制消息" },
+  "confirmClearAll": { "message": "确定要清除所有剪贴板项目吗？", "description": "清除所有确认" },
+  "characters": { "message": "字符", "description": "字符计数" },
+  "justNow": { "message": "刚刚", "description": "刚刚时间" },
+  "minutesAgo": { "message": "$MINUTES$分钟前", "description": "分钟前", "placeholders": { "minutes": { "content": "$1" } } },
+  "hoursAgo": { "message": "$HOURS$小时前", "description": "小时前", "placeholders": { "hours": { "content": "$1" } } },
+  "daysAgo": { "message": "$DAYS$天前", "description": "天前", "placeholders": { "days": { "content": "$1" } } },
+  "translate": { "message": "翻译", "description": "翻译按钮" },
+  "pin": { "message": "固定", "description": "固定按钮" },
+  "unpin": { "message": "取消固定", "description": "取消固定按钮" },
+  "copy": { "message": "复制", "description": "复制按钮" },
+  "delete": { "message": "删除", "description": "删除按钮" },
+  "translating": { "message": "翻译中...", "description": "翻译加载文本" },
+  "translationFailed": { "message": "翻译失败。", "description": "翻译失败消息" },
+  "saveToClipSmart": { "message": "保存到ClipSmart", "description": "上下文菜单项" },
+  "openClipSmart": { "message": "打开ClipSmart", "description": "命令描述" },
+  "copyLastItem": { "message": "复制最后一个剪贴板项目", "description": "命令描述" },
+  "items": { "message": "个项目", "description": "项目数量标签" },
+  "sortBy": { "message": "排序：", "description": "排序标签" },
+  "newest": { "message": "最新", "description": "排序选项" },
+  "oldest": { "message": "最旧", "description": "排序选项" },
+  "az": { "message": "按字母A-Z", "description": "排序选项" },
+  "za": { "message": "按字母Z-A", "description": "排序选项" },
+  "longest": { "message": "最多字符", "description": "排序选项" },
+  "shortest": { "message": "最少字符", "description": "排序选项" },
+  "premiumFeatures": { "message": "专业版功能", "description": "专业版功能部分标题" },
+  "enablePremium": { "message": "启用专业版模式", "description": "启用专业版模式标签" },
+  "premiumIncludes": { "message": "专业版包括：", "description": "专业版功能包括标签" },
+  "unlimitedHistory": { "message": "无限历史记录", "description": "无限历史记录功能" },
+  "exportTxtCsvPdf": { "message": "导出TXT/CSV/PDF", "description": "导出功能" },
+  "advancedTagging": { "message": "高级标签", "description": "高级标签功能" },
+  "unlimitedTranslations": { "message": "无限翻译", "description": "无限翻译功能" },
+  "tooltipTranslate": { "message": "翻译", "description": "翻译按钮提示" },
+  "tooltipPin": { "message": "固定", "description": "固定按钮提示" },
+  "tooltipUnpin": {
+    "message": "取消固定",
+    "description": "取消固定按钮提示"
+  },
+  "tooltipCopy": { "message": "复制", "description": "复制按钮提示" },
+  "tooltipDelete": { "message": "删除", "description": "删除按钮提示" },
+  "tooltipExport": { "message": "导出", "description": "导出按钮提示" },
+  "toggleTheme": { "message": "切换主题", "description": "切换主题提示" },
+  "pdfExportSuccess": { "message": "PDF导出成功！", "description": "PDF导出成功通知" },
+  "selectTranslationLanguage": { "message": "选择翻译语言：", "description": "选择翻译语言标签" },
+  "themeAuto": { "message": "自动", "description": "主题选项自动" },
+  "themeLight": { "message": "浅色", "description": "主题选项浅色" },
+  "themeDark": { "message": "深色", "description": "主题选项深色" },
+  "oneDay": { "message": "1天", "description": "自动删除1天" },
+  "sevenDays": { "message": "7天", "description": "自动删除7天" },
+  "thirtyDays": { "message": "30天", "description": "自动删除30天" },
+  "unlimitedTranslationsPro": {
+    "message": "专业版无限翻译！",
+    "description": "专业版无限翻译横幅"
+  },
+  "expand": {
+    "message": "📄 展开",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 收起",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "导出全部为PDF",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "导出为TXT",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "导出为CSV",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "导出为PDF",
+    "description": "Export as PDF option"
+  },
+  "subscriptionDetails": {
+    "message": "订阅详情",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "年度计划",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "月度计划", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "计划",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "价格",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "状态",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "活跃",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "节省",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "每年节省€17,89！",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/年",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/月",
+    "description": "Monthly plan price"
+  },
+  "premiumFeatures": {
+    "message": "高级功能",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "启用高级模式",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "高级模式已激活",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "高级功能包括:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "无限历史记录",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "导出到TXT/CSV/PDF",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "高级标签",
+    "description": "Advanced tagging feature"
+  }
+} 

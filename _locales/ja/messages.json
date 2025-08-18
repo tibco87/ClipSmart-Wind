@@ -1,0 +1,205 @@
+{
+  "appName": { "message": "ClipSmart", "description": "拡張機能名" },
+  "appDescription": { "message": "コピーしたテキストを二度と失わない。15言語翻訳、検索、タグ付きクリップボードマネージャー。無料20件、Pro版無制限。", "description": "拡張機能の説明" },
+  "recent": { "message": "最近", "description": "最近タブ" },
+  "pinned": { "message": "ピン留め", "description": "ピン留めタブ" },
+  "settings": { "message": "設定", "description": "設定タブ" },
+  "searchPlaceholder": { "message": "クリップボードを検索...", "description": "検索入力プレースホルダー" },
+  "noClipboardItems": { "message": "クリップボード項目がまだありません", "description": "空の状態タイトル" },
+  "copyToGetStarted": { "message": "何かをコピーして始めましょう！", "description": "空の状態サブタイトル" },
+  "noPinnedItems": { "message": "ピン留め項目なし", "description": "ピン留め項目なしメッセージ" },
+  "pinFavorites": { "message": "お気に入りのクリップをピン留めして素早くアクセス", "description": "お気に入りピン留めメッセージ" },
+  "appearance": { "message": "外観", "description": "外観設定" },
+  "theme": { "message": "テーマ", "description": "テーマ設定" },
+  "language": { "message": "言語", "description": "言語設定" },
+  "interfaceLanguage": { "message": "インターフェース言語", "description": "インターフェース言語設定" },
+  "storage": { "message": "ストレージ", "description": "ストレージ設定" },
+  "autoDeleteAfter": { "message": "自動削除時間", "description": "自動削除設定" },
+  "never": { "message": "削除しない", "description": "削除しないオプション" },
+  "clearAllItems": { "message": "すべての項目をクリア", "description": "すべてクリアボタン" },
+  "translation": { "message": "翻訳", "description": "翻訳設定" },
+  "defaultLanguages": { "message": "デフォルト言語", "description": "デフォルト翻訳言語" },
+  "translationsUsed": { "message": "使用した翻訳", "description": "使用した翻訳ラベル" },
+  "thisMonth": { "message": "今月", "description": "今月テキスト" },
+  "about": { "message": "概要", "description": "概要セクション" },
+  "privacyPolicy": { "message": "プライバシーポリシー", "description": "プライバシーポリシーリンク" },
+  "support": { "message": "サポート", "description": "サポートリンク" },
+  "upgradePro": { "message": "プロ版にアップグレード", "description": "プロ版アップグレードボタンラベル" },
+  "manageSubscription": { "message": "サブスクリプション管理", "description": "プロユーザー用サブスクリプション管理ボタン" },
+  "upgradeProTooltip": { "message": "無制限機能のためにプロ版にアップグレード", "description": "アップグレードボタンのツールチップ" },
+  "manageSubscriptionTooltip": { "message": "プロサブスクリプションを管理", "description": "サブスクリプション管理ボタンのツールチップ" },
+  "copied": { "message": "クリップボードにコピーされました！", "description": "コピー成功メッセージ" },
+  "translationCopied": { "message": "翻訳がコピーされました！", "description": "翻訳コピー成功" },
+  "moreItemsAvailable": { "message": "利用可能な項目がさらにあります", "description": "より多くの項目メッセージ" },
+  "unlimitedTranslations": { "message": "プロ版で無制限の翻訳！", "description": "プロ翻訳メッセージ" },
+  "reachedTranslationLimit": { "message": "無料翻訳の制限に達しました。無制限の翻訳のためにプロ版にアップグレードしてください！", "description": "翻訳制限メッセージ" },
+  "confirmClearAll": { "message": "すべてのクリップボード項目をクリアしますか？", "description": "すべてクリア確認" },
+  "characters": { "message": "文字", "description": "文字数" },
+  "justNow": { "message": "たった今", "description": "たった今時間" },
+  "minutesAgo": { "message": "$MINUTES$分前", "description": "分前", "placeholders": { "minutes": { "content": "$1" } } },
+  "hoursAgo": { "message": "$HOURS$時間前", "description": "時間前", "placeholders": { "hours": { "content": "$1" } } },
+  "daysAgo": { "message": "$DAYS$日前", "description": "日前", "placeholders": { "days": { "content": "$1" } } },
+  "translate": { "message": "翻訳", "description": "翻訳ボタン" },
+  "pin": { "message": "ピン留め", "description": "ピン留めボタン" },
+  "unpin": { "message": "ピン留め解除", "description": "ピン留め解除ボタン" },
+  "copy": { "message": "コピー", "description": "コピーボタン" },
+  "delete": { "message": "削除", "description": "削除ボタン" },
+  "translating": { "message": "翻訳中...", "description": "翻訳ローディング" },
+  "translationFailed": { "message": "翻訳に失敗しました。もう一度お試しください。", "description": "翻訳エラー" },
+  "saveToClipSmart": { "message": "ClipSmartに保存", "description": "コンテキストメニュー項目" },
+  "openClipSmart": { "message": "ClipSmartを開く", "description": "コマンド説明" },
+  "copyLastItem": { "message": "最後のクリップボード項目をコピー", "description": "コマンド説明" },
+  "items": {
+    "message": "アイテム",
+    "description": "Items label"
+  },
+  "expand": {
+    "message": "📄 展開",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 折りたたむ",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "すべてをPDFにエクスポート",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "TXTとしてエクスポート",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "CSVとしてエクスポート",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "PDFとしてエクスポート",
+    "description": "Export as PDF option"
+  },
+  "sortBy": { "message": "並び替え：", "description": "並び替えラベル" },
+  "newest": { "message": "最新", "description": "並び替えオプション" },
+  "oldest": { "message": "最古", "description": "並び替えオプション" },
+  "az": { "message": "アルファベット順A-Z", "description": "並び替えオプション" },
+  "za": { "message": "アルファベット順Z-A", "description": "並び替えオプション" },
+  "longest": { "message": "文字数が多い順", "description": "並び替えオプション" },
+  "shortest": { "message": "文字数が少ない順", "description": "並び替えオプション" },
+  "premiumFeatures": { "message": "プレミアム機能", "description": "プレミアム機能セクションタイトル" },
+  "enablePremium": { "message": "プレミアムモードを有効化", "description": "プレミアムモード有効化ラベル" },
+  "premiumIncludes": { "message": "プレミアム機能には以下が含まれます：", "description": "プレミアム機能含むラベル" },
+  "unlimitedHistory": { "message": "無制限の履歴", "description": "無制限履歴機能" },
+  "exportTxtCsvPdf": { "message": "TXT/CSV/PDFにエクスポート", "description": "エクスポート機能" },
+  "advancedTagging": { "message": "高度なタグ付け", "description": "高度なタグ付け機能" },
+  "unlimitedTranslationsPro": {
+    "message": "プロ版で無制限の翻訳！",
+    "description": "プロ版無制限翻訳のバナーまたはボタン"
+  },
+  "tooltipTranslate": { "message": "翻訳", "description": "翻訳ボタンのツールチップ" },
+  "tooltipPin": { "message": "ピン留め", "description": "ピン留めボタンのツールチップ" },
+  "tooltipUnpin": {
+    "message": "固定解除",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": { "message": "コピー", "description": "コピーボタンのツールチップ" },
+  "tooltipDelete": { "message": "削除", "description": "削除ボタンのツールチップ" },
+  "tooltipExport": { "message": "エクスポート", "description": "エクスポートボタンのツールチップ" },
+  "toggleTheme": { "message": "テーマを切り替え", "description": "テーマ切り替えツールチップ" },
+  "themeAuto": { "message": "自動", "description": "テーマオプション自動" },
+  "themeLight": { "message": "ライト", "description": "テーマオプションライト" },
+  "themeDark": { "message": "ダーク", "description": "テーマオプションダーク" },
+  "oneDay": { "message": "1日", "description": "自動削除1日" },
+  "sevenDays": { "message": "7日", "description": "自動削除7日" },
+  "thirtyDays": { "message": "30日", "description": "自動削除30日" },
+  "pdfExportSuccess": { "message": "PDFエクスポート成功！", "description": "PDFエクスポート成功通知" },
+  "selectTranslationLanguage": { "message": "翻訳言語を選択：", "description": "翻訳言語選択ラベル" },
+  "translating": { "message": "翻訳中...", "description": "翻訳読み込みテキスト" },
+  "translationFailed": { "message": "翻訳に失敗しました。", "description": "翻訳失敗メッセージ" },
+  "subscriptionDetails": {
+    "message": "サブスクリプション詳細",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "年間プラン",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "月間プラン", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "プラン",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "価格",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "ステータス",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "アクティブ",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "節約",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "年間€17,89の節約！",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/年",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/月",
+    "description": "Monthly plan price"
+  },
+  "premiumFeatures": {
+    "message": "プレミアム機能",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "プレミアムモードを有効にする",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "プレミアムモード有効",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "プレミアム機能には以下が含まれます:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "無制限履歴",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "TXT/CSV/PDFにエクスポート",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "高度なタグ付け",
+    "description": "Advanced tagging feature"
+  }
+} 

@@ -1,0 +1,429 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "Tên của tiện ích mở rộng"
+  },
+  "appDescription": {
+    "message": "Không bao giờ mất văn bản đã sao chép nữa. Trình quản lý clipboard với trình dịch 24 ngôn ngữ, tìm kiếm, thẻ. 20 miễn phí, Pro không giới hạn.",
+    "description": "Mô tả của tiện ích mở rộng"
+  },
+  "recent": {
+    "message": "Gần đây",
+    "description": "Tab gần đây"
+  },
+  "pinned": {
+    "message": "Đã ghim",
+    "description": "Tab đã ghim"
+  },
+  "settings": {
+    "message": "Cài đặt",
+    "description": "Tab cài đặt"
+  },
+  "searchPlaceholder": {
+    "message": "Tìm kiếm trong clipboard...",
+    "description": "Placeholder của ô tìm kiếm"
+  },
+  "noClipboardItems": {
+    "message": "Chưa có mục clipboard nào",
+    "description": "Tiêu đề trạng thái trống"
+  },
+  "copyToGetStarted": {
+    "message": "Sao chép gì đó để bắt đầu!",
+    "description": "Phụ đề trạng thái trống"
+  },
+  "noPinnedItems": {
+    "message": "Không có mục nào được ghim",
+    "description": "Thông báo không có mục đã ghim"
+  },
+  "pinFavorites": {
+    "message": "Ghim các clip yêu thích để truy cập nhanh",
+    "description": "Thông báo ghim mục yêu thích"
+  },
+  "appearance": {
+    "message": "Giao diện",
+    "description": "Cài đặt giao diện"
+  },
+  "theme": {
+    "message": "Chủ đề",
+    "description": "Cài đặt chủ đề"
+  },
+  "language": {
+    "message": "Ngôn ngữ",
+    "description": "Cài đặt ngôn ngữ"
+  },
+  "interfaceLanguage": {
+    "message": "Ngôn ngữ giao diện",
+    "description": "Cài đặt ngôn ngữ giao diện"
+  },
+  "storage": {
+    "message": "Lưu trữ",
+    "description": "Cài đặt lưu trữ"
+  },
+  "autoDeleteAfter": {
+    "message": "Tự động xóa mục sau",
+    "description": "Cài đặt tự động xóa"
+  },
+  "never": {
+    "message": "Không bao giờ",
+    "description": "Tùy chọn không bao giờ"
+  },
+  "clearAllItems": {
+    "message": "Xóa tất cả mục",
+    "description": "Nút xóa tất cả"
+  },
+  "translation": {
+    "message": "Dịch thuật",
+    "description": "Cài đặt dịch thuật"
+  },
+  "defaultLanguages": {
+    "message": "Ngôn ngữ mặc định",
+    "description": "Ngôn ngữ dịch mặc định"
+  },
+  "translationsUsed": {
+    "message": "Số lần dịch đã sử dụng",
+    "description": "Nhãn số lần dịch đã sử dụng"
+  },
+  "thisMonth": {
+    "message": "trong tháng này",
+    "description": "Văn bản tháng này"
+  },
+  "about": {
+    "message": "Giới thiệu",
+    "description": "Phần giới thiệu"
+  },
+  "privacyPolicy": {
+    "message": "Chính sách quyền riêng tư",
+    "description": "Liên kết chính sách quyền riêng tư"
+  },
+  "support": {
+    "message": "Hỗ trợ",
+    "description": "Liên kết hỗ trợ"
+  },
+  "items": {
+    "message": "mục",
+    "description": "Nhãn số lượng mục"
+  },
+  "expand": {
+    "message": "📄 Mở rộng",
+    "description": "Mở rộng văn bản dài"
+  },
+  "collapse": {
+    "message": "📄 Thu gọn",
+    "description": "Thu gọn văn bản dài"
+  },
+  "exportToPDF": {
+    "message": "Xuất tất cả ra PDF",
+    "description": "Nút xuất tất cả mục ra PDF"
+  },
+  "exportTxt": {
+    "message": "Xuất dưới dạng TXT",
+    "description": "Tùy chọn xuất dưới dạng TXT"
+  },
+  "exportCsv": {
+    "message": "Xuất dưới dạng CSV",
+    "description": "Tùy chọn xuất dưới dạng CSV"
+  },
+  "exportPdf": {
+    "message": "Xuất dưới dạng PDF",
+    "description": "Tùy chọn xuất dưới dạng PDF"
+  },
+  "upgradePro": {
+    "message": "Nâng cấp Pro",
+    "description": "Văn bản nút nâng cấp Pro"
+  },
+  "manageSubscription": {
+    "message": "Quản lý đăng ký",
+    "description": "Văn bản nút quản lý đăng ký cho người dùng Pro"
+  },
+  "upgradeProTooltip": {
+    "message": "Nâng cấp lên Pro để có tính năng không giới hạn",
+    "description": "Tooltip cho nút nâng cấp"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Quản lý đăng ký Pro của bạn",
+    "description": "Tooltip cho nút quản lý đăng ký"
+  },
+  "copied": {
+    "message": "Đã sao chép vào clipboard!",
+    "description": "Thông báo sao chép thành công"
+  },
+  "translationCopied": {
+    "message": "Đã sao chép bản dịch!",
+    "description": "Sao chép bản dịch thành công"
+  },
+  "moreItemsAvailable": {
+    "message": "có thêm mục khả dụng",
+    "description": "Thông báo về các mục bổ sung"
+  },
+  "unlimitedTranslations": {
+    "message": "Dịch thuật không giới hạn với Pro!",
+    "description": "Thông báo về dịch thuật Pro"
+  },
+  "reachedTranslationLimit": {
+    "message": "Bạn đã đạt giới hạn dịch thuật miễn phí. Nâng cấp lên Pro để có dịch thuật không giới hạn!",
+    "description": "Thông báo giới hạn dịch thuật"
+  },
+  "confirmClearAll": {
+    "message": "Bạn có chắc chắn muốn xóa tất cả mục clipboard không?",
+    "description": "Xác nhận xóa tất cả"
+  },
+  "characters": {
+    "message": "ký tự",
+    "description": "Đếm ký tự"
+  },
+  "justNow": {
+    "message": "Vừa xong",
+    "description": "Thời gian vừa xong"
+  },
+  "minutesAgo": {
+    "message": "$MINUTES$ phút trước",
+    "description": "Phút trước",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "$HOURS$ giờ trước",
+    "description": "Giờ trước",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "$DAYS$ ngày trước",
+    "description": "Ngày trước",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Dịch",
+    "description": "Nút dịch"
+  },
+  "pin": {
+    "message": "Ghim",
+    "description": "Nút ghim"
+  },
+  "unpin": {
+    "message": "Bỏ ghim",
+    "description": "Nút bỏ ghim"
+  },
+  "copy": {
+    "message": "Sao chép",
+    "description": "Nút sao chép"
+  },
+  "delete": {
+    "message": "Xóa",
+    "description": "Nút xóa"
+  },
+  "translating": {
+    "message": "Đang dịch...",
+    "description": "Đang tải dịch thuật"
+  },
+  "translationFailed": {
+    "message": "Dịch thuật thất bại. Vui lòng thử lại.",
+    "description": "Lỗi dịch thuật"
+  },
+  "saveToClipSmart": {
+    "message": "Lưu vào ClipSmart",
+    "description": "Mục menu ngữ cảnh"
+  },
+  "openClipSmart": {
+    "message": "Mở ClipSmart",
+    "description": "Mô tả lệnh"
+  },
+  "copyLastItem": {
+    "message": "Sao chép mục clipboard cuối cùng",
+    "description": "Mô tả lệnh"
+  },
+  "sortBy": {
+    "message": "Sắp xếp:",
+    "description": "Nhãn sắp xếp"
+  },
+  "newest": {
+    "message": "Mới nhất",
+    "description": "Tùy chọn sắp xếp"
+  },
+  "oldest": {
+    "message": "Cũ nhất",
+    "description": "Tùy chọn sắp xếp"
+  },
+  "az": {
+    "message": "A-Z",
+    "description": "Tùy chọn sắp xếp"
+  },
+  "za": {
+    "message": "Z-A",
+    "description": "Tùy chọn sắp xếp"
+  },
+  "longest": {
+    "message": "Dài nhất",
+    "description": "Tùy chọn sắp xếp"
+  },
+  "shortest": {
+    "message": "Ngắn nhất",
+    "description": "Tùy chọn sắp xếp"
+  },
+  "premiumFeatures": {
+    "message": "Tính năng Premium",
+    "description": "Tiêu đề phần tính năng premium"
+  },
+  "enablePremium": {
+    "message": "Bật chế độ premium",
+    "description": "Nhãn bật chế độ premium"
+  },
+  "premiumModeActive": {
+    "message": "Chế độ premium đang hoạt động",
+    "description": "Nhãn chế độ premium đang hoạt động"
+  },
+  "premiumIncludes": {
+    "message": "Tính năng Premium bao gồm:",
+    "description": "Nhãn các tính năng premium được bao gồm"
+  },
+  "unlimitedHistory": {
+    "message": "Lịch sử không giới hạn",
+    "description": "Tính năng lịch sử không giới hạn"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Xuất TXT/CSV/PDF",
+    "description": "Tính năng xuất"
+  },
+  "advancedTagging": {
+    "message": "Gắn thẻ nâng cao",
+    "description": "Tính năng gắn thẻ nâng cao"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Dịch thuật không giới hạn với Pro!",
+    "description": "Banner hoặc nút cho dịch thuật không giới hạn với phiên bản Pro"
+  },
+  "tooltipTranslate": {
+    "message": "Dịch",
+    "description": "Tooltip cho nút dịch"
+  },
+  "tooltipPin": {
+    "message": "Ghim",
+    "description": "Tooltip cho nút ghim"
+  },
+  "tooltipUnpin": {
+    "message": "Bỏ ghim",
+    "description": "Tooltip cho nút bỏ ghim"
+  },
+  "tooltipCopy": {
+    "message": "Sao chép",
+    "description": "Tooltip cho nút sao chép"
+  },
+  "tooltipDelete": {
+    "message": "Xóa",
+    "description": "Tooltip cho nút xóa"
+  },
+  "tooltipExport": {
+    "message": "Xuất",
+    "description": "Tooltip cho nút xuất"
+  },
+  "toggleTheme": {
+    "message": "Chuyển chủ đề",
+    "description": "Tooltip cho nút chuyển chủ đề"
+  },
+  "themeAuto": {
+    "message": "Tự động",
+    "description": "Tùy chọn chủ đề tự động"
+  },
+  "themeLight": {
+    "message": "Sáng",
+    "description": "Tùy chọn chủ đề sáng"
+  },
+  "themeDark": {
+    "message": "Tối",
+    "description": "Tùy chọn chủ đề tối"
+  },
+  "oneDay": {
+    "message": "1 ngày",
+    "description": "Tự động xóa 1 ngày"
+  },
+  "sevenDays": {
+    "message": "7 ngày",
+    "description": "Tự động xóa 7 ngày"
+  },
+  "thirtyDays": {
+    "message": "30 ngày",
+    "description": "Tự động xóa 30 ngày"
+  },
+  "close": {
+    "message": "Đóng",
+    "description": "Nút đóng dịch thuật"
+  },
+  "pdfExportSuccess": {
+    "message": "Xuất PDF thành công!",
+    "description": "Thông báo xuất PDF thành công"
+  },
+  "selectTranslationLanguage": {
+    "message": "Chọn ngôn ngữ dịch:",
+    "description": "Nhãn chọn ngôn ngữ dịch"
+  },
+  "subscriptionDetails": {
+    "message": "Chi tiết đăng ký",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Gói hàng năm",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Gói hàng tháng", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Gói",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Giá",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Trạng thái",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Hoạt động",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Tiết kiệm",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "Tiết kiệm €17,89 mỗi năm!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/năm",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/tháng",
+    "description": "Monthly plan price"
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "The name of the extension"
+  },
+  "appDescription": {
+    "message": "কপি করা টেক্সট আর কখনো হারাবেন না। ২৪-ভাষার অনুবাদক, অনুসন্ধান, ট্যাগ সহ ক্লিপবোর্ড ম্যানেজার। ২০টি বিনামূল্যে, Pro সীমাহীন।",
+    "description": "The description of the extension"
+  },
+  "recent": {
+    "message": "সাম্প্রতিক",
+    "description": "Recent tab"
+  },
+  "pinned": {
+    "message": "পিন করা",
+    "description": "Pinned tab"
+  },
+  "settings": {
+    "message": "সেটিংস",
+    "description": "Settings tab"
+  },
+  "searchPlaceholder": {
+    "message": "ক্লিপবোর্ড অনুসন্ধান করুন...",
+    "description": "Search input placeholder"
+  },
+  "noClipboardItems": {
+    "message": "এখনো কোনো ক্লিপবোর্ড আইটেম নেই",
+    "description": "Empty state title"
+  },
+  "copyToGetStarted": {
+    "message": "শুরু করতে কিছু কপি করুন!",
+    "description": "Empty state subtitle"
+  },
+  "noPinnedItems": {
+    "message": "কোনো পিন করা আইটেম নেই",
+    "description": "No pinned items message"
+  },
+  "pinFavorites": {
+    "message": "দ্রুত অ্যাক্সেসের জন্য আপনার প্রিয় ক্লিপগুলি পিন করুন",
+    "description": "Pin favorites message"
+  },
+  "appearance": {
+    "message": "চেহারা",
+    "description": "Appearance settings"
+  },
+  "theme": {
+    "message": "থিম",
+    "description": "Theme setting"
+  },
+  "language": {
+    "message": "ভাষা",
+    "description": "Language setting"
+  },
+  "interfaceLanguage": {
+    "message": "ইন্টারফেস ভাষা",
+    "description": "Interface language setting"
+  },
+  "storage": {
+    "message": "সংরক্ষণ",
+    "description": "Storage settings"
+  },
+  "autoDeleteAfter": {
+    "message": "এর পরে স্বয়ংক্রিয়ভাবে আইটেম মুছুন",
+    "description": "Auto-delete setting"
+  },
+  "never": {
+    "message": "কখনো না",
+    "description": "Never option"
+  },
+  "clearAllItems": {
+    "message": "সব আইটেম মুছুন",
+    "description": "Clear all button"
+  },
+  "translation": {
+    "message": "অনুবাদ",
+    "description": "Translation settings"
+  },
+  "defaultLanguages": {
+    "message": "ডিফল্ট ভাষা",
+    "description": "Default translation languages"
+  },
+  "translationsUsed": {
+    "message": "ব্যবহৃত অনুবাদ",
+    "description": "Translations used label"
+  },
+  "thisMonth": {
+    "message": "এই মাসে",
+    "description": "This month text"
+  },
+  "about": {
+    "message": "সম্পর্কে",
+    "description": "About section"
+  },
+  "privacyPolicy": {
+    "message": "গোপনীয়তা নীতি",
+    "description": "Privacy policy link"
+  },
+  "support": {
+    "message": "সহায়তা",
+    "description": "Support link"
+  },
+  "items": {
+    "message": "আইটেম",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 বিস্তৃত করুন",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 সংকুচিত করুন",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "সব PDF-এ এক্সপোর্ট করুন",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "TXT হিসেবে এক্সপোর্ট করুন",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "CSV হিসেবে এক্সপোর্ট করুন",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "PDF হিসেবে এক্সপোর্ট করুন",
+    "description": "Export as PDF option"
+  },
+  "upgradePro": {
+    "message": "Pro আপগ্রেড করুন",
+    "description": "Upgrade to Pro button text"
+  },
+  "manageSubscription": {
+    "message": "সাবস্ক্রিপশন পরিচালনা করুন",
+    "description": "Manage subscription button text for Pro users"
+  },
+  "upgradeProTooltip": {
+    "message": "সীমাহীন বৈশিষ্ট্যের জন্য Pro-তে আপগ্রেড করুন",
+    "description": "Tooltip for upgrade button"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "আপনার Pro সাবস্ক্রিপশন পরিচালনা করুন",
+    "description": "Tooltip for manage subscription button"
+  },
+  "copied": {
+    "message": "ক্লিপবোর্ডে কপি করা হয়েছে!",
+    "description": "Copy success message"
+  },
+  "translationCopied": {
+    "message": "অনুবাদ কপি করা হয়েছে!",
+    "description": "Translation copy success"
+  },
+  "moreItemsAvailable": {
+    "message": "আরো আইটেম উপলব্ধ",
+    "description": "More items message"
+  },
+  "unlimitedTranslations": {
+    "message": "Pro-এর সাথে সীমাহীন অনুবাদ!",
+    "description": "Pro translations message"
+  },
+  "reachedTranslationLimit": {
+    "message": "আপনি বিনামূল্যে অনুবাদের সীমায় পৌঁছেছেন। সীমাহীন অনুবাদের জন্য Pro-তে আপগ্রেড করুন!",
+    "description": "Translation limit message"
+  },
+  "confirmClearAll": {
+    "message": "আপনি কি নিশ্চিত যে সব ক্লিপবোর্ড আইটেম মুছতে চান?",
+    "description": "Clear all confirmation"
+  },
+  "characters": {
+    "message": "অক্ষর",
+    "description": "Characters count"
+  },
+  "justNow": {
+    "message": "এখনই",
+    "description": "Just now time"
+  },
+  "minutesAgo": {
+    "message": "$MINUTES$ মিনিট আগে",
+    "description": "Minutes ago",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "$HOURS$ ঘন্টা আগে",
+    "description": "Hours ago",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "$DAYS$ দিন আগে",
+    "description": "Days ago",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "অনুবাদ করুন",
+    "description": "Translate button"
+  },
+  "pin": {
+    "message": "পিন করুন",
+    "description": "Pin button"
+  },
+  "unpin": {
+    "message": "আনপিন করুন",
+    "description": "Unpin button"
+  },
+  "copy": {
+    "message": "কপি করুন",
+    "description": "Copy button"
+  },
+  "delete": {
+    "message": "মুছুন",
+    "description": "Delete button"
+  },
+  "translating": {
+    "message": "অনুবাদ করা হচ্ছে...",
+    "description": "Translating loading"
+  },
+  "translationFailed": {
+    "message": "অনুবাদ ব্যর্থ হয়েছে। আবার চেষ্টা করুন।",
+    "description": "Translation error"
+  },
+  "saveToClipSmart": {
+    "message": "ClipSmart-এ সংরক্ষণ করুন",
+    "description": "Context menu item"
+  },
+  "openClipSmart": {
+    "message": "ClipSmart খুলুন",
+    "description": "Command description"
+  },
+  "copyLastItem": {
+    "message": "শেষ ক্লিপবোর্ড আইটেম কপি করুন",
+    "description": "Command description"
+  },
+  "sortBy": {
+    "message": "সাজান:",
+    "description": "Sort label"
+  },
+  "newest": {
+    "message": "নতুন",
+    "description": "Sort option"
+  },
+  "oldest": {
+    "message": "পুরাতন",
+    "description": "Sort option"
+  },
+  "az": {
+    "message": "বর্ণানুক্রমিক ক-য",
+    "description": "Sort option"
+  },
+  "za": {
+    "message": "বর্ণানুক্রমিক য-ক",
+    "description": "Sort option"
+  },
+  "longest": {
+    "message": "সবচেয়ে বেশি অক্ষর",
+    "description": "Sort option"
+  },
+  "shortest": {
+    "message": "সবচেয়ে কম অক্ষর",
+    "description": "Sort option"
+  },
+  "premiumFeatures": {
+    "message": "প্রিমিয়াম বৈশিষ্ট্য",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "প্রিমিয়াম মোড সক্রিয় করুন",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "প্রিমিয়াম মোড সক্রিয়",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "প্রিমিয়াম বৈশিষ্ট্য অন্তর্ভুক্ত:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "সীমাহীন ইতিহাস",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "TXT/CSV/PDF-এ এক্সপোর্ট করুন",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "উন্নত ট্যাগিং",
+    "description": "Advanced tagging feature"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Pro-এর সাথে সীমাহীন অনুবাদ!",
+    "description": "Banner or button for unlimited translations with Pro version"
+  },
+  "tooltipTranslate": {
+    "message": "অনুবাদ করুন",
+    "description": "Tooltip for translate button"
+  },
+  "tooltipPin": {
+    "message": "পিন করুন",
+    "description": "Tooltip for pin button"
+  },
+  "tooltipUnpin": {
+    "message": "আনপিন করুন",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "কপি করুন",
+    "description": "Tooltip for copy button"
+  },
+  "tooltipDelete": {
+    "message": "মুছুন",
+    "description": "Tooltip for delete button"
+  },
+  "tooltipExport": {
+    "message": "এক্সপোর্ট করুন",
+    "description": "Tooltip for export button"
+  },
+  "toggleTheme": {
+    "message": "থিম পরিবর্তন করুন",
+    "description": "Tooltip for theme toggle button"
+  },
+  "themeAuto": {
+    "message": "স্বয়ংক্রিয়",
+    "description": "Theme option auto"
+  },
+  "themeLight": {
+    "message": "হালকা",
+    "description": "Theme option light"
+  },
+  "themeDark": {
+    "message": "অন্ধকার",
+    "description": "Theme option dark"
+  },
+  "oneDay": {
+    "message": "১ দিন",
+    "description": "Auto-delete 1 day"
+  },
+  "sevenDays": {
+    "message": "৭ দিন",
+    "description": "Auto-delete 7 days"
+  },
+  "thirtyDays": {
+    "message": "৩০ দিন",
+    "description": "Auto-delete 30 days"
+  },
+  "close": {
+    "message": "বন্ধ করুন",
+    "description": "Close translation button"
+  },
+  "pdfExportSuccess": {
+    "message": "PDF এক্সপোর্ট সফল!",
+    "description": "PDF export success notification"
+  },
+  "selectTranslationLanguage": {
+    "message": "অনুবাদের ভাষা নির্বাচন করুন:",
+    "description": "Select translation language label"
+  },
+  "translationFailed": {
+    "message": "অনুবাদ ব্যর্থ হয়েছে।",
+    "description": "Translation failed message"
+  },
+  "subscriptionDetails": {
+    "message": "সাবস্ক্রিপশনের বিবরণ",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "বার্ষিক পরিকল্পনা",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "মাসিক পরিকল্পনা", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "পরিকল্পনা",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "মূল্য",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "অবস্থা",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "সক্রিয়",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "সাশ্রয়",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "বছরে €১৭.৮৯ সাশ্রয়!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€২৯.৯৯/বছর",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€৩.৯৯/মাস",
+    "description": "Monthly plan price"
+  }
+}

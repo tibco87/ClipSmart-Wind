@@ -1,0 +1,433 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "The name of the extension"
+  },
+  "appDescription": {
+    "message": "Nunca perca texto copiado novamente. Gerenciador de área de transferência com tradutor de 18 idiomas, pesquisa, tags. 20 grátis, Pro ilimitado.",
+    "description": "The description of the extension"
+  },
+  "recent": {
+    "message": "Recentes",
+    "description": "Recent tab"
+  },
+  "pinned": {
+    "message": "Fixados",
+    "description": "Pinned tab"
+  },
+  "settings": {
+    "message": "Configurações",
+    "description": "Settings tab"
+  },
+  "searchPlaceholder": {
+    "message": "Pesquisar área de transferência...",
+    "description": "Search input placeholder"
+  },
+  "noClipboardItems": {
+    "message": "Nenhum item na área de transferência ainda",
+    "description": "Empty state title"
+  },
+  "copyToGetStarted": {
+    "message": "Copie algo para começar!",
+    "description": "Empty state subtitle"
+  },
+  "noPinnedItems": {
+    "message": "Nenhum item fixado",
+    "description": "No pinned items message"
+  },
+  "pinFavorites": {
+    "message": "Fixar seus clipes favoritos para acesso rápido",
+    "description": "Pin favorites message"
+  },
+  "appearance": {
+    "message": "Aparência",
+    "description": "Appearance settings"
+  },
+  "theme": {
+    "message": "Tema",
+    "description": "Theme setting"
+  },
+  "language": {
+    "message": "Idioma",
+    "description": "Language setting"
+  },
+  "interfaceLanguage": {
+    "message": "Idioma da Interface",
+    "description": "Interface language setting"
+  },
+  "storage": {
+    "message": "Armazenamento",
+    "description": "Storage settings"
+  },
+  "autoDeleteAfter": {
+    "message": "Excluir itens automaticamente após",
+    "description": "Auto-delete setting"
+  },
+  "never": {
+    "message": "Nunca",
+    "description": "Never option"
+  },
+  "clearAllItems": {
+    "message": "Limpar Todos os Itens",
+    "description": "Clear all button"
+  },
+  "translation": {
+    "message": "Tradução",
+    "description": "Translation settings"
+  },
+  "defaultLanguages": {
+    "message": "Idiomas padrão",
+    "description": "Default translation languages"
+  },
+  "translationsUsed": {
+    "message": "Traduções usadas",
+    "description": "Translations used label"
+  },
+  "thisMonth": {
+    "message": "este mês",
+    "description": "This month text"
+  },
+  "about": {
+    "message": "Sobre",
+    "description": "About section"
+  },
+  "privacyPolicy": {
+    "message": "Política de Privacidade",
+    "description": "Privacy policy link"
+  },
+  "support": {
+    "message": "Suporte",
+    "description": "Support link"
+  },
+  "items": {
+    "message": "itens",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 Expandir",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Recolher",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Exportar tudo para PDF",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "Exportar como TXT",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "Exportar como CSV",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "Exportar como PDF",
+    "description": "Export as PDF option"
+  },
+  "upgradePro": {
+    "message": "Atualizar Pro",
+    "description": "Upgrade to Pro button text"
+  },
+  "manageSubscription": {
+    "message": "Gerenciar Assinatura",
+    "description": "Manage subscription button text for Pro users"
+  },
+  "upgradeProTooltip": {
+    "message": "Atualizar para Pro para recursos ilimitados",
+    "description": "Tooltip for upgrade button"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Gerenciar sua assinatura Pro",
+    "description": "Tooltip for manage subscription button"
+  },
+  "copied": {
+    "message": "Copiado para área de transferência!",
+    "description": "Copy success message"
+  },
+  "translationCopied": {
+    "message": "Tradução copiada!",
+    "description": "Translation copy success"
+  },
+  "moreItemsAvailable": {
+    "message": "mais itens disponíveis",
+    "description": "More items message"
+  },
+  "unlimitedTranslations": {
+    "message": "Traduções ilimitadas com Pro!",
+    "description": "Pro translations message"
+  },
+  "reachedTranslationLimit": {
+    "message": "Você atingiu o limite de traduções gratuitas. Atualize para Pro para traduções ilimitadas!",
+    "description": "Translation limit message"
+  },
+  "confirmClearAll": {
+    "message": "Tem certeza de que deseja limpar todos os itens da área de transferência?",
+    "description": "Clear all confirmation"
+  },
+  "characters": {
+    "message": "caracteres",
+    "description": "Characters count"
+  },
+  "justNow": {
+    "message": "Agora mesmo",
+    "description": "Just now time"
+  },
+  "minutesAgo": {
+    "message": "$MINUTES$m atrás",
+    "description": "Minutes ago",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "$HOURS$h atrás",
+    "description": "Hours ago",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "$DAYS$d atrás",
+    "description": "Days ago",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Traduzir",
+    "description": "Translate button"
+  },
+  "pin": {
+    "message": "Fixar",
+    "description": "Pin button"
+  },
+  "unpin": {
+    "message": "Desfixar",
+    "description": "Unpin button"
+  },
+  "copy": {
+    "message": "Copiar",
+    "description": "Copy button"
+  },
+  "delete": {
+    "message": "Excluir",
+    "description": "Delete button"
+  },
+  "translating": {
+    "message": "Traduzindo...",
+    "description": "Translating loading"
+  },
+  "translationFailed": {
+    "message": "Tradução falhou. Tente novamente.",
+    "description": "Translation error"
+  },
+  "saveToClipSmart": {
+    "message": "Salvar no ClipSmart",
+    "description": "Context menu item"
+  },
+  "openClipSmart": {
+    "message": "Abrir ClipSmart",
+    "description": "Command description"
+  },
+  "copyLastItem": {
+    "message": "Copiar último item da área de transferência",
+    "description": "Command description"
+  },
+  "sortBy": {
+    "message": "Ordenar por:",
+    "description": "Sort label"
+  },
+  "newest": {
+    "message": "Mais recentes",
+    "description": "Sort option"
+  },
+  "oldest": {
+    "message": "Mais antigos",
+    "description": "Sort option"
+  },
+  "az": {
+    "message": "Alfabeticamente A-Z",
+    "description": "Sort option"
+  },
+  "za": {
+    "message": "Alfabeticamente Z-A",
+    "description": "Sort option"
+  },
+  "longest": {
+    "message": "Mais caracteres",
+    "description": "Sort option"
+  },
+  "shortest": {
+    "message": "Menos caracteres",
+    "description": "Sort option"
+  },
+  "premiumFeatures": {
+    "message": "Recursos Premium",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "Ativar Modo Premium",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "Modo Premium Ativo",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "Recursos premium incluem:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "Histórico ilimitado",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Exportar para TXT/CSV/PDF",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "Marcação avançada",
+    "description": "Advanced tagging feature"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Traduções ilimitadas com Pro!",
+    "description": "Banner or button for unlimited translations with Pro version"
+  },
+  "tooltipTranslate": {
+    "message": "Traduzir",
+    "description": "Tooltip for translate button"
+  },
+  "tooltipPin": {
+    "message": "Fixar",
+    "description": "Tooltip for pin button"
+  },
+  "tooltipUnpin": {
+    "message": "Desafixar",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "Copiar",
+    "description": "Tooltip for copy button"
+  },
+  "tooltipDelete": {
+    "message": "Excluir",
+    "description": "Tooltip for delete button"
+  },
+  "tooltipExport": {
+    "message": "Exportar",
+    "description": "Tooltip for export button"
+  },
+  "toggleTheme": {
+    "message": "Alternar tema",
+    "description": "Tooltip for theme toggle button"
+  },
+  "themeAuto": {
+    "message": "Automático",
+    "description": "Theme option auto"
+  },
+  "themeLight": {
+    "message": "Claro",
+    "description": "Theme option light"
+  },
+  "themeDark": {
+    "message": "Escuro",
+    "description": "Theme option dark"
+  },
+  "oneDay": {
+    "message": "1 dia",
+    "description": "Auto-delete 1 day"
+  },
+  "sevenDays": {
+    "message": "7 dias",
+    "description": "Auto-delete 7 days"
+  },
+  "thirtyDays": {
+    "message": "30 dias",
+    "description": "Auto-delete 30 days"
+  },
+  "close": {
+    "message": "Fechar",
+    "description": "Close translation button"
+  },
+  "pdfExportSuccess": {
+    "message": "Exportação PDF bem-sucedida!",
+    "description": "PDF export success notification"
+  },
+  "selectTranslationLanguage": {
+    "message": "Selecionar idioma de tradução:",
+    "description": "Select translation language label"
+  },
+  "translationFailed": {
+    "message": "Tradução falhou.",
+    "description": "Translation failed message"
+  },
+  "subscriptionDetails": {
+    "message": "Detalhes da assinatura",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Plano anual",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Plano mensal", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Plano",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Preço",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Status",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Ativo",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Economia",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 por ano!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/ano",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/mês",
+    "description": "Monthly plan price"
+  }
+}

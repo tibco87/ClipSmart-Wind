@@ -1,0 +1,445 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "Le nom de l'extension"
+  },
+  "appDescription": {
+    "message": "Ne perdez plus jamais de texte copié. Gestionnaire de presse-papiers avec traducteur 18 langues, recherche, tags. 20 gratuits, Pro illimité.",
+    "description": "La description de l'extension"
+  },
+  "recent": {
+    "message": "Récents",
+    "description": "Onglet récents"
+  },
+  "pinned": {
+    "message": "Épinglés",
+    "description": "Onglet épinglés"
+  },
+  "settings": {
+    "message": "Paramètres",
+    "description": "Onglet paramètres"
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher dans le presse-papiers...",
+    "description": "Placeholder de recherche"
+  },
+  "noClipboardItems": {
+    "message": "Aucun élément dans le presse-papiers pour l'instant",
+    "description": "Titre état vide"
+  },
+  "copyToGetStarted": {
+    "message": "Copiez quelque chose pour commencer !",
+    "description": "Sous-titre état vide"
+  },
+  "noPinnedItems": {
+    "message": "Aucun élément épinglé",
+    "description": "Message aucun épinglé"
+  },
+  "pinFavorites": {
+    "message": "Épinglez vos favoris pour un accès rapide",
+    "description": "Message épingler favoris"
+  },
+  "appearance": {
+    "message": "Apparence",
+    "description": "Paramètres d'apparence"
+  },
+  "theme": {
+    "message": "Thème",
+    "description": "Paramètre de thème"
+  },
+  "language": {
+    "message": "Langue",
+    "description": "Paramètre de langue"
+  },
+  "interfaceLanguage": {
+    "message": "Langue de l'interface",
+    "description": "Paramètre langue interface"
+  },
+  "storage": {
+    "message": "Stockage",
+    "description": "Paramètres de stockage"
+  },
+  "autoDeleteAfter": {
+    "message": "Suppression automatique après",
+    "description": "Paramètre suppression auto"
+  },
+  "never": {
+    "message": "Jamais",
+    "description": "Option jamais"
+  },
+  "clearAllItems": {
+    "message": "Tout effacer",
+    "description": "Bouton tout effacer"
+  },
+  "translation": {
+    "message": "Traduction",
+    "description": "Paramètres de traduction"
+  },
+  "defaultLanguages": {
+    "message": "Langues par défaut",
+    "description": "Langues de traduction par défaut"
+  },
+  "translationsUsed": {
+    "message": "Traductions utilisées",
+    "description": "Label traductions utilisées"
+  },
+  "thisMonth": {
+    "message": "ce mois-ci",
+    "description": "Texte ce mois-ci"
+  },
+  "about": {
+    "message": "À propos",
+    "description": "Section à propos"
+  },
+  "privacyPolicy": {
+    "message": "Politique de confidentialité",
+    "description": "Lien politique de confidentialité"
+  },
+  "support": {
+    "message": "Support",
+    "description": "Lien support"
+  },
+  "upgradePro": {
+    "message": "Passer à Pro",
+    "description": "Bouton mise à niveau Pro"
+  },
+  "copied": {
+    "message": "Copié dans le presse-papiers !",
+    "description": "Message succès copie"
+  },
+  "translationCopied": {
+    "message": "Traduction copiée !",
+    "description": "Succès copie traduction"
+  },
+  "moreItemsAvailable": {
+    "message": "plus d'éléments disponibles",
+    "description": "Message plus d'éléments"
+  },
+  "unlimitedTranslations": {
+    "message": "Traductions illimitées avec Pro !",
+    "description": "Message traductions Pro"
+  },
+  "reachedTranslationLimit": {
+    "message": "Vous avez atteint la limite gratuite de traduction. Passez à Pro pour des traductions illimitées !",
+    "description": "Message limite traduction"
+  },
+  "confirmClearAll": {
+    "message": "Êtes-vous sûr de vouloir tout effacer ?",
+    "description": "Confirmation tout effacer"
+  },
+  "characters": {
+    "message": "caractères",
+    "description": "Nombre de caractères"
+  },
+  "justNow": {
+    "message": "À l'instant",
+    "description": "Temps juste maintenant"
+  },
+  "minutesAgo": {
+    "message": "il y a $MINUTES$m",
+    "description": "Il y a minutes",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "il y a $HOURS$h",
+    "description": "Il y a heures",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "il y a $DAYS$d",
+    "description": "Il y a jours",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Traduire",
+    "description": "Bouton traduire"
+  },
+  "pin": {
+    "message": "Épingler",
+    "description": "Bouton épingler"
+  },
+  "unpin": {
+    "message": "Désépingler",
+    "description": "Bouton désépingler"
+  },
+  "copy": {
+    "message": "Copier",
+    "description": "Bouton copier"
+  },
+  "delete": {
+    "message": "Supprimer",
+    "description": "Bouton supprimer"
+  },
+  "translating": {
+    "message": "Traduction en cours...",
+    "description": "Chargement traduction"
+  },
+  "translationFailed": {
+    "message": "La traduction a échoué. Veuillez réessayer.",
+    "description": "Erreur traduction"
+  },
+  "saveToClipSmart": {
+    "message": "Enregistrer dans ClipSmart",
+    "description": "Élément menu contextuel"
+  },
+  "openClipSmart": {
+    "message": "Ouvrir ClipSmart",
+    "description": "Description commande"
+  },
+  "copyLastItem": {
+    "message": "Copier le dernier élément du presse-papiers",
+    "description": "Description commande"
+  },
+  "items": {
+    "message": "éléments",
+    "description": "Label nombre d'éléments"
+  },
+  "sortBy": {
+    "message": "Trier par :",
+    "description": "Label tri"
+  },
+  "newest": {
+    "message": "Les plus récents",
+    "description": "Option tri"
+  },
+  "oldest": {
+    "message": "Les plus anciens",
+    "description": "Option tri"
+  },
+  "az": {
+    "message": "Alphabétiquement A-Z",
+    "description": "Option tri"
+  },
+  "za": {
+    "message": "Alphabétiquement Z-A",
+    "description": "Option tri"
+  },
+  "longest": {
+    "message": "Le plus de caractères",
+    "description": "Option tri"
+  },
+  "shortest": {
+    "message": "Le moins de caractères",
+    "description": "Option tri"
+  },
+  "premiumFeatures": {
+    "message": "Fonctionnalités Premium",
+    "description": "Titre section premium"
+  },
+  "enablePremium": {
+    "message": "Activer le mode Premium",
+    "description": "Label activer premium"
+  },
+  "premiumModeActive": {
+    "message": "Mode Premium actif",
+    "description": "Label mode premium actif"
+  },
+  "premiumIncludes": {
+    "message": "Les fonctionnalités premium incluent :",
+    "description": "Label inclut premium"
+  },
+  "unlimitedHistory": {
+    "message": "Historique illimité",
+    "description": "Fonctionnalité historique illimité"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Export to TXT/CSV/PDF",
+    "description": "Fonctionnalité export"
+  },
+  "advancedTagging": {
+    "message": "Tagging avancé",
+    "description": "Fonctionnalité tagging avancé"
+  },
+  "unlimitedTranslations": {
+    "message": "Traductions illimitées",
+    "description": "Fonctionnalité traductions illimitées"
+  },
+  "tooltipTranslate": {
+    "message": "Traduire",
+    "description": "Tooltip bouton traduire"
+  },
+  "tooltipPin": {
+    "message": "Épingler",
+    "description": "Tooltip bouton épingler"
+  },
+  "tooltipUnpin": {
+    "message": "Désépingler",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "Copier",
+    "description": "Tooltip bouton copier"
+  },
+  "tooltipDelete": {
+    "message": "Supprimer",
+    "description": "Tooltip bouton supprimer"
+  },
+  "tooltipExport": {
+    "message": "Exporter",
+    "description": "Tooltip bouton exporter"
+  },
+  "toggleTheme": {
+    "message": "Changer le thème",
+    "description": "Tooltip bouton changer thème"
+  },
+  "themeAuto": {
+    "message": "Auto",
+    "description": "Option thème auto"
+  },
+  "themeLight": {
+    "message": "Clair",
+    "description": "Option thème clair"
+  },
+  "themeDark": {
+    "message": "Sombre",
+    "description": "Option thème sombre"
+  },
+  "oneDay": {
+    "message": "1 jour",
+    "description": "Suppression auto 1 jour"
+  },
+  "sevenDays": {
+    "message": "7 jours",
+    "description": "Suppression auto 7 jours"
+  },
+  "thirtyDays": {
+    "message": "30 jours",
+    "description": "Suppression auto 30 jours"
+  },
+  "upgradePro": {
+    "message": "Passer à Pro",
+    "description": "Texte du bouton passer à Pro"
+  },
+  "manageSubscription": {
+    "message": "Gérer l'abonnement",
+    "description": "Texte du bouton gérer l'abonnement pour les utilisateurs Pro"
+  },
+  "upgradeProTooltip": {
+    "message": "Passer à Pro pour des fonctionnalités illimitées",
+    "description": "Tooltip pour le bouton upgrade"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Gérer votre abonnement Pro",
+    "description": "Tooltip pour le bouton gérer l'abonnement"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Traductions illimitées avec Pro !",
+    "description": "Bannière ou bouton pour traductions illimitées avec la version Pro"
+  },
+  "items": {
+    "message": "éléments",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 Développer",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 Réduire",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "Tout exporter en PDF",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "Exporter en TXT",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "Exporter en CSV",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "Exporter en PDF",
+    "description": "Export as PDF option"
+  },
+  "pdfExportSuccess": {
+    "message": "Export PDF réussi !",
+    "description": "Notification de succès d'export PDF"
+  },
+  "selectTranslationLanguage": {
+    "message": "Sélectionnez la langue de traduction :",
+    "description": "Sélectionner la langue de traduction label"
+  },
+  "translating": {
+    "message": "Traduction en cours...",
+    "description": "Texte de chargement de traduction"
+  },
+  "translationFailed": {
+    "message": "La traduction a échoué.",
+    "description": "Message d'échec de traduction"
+  },
+  "subscriptionDetails": {
+    "message": "Détails de l'abonnement",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Plan annuel",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Plan mensuel", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Plan",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Prix",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Statut",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Actif",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Économies",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 par an !",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/an",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/mois",
+    "description": "Monthly plan price"
+  }
+} 

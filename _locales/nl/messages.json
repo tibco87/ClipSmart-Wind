@@ -1,0 +1,429 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "De naam van de extensie"
+  },
+  "appDescription": {
+    "message": "Verlies nooit meer gekopieerde tekst. Klembord manager met 24-talen vertaler, zoeken, tags. 20 gratis, Pro onbeperkt.",
+    "description": "De beschrijving van de extensie"
+  },
+  "recent": {
+    "message": "Recent",
+    "description": "Recent tabblad"
+  },
+  "pinned": {
+    "message": "Vastgepind",
+    "description": "Vastgepind tabblad"
+  },
+  "settings": {
+    "message": "Instellingen",
+    "description": "Instellingen tabblad"
+  },
+  "searchPlaceholder": {
+    "message": "Zoek in klembord...",
+    "description": "Zoek invoer placeholder"
+  },
+  "noClipboardItems": {
+    "message": "Nog geen klembord items",
+    "description": "Lege status titel"
+  },
+  "copyToGetStarted": {
+    "message": "Kopieer iets om te beginnen!",
+    "description": "Lege status ondertitel"
+  },
+  "noPinnedItems": {
+    "message": "Geen vastgepinde items",
+    "description": "Geen vastgepinde items bericht"
+  },
+  "pinFavorites": {
+    "message": "Pin je favoriete clips voor snelle toegang",
+    "description": "Pin favorieten bericht"
+  },
+  "appearance": {
+    "message": "Uiterlijk",
+    "description": "Uiterlijk instellingen"
+  },
+  "theme": {
+    "message": "Thema",
+    "description": "Thema instelling"
+  },
+  "language": {
+    "message": "Taal",
+    "description": "Taal instelling"
+  },
+  "interfaceLanguage": {
+    "message": "Interface Taal",
+    "description": "Interface taal instelling"
+  },
+  "storage": {
+    "message": "Opslag",
+    "description": "Opslag instellingen"
+  },
+  "autoDeleteAfter": {
+    "message": "Auto-verwijder items na",
+    "description": "Auto-verwijder instelling"
+  },
+  "never": {
+    "message": "Nooit",
+    "description": "Nooit optie"
+  },
+  "clearAllItems": {
+    "message": "Wis Alle Items",
+    "description": "Wis alles knop"
+  },
+  "translation": {
+    "message": "Vertaling",
+    "description": "Vertaling instellingen"
+  },
+  "defaultLanguages": {
+    "message": "Standaard talen",
+    "description": "Standaard vertaal talen"
+  },
+  "translationsUsed": {
+    "message": "Vertalingen gebruikt",
+    "description": "Vertalingen gebruikt label"
+  },
+  "thisMonth": {
+    "message": "deze maand",
+    "description": "Deze maand tekst"
+  },
+  "about": {
+    "message": "Over",
+    "description": "Over sectie"
+  },
+  "privacyPolicy": {
+    "message": "Privacybeleid",
+    "description": "Privacybeleid link"
+  },
+  "support": {
+    "message": "Ondersteuning",
+    "description": "Ondersteuning link"
+  },
+  "items": {
+    "message": "items",
+    "description": "Items aantal label"
+  },
+  "expand": {
+    "message": "📄 Uitklappen",
+    "description": "Lange tekst uitklappen"
+  },
+  "collapse": {
+    "message": "📄 Inklappen",
+    "description": "Lange tekst inklappen"
+  },
+  "exportToPDF": {
+    "message": "Alles exporteren naar PDF",
+    "description": "Exporteer alle items naar PDF knop"
+  },
+  "exportTxt": {
+    "message": "Export als TXT",
+    "description": "Export als TXT optie"
+  },
+  "exportCsv": {
+    "message": "Export als CSV",
+    "description": "Export als CSV optie"
+  },
+  "exportPdf": {
+    "message": "Export als PDF",
+    "description": "Export als PDF optie"
+  },
+  "upgradePro": {
+    "message": "Upgrade Pro",
+    "description": "Upgrade naar Pro knop tekst"
+  },
+  "manageSubscription": {
+    "message": "Abonnement Beheren",
+    "description": "Abonnement beheren knop tekst voor Pro gebruikers"
+  },
+  "upgradeProTooltip": {
+    "message": "Upgrade naar Pro voor onbeperkte functies",
+    "description": "Tooltip voor upgrade knop"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "Beheer je Pro abonnement",
+    "description": "Tooltip voor abonnement beheren knop"
+  },
+  "copied": {
+    "message": "Gekopieerd naar klembord!",
+    "description": "Kopieer succes bericht"
+  },
+  "translationCopied": {
+    "message": "Vertaling gekopieerd!",
+    "description": "Vertaling kopieer succes"
+  },
+  "moreItemsAvailable": {
+    "message": "meer items beschikbaar",
+    "description": "Meer items bericht"
+  },
+  "unlimitedTranslations": {
+    "message": "Onbeperkte vertalingen met Pro!",
+    "description": "Pro vertalingen bericht"
+  },
+  "reachedTranslationLimit": {
+    "message": "Je hebt de gratis vertaal limiet bereikt. Upgrade naar Pro voor onbeperkte vertalingen!",
+    "description": "Vertaal limiet bericht"
+  },
+  "confirmClearAll": {
+    "message": "Weet je zeker dat je alle klembord items wilt wissen?",
+    "description": "Wis alles bevestiging"
+  },
+  "characters": {
+    "message": "tekens",
+    "description": "Tekens aantal"
+  },
+  "justNow": {
+    "message": "Zojuist",
+    "description": "Zojuist tijd"
+  },
+  "minutesAgo": {
+    "message": "$MINUTES$m geleden",
+    "description": "Minuten geleden",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "$HOURS$u geleden",
+    "description": "Uren geleden",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "$DAYS$d geleden",
+    "description": "Dagen geleden",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "Vertalen",
+    "description": "Vertaal knop"
+  },
+  "pin": {
+    "message": "Vastpinnen",
+    "description": "Vastpin knop"
+  },
+  "unpin": {
+    "message": "Losmaken",
+    "description": "Losmaak knop"
+  },
+  "copy": {
+    "message": "Kopiëren",
+    "description": "Kopieer knop"
+  },
+  "delete": {
+    "message": "Verwijderen",
+    "description": "Verwijder knop"
+  },
+  "translating": {
+    "message": "Vertalen...",
+    "description": "Vertalen laden"
+  },
+  "translationFailed": {
+    "message": "Vertaling mislukt. Probeer opnieuw.",
+    "description": "Vertaling fout"
+  },
+  "saveToClipSmart": {
+    "message": "Opslaan in ClipSmart",
+    "description": "Context menu item"
+  },
+  "openClipSmart": {
+    "message": "Open ClipSmart",
+    "description": "Commando beschrijving"
+  },
+  "copyLastItem": {
+    "message": "Kopieer laatste klembord item",
+    "description": "Commando beschrijving"
+  },
+  "sortBy": {
+    "message": "Sorteren op:",
+    "description": "Sorteer label"
+  },
+  "newest": {
+    "message": "Nieuwste",
+    "description": "Sorteer optie"
+  },
+  "oldest": {
+    "message": "Oudste",
+    "description": "Sorteer optie"
+  },
+  "az": {
+    "message": "Alfabetisch A-Z",
+    "description": "Sorteer optie"
+  },
+  "za": {
+    "message": "Alfabetisch Z-A",
+    "description": "Sorteer optie"
+  },
+  "longest": {
+    "message": "Meeste tekens",
+    "description": "Sorteer optie"
+  },
+  "shortest": {
+    "message": "Minste tekens",
+    "description": "Sorteer optie"
+  },
+  "premiumFeatures": {
+    "message": "Premium Functies",
+    "description": "Premium functies sectie titel"
+  },
+  "enablePremium": {
+    "message": "Premium Modus Inschakelen",
+    "description": "Premium modus inschakelen label"
+  },
+  "premiumModeActive": {
+    "message": "Premium Modus Actief",
+    "description": "Premium modus actief label"
+  },
+  "premiumIncludes": {
+    "message": "Premium functies omvatten:",
+    "description": "Premium functies omvatten label"
+  },
+  "unlimitedHistory": {
+    "message": "Onbeperkte geschiedenis",
+    "description": "Onbeperkte geschiedenis functie"
+  },
+  "exportTxtCsvPdf": {
+    "message": "Export naar TXT/CSV/PDF",
+    "description": "Export functie"
+  },
+  "advancedTagging": {
+    "message": "Geavanceerde tags",
+    "description": "Geavanceerde tags functie"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "Onbeperkte vertalingen met Pro!",
+    "description": "Banner of knop voor onbeperkte vertalingen met Pro versie"
+  },
+  "tooltipTranslate": {
+    "message": "Vertalen",
+    "description": "Tooltip voor vertaal knop"
+  },
+  "tooltipPin": {
+    "message": "Vastpinnen",
+    "description": "Tooltip voor vastpin knop"
+  },
+  "tooltipUnpin": {
+    "message": "Losmaken",
+    "description": "Tooltip voor losmaak knop"
+  },
+  "tooltipCopy": {
+    "message": "Kopiëren",
+    "description": "Tooltip voor kopieer knop"
+  },
+  "tooltipDelete": {
+    "message": "Verwijderen",
+    "description": "Tooltip voor verwijder knop"
+  },
+  "tooltipExport": {
+    "message": "Exporteren",
+    "description": "Tooltip voor export knop"
+  },
+  "toggleTheme": {
+    "message": "Thema wisselen",
+    "description": "Tooltip voor thema wissel knop"
+  },
+  "themeAuto": {
+    "message": "Automatisch",
+    "description": "Thema optie automatisch"
+  },
+  "themeLight": {
+    "message": "Licht",
+    "description": "Thema optie licht"
+  },
+  "themeDark": {
+    "message": "Donker",
+    "description": "Thema optie donker"
+  },
+  "oneDay": {
+    "message": "1 dag",
+    "description": "Auto-verwijder 1 dag"
+  },
+  "sevenDays": {
+    "message": "7 dagen",
+    "description": "Auto-verwijder 7 dagen"
+  },
+  "thirtyDays": {
+    "message": "30 dagen",
+    "description": "Auto-verwijder 30 dagen"
+  },
+  "close": {
+    "message": "Sluiten",
+    "description": "Sluit vertaling knop"
+  },
+  "pdfExportSuccess": {
+    "message": "PDF export succesvol!",
+    "description": "PDF export succes melding"
+  },
+  "selectTranslationLanguage": {
+    "message": "Selecteer vertaal taal:",
+    "description": "Selecteer vertaal taal label"
+  },
+  "subscriptionDetails": {
+    "message": "Abonnement details",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "Jaarlijks abonnement",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "Maandelijks abonnement", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "Abonnement",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "Prijs",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "Status",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "Actief",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "Besparing",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17,89 per jaar!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29,99/jaar",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3,99/maand",
+    "description": "Monthly plan price"
+  }
+}

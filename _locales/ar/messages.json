@@ -1,0 +1,433 @@
+{
+  "appName": {
+    "message": "ClipSmart",
+    "description": "The name of the extension"
+  },
+  "appDescription": {
+    "message": "لا تفقد النص المنسوخ أبداً مرة أخرى. مدير الحافظة مع مترجم 24 لغة، البحث، العلامات. 20 مجاناً، Pro غير محدود.",
+    "description": "The description of the extension"
+  },
+  "recent": {
+    "message": "الحديثة",
+    "description": "Recent tab"
+  },
+  "pinned": {
+    "message": "المثبتة",
+    "description": "Pinned tab"
+  },
+  "settings": {
+    "message": "الإعدادات",
+    "description": "Settings tab"
+  },
+  "searchPlaceholder": {
+    "message": "البحث في الحافظة...",
+    "description": "Search input placeholder"
+  },
+  "noClipboardItems": {
+    "message": "لا توجد عناصر في الحافظة بعد",
+    "description": "Empty state title"
+  },
+  "copyToGetStarted": {
+    "message": "انسخ شيئاً للبدء!",
+    "description": "Empty state subtitle"
+  },
+  "noPinnedItems": {
+    "message": "لا توجد عناصر مثبتة",
+    "description": "No pinned items message"
+  },
+  "pinFavorites": {
+    "message": "ثبت مقاطعك المفضلة للوصول السريع",
+    "description": "Pin favorites message"
+  },
+  "appearance": {
+    "message": "المظهر",
+    "description": "Appearance settings"
+  },
+  "theme": {
+    "message": "السمة",
+    "description": "Theme setting"
+  },
+  "language": {
+    "message": "اللغة",
+    "description": "Language setting"
+  },
+  "interfaceLanguage": {
+    "message": "لغة الواجهة",
+    "description": "Interface language setting"
+  },
+  "storage": {
+    "message": "التخزين",
+    "description": "Storage settings"
+  },
+  "autoDeleteAfter": {
+    "message": "حذف تلقائي للعناصر بعد",
+    "description": "Auto-delete setting"
+  },
+  "never": {
+    "message": "أبداً",
+    "description": "Never option"
+  },
+  "clearAllItems": {
+    "message": "مسح جميع العناصر",
+    "description": "Clear all button"
+  },
+  "translation": {
+    "message": "الترجمة",
+    "description": "Translation settings"
+  },
+  "defaultLanguages": {
+    "message": "اللغات الافتراضية",
+    "description": "Default translation languages"
+  },
+  "translationsUsed": {
+    "message": "الترجمات المستخدمة",
+    "description": "Translations used label"
+  },
+  "thisMonth": {
+    "message": "هذا الشهر",
+    "description": "This month text"
+  },
+  "about": {
+    "message": "حول",
+    "description": "About section"
+  },
+  "privacyPolicy": {
+    "message": "سياسة الخصوصية",
+    "description": "Privacy policy link"
+  },
+  "support": {
+    "message": "الدعم",
+    "description": "Support link"
+  },
+  "items": {
+    "message": "عناصر",
+    "description": "Items count label"
+  },
+  "expand": {
+    "message": "📄 توسيع",
+    "description": "Expand long text"
+  },
+  "collapse": {
+    "message": "📄 طي",
+    "description": "Collapse long text"
+  },
+  "exportToPDF": {
+    "message": "تصدير الكل إلى PDF",
+    "description": "Export all items to PDF button"
+  },
+  "exportTxt": {
+    "message": "تصدير كـ TXT",
+    "description": "Export as TXT option"
+  },
+  "exportCsv": {
+    "message": "تصدير كـ CSV",
+    "description": "Export as CSV option"
+  },
+  "exportPdf": {
+    "message": "تصدير كـ PDF",
+    "description": "Export as PDF option"
+  },
+  "upgradePro": {
+    "message": "ترقية Pro",
+    "description": "Upgrade to Pro button text"
+  },
+  "manageSubscription": {
+    "message": "إدارة الاشتراك",
+    "description": "Manage subscription button text for Pro users"
+  },
+  "upgradeProTooltip": {
+    "message": "ترقية إلى Pro للحصول على ميزات غير محدودة",
+    "description": "Tooltip for upgrade button"
+  },
+  "manageSubscriptionTooltip": {
+    "message": "إدارة اشتراك Pro الخاص بك",
+    "description": "Tooltip for manage subscription button"
+  },
+  "copied": {
+    "message": "تم النسخ إلى الحافظة!",
+    "description": "Copy success message"
+  },
+  "translationCopied": {
+    "message": "تم نسخ الترجمة!",
+    "description": "Translation copy success"
+  },
+  "moreItemsAvailable": {
+    "message": "المزيد من العناصر متاحة",
+    "description": "More items message"
+  },
+  "unlimitedTranslations": {
+    "message": "ترجمات غير محدودة مع Pro!",
+    "description": "Pro translations message"
+  },
+  "reachedTranslationLimit": {
+    "message": "لقد وصلت إلى حد الترجمة المجانية. ترقية إلى Pro للحصول على ترجمات غير محدودة!",
+    "description": "Translation limit message"
+  },
+  "confirmClearAll": {
+    "message": "هل أنت متأكد من أنك تريد مسح جميع عناصر الحافظة؟",
+    "description": "Clear all confirmation"
+  },
+  "characters": {
+    "message": "أحرف",
+    "description": "Characters count"
+  },
+  "justNow": {
+    "message": "الآن",
+    "description": "Just now time"
+  },
+  "minutesAgo": {
+    "message": "منذ $MINUTES$ دقيقة",
+    "description": "Minutes ago",
+    "placeholders": {
+      "minutes": {
+        "content": "$1"
+      }
+    }
+  },
+  "hoursAgo": {
+    "message": "منذ $HOURS$ ساعة",
+    "description": "Hours ago",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      }
+    }
+  },
+  "daysAgo": {
+    "message": "منذ $DAYS$ يوم",
+    "description": "Days ago",
+    "placeholders": {
+      "days": {
+        "content": "$1"
+      }
+    }
+  },
+  "translate": {
+    "message": "ترجمة",
+    "description": "Translate button"
+  },
+  "pin": {
+    "message": "تثبيت",
+    "description": "Pin button"
+  },
+  "unpin": {
+    "message": "إلغاء التثبيت",
+    "description": "Unpin button"
+  },
+  "copy": {
+    "message": "نسخ",
+    "description": "Copy button"
+  },
+  "delete": {
+    "message": "حذف",
+    "description": "Delete button"
+  },
+  "translating": {
+    "message": "جاري الترجمة...",
+    "description": "Translating loading"
+  },
+  "translationFailed": {
+    "message": "فشلت الترجمة. يرجى المحاولة مرة أخرى.",
+    "description": "Translation error"
+  },
+  "saveToClipSmart": {
+    "message": "حفظ في ClipSmart",
+    "description": "Context menu item"
+  },
+  "openClipSmart": {
+    "message": "فتح ClipSmart",
+    "description": "Command description"
+  },
+  "copyLastItem": {
+    "message": "نسخ آخر عنصر في الحافظة",
+    "description": "Command description"
+  },
+  "sortBy": {
+    "message": "ترتيب حسب:",
+    "description": "Sort label"
+  },
+  "newest": {
+    "message": "الأحدث",
+    "description": "Sort option"
+  },
+  "oldest": {
+    "message": "الأقدم",
+    "description": "Sort option"
+  },
+  "az": {
+    "message": "أبجدياً أ-ي",
+    "description": "Sort option"
+  },
+  "za": {
+    "message": "أبجدياً ي-أ",
+    "description": "Sort option"
+  },
+  "longest": {
+    "message": "الأكثر أحرفاً",
+    "description": "Sort option"
+  },
+  "shortest": {
+    "message": "الأقل أحرفاً",
+    "description": "Sort option"
+  },
+  "premiumFeatures": {
+    "message": "ميزات Premium",
+    "description": "Premium features section title"
+  },
+  "enablePremium": {
+    "message": "تفعيل وضع Premium",
+    "description": "Enable premium mode label"
+  },
+  "premiumModeActive": {
+    "message": "وضع Premium نشط",
+    "description": "Premium mode active label"
+  },
+  "premiumIncludes": {
+    "message": "تتضمن ميزات Premium:",
+    "description": "Premium features include label"
+  },
+  "unlimitedHistory": {
+    "message": "تاريخ غير محدود",
+    "description": "Unlimited history feature"
+  },
+  "exportTxtCsvPdf": {
+    "message": "تصدير إلى TXT/CSV/PDF",
+    "description": "Export feature"
+  },
+  "advancedTagging": {
+    "message": "علامات متقدمة",
+    "description": "Advanced tagging feature"
+  },
+  "unlimitedTranslationsPro": {
+    "message": "ترجمات غير محدودة مع Pro!",
+    "description": "Banner or button for unlimited translations with Pro version"
+  },
+  "tooltipTranslate": {
+    "message": "ترجمة",
+    "description": "Tooltip for translate button"
+  },
+  "tooltipPin": {
+    "message": "تثبيت",
+    "description": "Tooltip for pin button"
+  },
+  "tooltipUnpin": {
+    "message": "إلغاء التثبيت",
+    "description": "Tooltip for unpin button"
+  },
+  "tooltipCopy": {
+    "message": "نسخ",
+    "description": "Tooltip for copy button"
+  },
+  "tooltipDelete": {
+    "message": "حذف",
+    "description": "Tooltip for delete button"
+  },
+  "tooltipExport": {
+    "message": "تصدير",
+    "description": "Tooltip for export button"
+  },
+  "toggleTheme": {
+    "message": "تبديل السمة",
+    "description": "Tooltip for theme toggle button"
+  },
+  "themeAuto": {
+    "message": "تلقائي",
+    "description": "Theme option auto"
+  },
+  "themeLight": {
+    "message": "فاتح",
+    "description": "Theme option light"
+  },
+  "themeDark": {
+    "message": "داكن",
+    "description": "Theme option dark"
+  },
+  "oneDay": {
+    "message": "يوم واحد",
+    "description": "Auto-delete 1 day"
+  },
+  "sevenDays": {
+    "message": "7 أيام",
+    "description": "Auto-delete 7 days"
+  },
+  "thirtyDays": {
+    "message": "30 يوماً",
+    "description": "Auto-delete 30 days"
+  },
+  "close": {
+    "message": "إغلاق",
+    "description": "Close translation button"
+  },
+  "pdfExportSuccess": {
+    "message": "تم تصدير PDF بنجاح!",
+    "description": "PDF export success notification"
+  },
+  "selectTranslationLanguage": {
+    "message": "اختر لغة الترجمة:",
+    "description": "Select translation language label"
+  },
+  "translationFailed": {
+    "message": "فشلت الترجمة.",
+    "description": "Translation failed message"
+  },
+  "subscriptionDetails": {
+    "message": "تفاصيل الاشتراك",
+    "description": "Subscription details section title"
+  },
+  "yearlyPlan": {
+    "message": "الخطة السنوية",
+    "description": "Yearly subscription plan name"
+  },
+  "monthlyPlan": {
+    "message": "الخطة الشهرية", 
+    "description": "Monthly subscription plan name"
+  },
+  "plan": {
+    "message": "الخطة",
+    "description": "Subscription plan label"
+  },
+  "price": {
+    "message": "السعر",
+    "description": "Subscription price label"
+  },
+  "status": {
+    "message": "الحالة",
+    "description": "Subscription status label"
+  },
+  "active": {
+    "message": "نشط",
+    "description": "Active subscription status"
+  },
+  "savings": {
+    "message": "التوفير",
+    "description": "Yearly plan savings label"
+  },
+  "savingsAmount": {
+    "message": "€17.89 سنوياً!",
+    "description": "Yearly plan savings amount"
+  },
+  "planIcon": {
+    "message": "📋",
+    "description": "Plan icon"
+  },
+  "priceIcon": {
+    "message": "💰",
+    "description": "Price icon"
+  },
+  "statusIcon": {
+    "message": "✅",
+    "description": "Status icon"
+  },
+  "savingsIcon": {
+    "message": "💡",
+    "description": "Savings icon"
+  },
+  "yearlyPrice": {
+    "message": "€29.99/سنة",
+    "description": "Yearly plan price"
+  },
+  "monthlyPrice": {
+    "message": "€3.99/شهر",
+    "description": "Monthly plan price"
+  }
+}
