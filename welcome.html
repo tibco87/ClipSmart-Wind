@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ClipSmart - Smart Clipboard Manager</title>
+    <link rel="stylesheet" href="welcome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-clipboard"></i>
+                <span>ClipSmart</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="privacy.html" target="_blank">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Welcome to ClipSmart! 🎉</h1>
+                <p class="hero-subtitle">Your smart clipboard manager is now ready to boost your productivity</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-magic"></i>
+                        <span>Automatic clipboard tracking</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Smart translation</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-tags"></i>
+                        <span>Organize with tags</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="openExtension()">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToFeatures()">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="clipboard-item">
+                            <div class="item-header">
+                                <i class="fas fa-file-text"></i>
+                                <span>2 min ago</span>
+                            </div>
+                            <div class="item-text">Welcome to ClipSmart! Your clipboard history is now being tracked automatically.</div>
+                        </div>
+                        <div class="clipboard-item">
+                            <div class="item-header">
+                                <i class="fas fa-link"></i>
+                                <span>5 min ago</span>
+                            </div>
+                            <div class="item-text">https://tibco87.github.io/ClipSmart_ExtPay-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Smart History</h3>
+                    <p>Automatically track and organize your clipboard history with intelligent categorization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Instant Translation</h3>
+                    <p>Translate text instantly with support for 10+ languages powered by Google Translate.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-thumbtack"></i>
+                    </div>
+                    <h3>Pin Important Items</h3>
+                    <p>Pin frequently used items to keep them at the top of your clipboard history.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Smart Search</h3>
+                    <p>Find any clipboard item instantly with powerful search and filtering capabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Dark Mode</h3>
+                    <p>Switch between light and dark themes to match your preferences and reduce eye strain.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Keyboard Shortcuts</h3>
+                    <p>Access your clipboard quickly with customizable keyboard shortcuts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">$0</div>
+                        <p>Perfect for getting started</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 20 clipboard items</li>
+                        <li><i class="fas fa-check"></i> 5 translations per month</li>
+                        <li><i class="fas fa-check"></i> Basic search</li>
+                        <li><i class="fas fa-check"></i> Dark/Light theme</li>
+                        <li><i class="fas fa-check"></i> Keyboard shortcuts</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Pro Monthly</h3>
+                        <div class="price">€3.99<span>/month</span></div>
+                        <p>For power users and professionals</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited clipboard items</li>
+                        <li><i class="fas fa-check"></i> Unlimited translations</li>
+                        <li><i class="fas fa-check"></i> Advanced search & filters</li>
+                        <li><i class="fas fa-check"></i> Smart tagging system</li>
+                        <li><i class="fas fa-check"></i> Export to TXT/CSV/PDF</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Auto-cleanup settings</li>
+                        <li><i class="fas fa-check"></i> Multi-language support</li>
+                    </ul>
+                    <button class="btn-secondary" onclick="upgradeToPro()">
+                        <i class="fas fa-crown"></i>
+                        Upgrade to Pro
+                    </button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro Yearly</h3>
+                        <div class="price">€29.99<span>/year</span></div>
+                        <p class="savings">Save €17.89 per year!</p>
+                        <p>For power users and professionals</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited clipboard items</li>
+                        <li><i class="fas fa-check"></i> Unlimited translations</li>
+                        <li><i class="fas fa-check"></i> Advanced search & filters</li>
+                        <li><i class="fas fa-check"></i> Smart tagging system</li>
+                        <li><i class="fas fa-check"></i> Export to TXT/CSV/PDF</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Auto-cleanup settings</li>
+                        <li><i class="fas fa-check"></i> Multi-language support</li>
+                        <li><i class="fas fa-star"></i> <strong>Best value - 37% savings</strong></li>
+                    </ul>
+                    <button class="btn-primary" onclick="upgradeToPro()">
+                        <i class="fas fa-crown"></i>
+                        Upgrade to Pro
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>We'd love to hear from you</h3>
+                    <p>Have questions, suggestions, or need help? Send us a message and we'll get back to you as soon as possible.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>tkutik72@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqalbkko" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Question</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="billing">Billing Question</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-clipboard"></i>
+                        <span>ClipSmart</span>
+                    </div>
+                    <p>Your smart clipboard manager for enhanced productivity.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#" onclick="openExtension()">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ClipSmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="welcome.js"></script>
+</body>
+</html> 

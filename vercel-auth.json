@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "proxy-server-auth.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/proxy-server-auth.js"
+    }
+  ]
+}

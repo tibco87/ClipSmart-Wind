@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "proxy-server-public-final.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/proxy-server-public-final.js"
+    }
+  ]
+}
