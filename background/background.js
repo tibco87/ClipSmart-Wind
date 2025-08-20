@@ -223,8 +223,8 @@ chrome.runtime.onInstalled.addListener(async (details) => {
     }
 };
 
-// Google Translate API Integration
-const GOOGLE_TRANSLATE_API_KEY = 'AIzaSyBel24LTIb-LYj5I5kcbr2quZkAS35RAD0';
+// Google Translate API Integration - Using proxy server for security
+const TRANSLATE_PROXY_URL = 'https://clipsmart-translation-proxy.vercel.app/translate';
 
 // Listen for messages from popup.js for translation
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
@@ -344,20 +344,19 @@ chrome.storage.local.get(['clipboardItems'], (data) => {
     clipboardMonitor.updateBadge(items.length);
 });
 
-// Google Translate function
+// Google Translate function - Using proxy server for security
 async function translateText(text, targetLang) {
-    const url = `https://translation.googleapis.com/language/translate/v2?key=${GOOGLE_TRANSLATE_API_KEY}`;
-    
     try {
-        const response = await fetch(url, {
+        const response = await fetch(TRANSLATE_PROXY_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'X-Extension-Id': EXTENSION_ID
             },
             body: JSON.stringify({
-                q: text,
-                target: targetLang,
-                format: 'text'
+                text: text,
+                targetLang: targetLang,
+                extensionId: EXTENSION_ID
             })
         });
 
@@ -366,7 +365,7 @@ async function translateText(text, targetLang) {
         }
 
         const data = await response.json();
-        return data.data.translations[0].translatedText;
+        return data.translation;
     } catch (error) {
         console.error('Translation error:', error);
         throw error;

@@ -37,7 +37,8 @@
   "host_permissions": [
     "https://ipapi.co/",
     "https://extensionpay.com/",
-    "https://translate.googleapis.com/"
+    "https://translate.googleapis.com/",
+    "https://clipsmart-translation-proxy.vercel.app/"
   ],
   
   "commands": {
