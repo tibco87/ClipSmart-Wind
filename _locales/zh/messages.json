@@ -1,5 +1,5 @@
 {
-  "appName": { "message": "ClipSmart", "description": "扩展名称" },
+  "appName": { "message": "ClipSmart – Clipboard Manager & Translator", "description": "扩展名称" },
   "appDescription": { "message": "永不丢失复制的文本。剪贴板管理器带24种语言翻译器、搜索、标签。免费20项，专业版无限。", "description": "扩展描述" },
   "recent": { "message": "最近", "description": "最近标签" },
   "pinned": { "message": "已固定", "description": "已固定标签" },

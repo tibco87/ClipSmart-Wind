@@ -1,5 +1,5 @@
 {
-  "appName": { "message": "ClipSmart", "description": "拡張機能名" },
+  "appName": { "message": "ClipSmart – Clipboard Manager & Translator", "description": "拡張機能名" },
   "appDescription": { "message": "コピーしたテキストを二度と失わない。15言語翻訳、検索、タグ付きクリップボードマネージャー。無料20件、Pro版無制限。", "description": "拡張機能の説明" },
   "recent": { "message": "最近", "description": "最近タブ" },
   "pinned": { "message": "ピン留め", "description": "ピン留めタブ" },

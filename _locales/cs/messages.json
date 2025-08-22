@@ -1,5 +1,5 @@
 {
-  "appName": { "message": "ClipSmart", "description": "Název rozšíření" },
+  "appName": { "message": "ClipSmart – Clipboard Manager & Translator", "description": "Název rozšíření" },
   "appDescription": { "message": "Už nikdy neztratíte zkopírovaný text. Správce schránky s překladačem do 18 jazyků, vyhledávání, štítky. 20 zdarma, Pro neomezeně.", "description": "Popis rozšíření" },
   "recent": { "message": "Nedávné", "description": "Záložka nedávné" },
   "pinned": { "message": "Připnuté", "description": "Záložka připnuté" },

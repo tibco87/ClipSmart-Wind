@@ -1,5 +1,5 @@
 {
-  "appName": { "message": "ClipSmart", "description": "El nombre de la extensión" },
+  "appName": { "message": "ClipSmart – Clipboard Manager & Translator", "description": "El nombre de la extensión" },
   "appDescription": { "message": "Nunca pierdas texto copiado otra vez. Gestor de portapapeles con traductor de 18 idiomas, búsqueda, etiquetas. 20 gratis, Pro ilimitado.", "description": "La descripción de la extensión" },
   "recent": { "message": "Recientes", "description": "Pestaña recientes" },
   "pinned": { "message": "Fijados", "description": "Pestaña fijados" },
