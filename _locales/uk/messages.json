@@ -1,6 +1,6 @@
 {
   "appName": { "message": "ClipSmart – Clipboard Manager & Translator", "description": "Назва розширення" },
-  "appDescription": { "message": "Більше ніколи не втрачайте скопійований текст. Менеджер буфера з перекладачем на 18 мов, пошук, теги. 20 безкоштовно, Pro необмежено.", "description": "Опис розширення" },
+  "appDescription": { "message": "Розумний менеджер буфера з необмеженою історією, миттєвим перекладом на 40 мов та потужним пошуком. Працюйте швидше та розумніше.", "description": "Опис розширення" },
   "recent": { "message": "Останні", "description": "Вкладка останні" },
   "pinned": { "message": "Закріплені", "description": "Вкладка закріплені" },
   "settings": { "message": "Налаштування", "description": "Вкладка налаштування" },

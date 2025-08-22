@@ -1,6 +1,6 @@
 {
   "appName": { "message": "ClipSmart – Clipboard Manager & Translator", "description": "Nazwa rozszerzenia" },
-  "appDescription": { "message": "Nigdy więcej nie zgub skopiowanego tekstu. Menedżer schowka z tłumaczem 18 języków, wyszukiwanie, tagi. 20 za darmo, Pro bez limitu.", "description": "Opis rozszerzenia" },
+  "appDescription": { "message": "Inteligentny menedżer schowka z nieograniczoną historią, natychmiastowym tłumaczeniem na 40 języków i potężnym wyszukiwaniem. Pracuj szybciej i mądrzej.", "description": "Opis rozszerzenia" },
   "recent": { "message": "Ostatnie", "description": "Zakładka ostatnie" },
   "pinned": { "message": "Przypięte", "description": "Zakładka przypięte" },
   "settings": { "message": "Ustawienia", "description": "Zakładka ustawienia" },

@@ -1,6 +1,6 @@
 {
   "appName": { "message": "ClipSmart – Clipboard Manager & Translator", "description": "확장 프로그램 이름" },
-  "appDescription": { "message": "복사한 텍스트를 다시는 잃지 마세요. 15개 언어 번역기, 검색, 태그가 있는 클립보드 매니저. 무료 20개, Pro 무제한.", "description": "확장 프로그램 설명" },
+  "appDescription": { "message": "무제한 기록, 40개 언어 즉시 번역 및 강력한 검색 기능을 갖춘 스마트 클립보드 매니저. 더 빠르고 스마트하게 작업하세요.", "description": "확장 프로그램 설명" },
   "recent": { "message": "최근", "description": "최근 탭" },
   "pinned": { "message": "고정됨", "description": "고정됨 탭" },
   "settings": { "message": "설정", "description": "설정 탭" },

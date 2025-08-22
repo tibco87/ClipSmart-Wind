@@ -1,6 +1,6 @@
 {
   "appName": { "message": "ClipSmart – Clipboard Manager & Translator", "description": "एक्सटेंशन का नाम" },
-  "appDescription": { "message": "कॉपी किया टेक्स्ट फिर कभी न खोएं। 15 भाषा अनुवादक, खोज, टैग के साथ क्लिपबोर्ड मैनेजर। 20 मुफ्त, Pro असीमित।", "description": "एक्सटेंशन का विवरण" },
+  "appDescription": { "message": "असीमित इतिहास, 40 भाषाओं में तत्काल अनुवाद और शक्तिशाली खोज के साथ स्मार्ट क्लिपबोर्ड मैनेजर। तेज और स्मार्ट तरीके से काम करें।", "description": "एक्सटेंशन का विवरण" },
   "recent": { "message": "हाल ही का", "description": "हाल ही का टैब" },
   "pinned": { "message": "पिन किया गया", "description": "पिन किया गया टैब" },
   "settings": { "message": "सेटिंग्स", "description": "सेटिंग्स टैब" },
