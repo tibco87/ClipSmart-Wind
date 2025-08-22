@@ -772,7 +772,7 @@ class ClipSmart {
 
         document.getElementById('supportLink').addEventListener('click', (e) => {
             e.preventDefault();
-            chrome.tabs.create({ url: 'https://tibco87.github.io/ClipSmart_ExtPay-/index.html' });
+            chrome.tabs.create({ url: 'https://tibco87.github.io/ClipSmart_ExtPay/index.html' });
         });
 
         // Premium mode toggle
