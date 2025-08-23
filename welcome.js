@@ -66,7 +66,7 @@ function handleContactForm() {
     })
     .finally(() => {
         // Reset button
-        submitBtn.innerHTML = originalText;
+        submitBtn.textContent = originalText;
         submitBtn.disabled = false;
     });
 }
@@ -81,15 +81,29 @@ function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.style.background = type === 'success' ? '#28ca42' : type === 'error' ? '#ff4757' : '#667eea';
-    notification.innerHTML = `
-        <div class="notification-content">
-            <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
-            <span>${message}</span>
-            <button onclick="this.parentElement.parentElement.remove()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    `;
+    // Create notification content safely
+    const iconClass = type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle';
+    
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'notification-content';
+    
+    const icon = document.createElement('i');
+    icon.className = `fas ${iconClass}`;
+    
+    const messageSpan = document.createElement('span');
+    messageSpan.textContent = message;
+    
+    const closeButton = document.createElement('button');
+    closeButton.innerHTML = '<i class="fas fa-times"></i>';
+    closeButton.onclick = function() {
+        this.parentElement.parentElement.remove();
+    };
+    
+    contentDiv.appendChild(icon);
+    contentDiv.appendChild(messageSpan);
+    contentDiv.appendChild(closeButton);
+    
+    notification.appendChild(contentDiv);
 
     // CSS styles are now in welcome.css
 

@@ -61,16 +61,27 @@ function initializeTableOfContents() {
     if (sections.length > 0) {
         const toc = document.createElement('div');
         toc.className = 'table-of-contents';
-        toc.innerHTML = `
-            <h3>Table of Contents</h3>
-            <ul>
-                ${Array.from(sections).map((section, index) => {
-                    const id = `section-${index + 1}`;
-                    section.id = id;
-                    return `<li><a href="#${id}">${section.textContent}</a></li>`;
-                }).join('')}
-            </ul>
-        `;
+        // Create TOC safely
+        const tocTitle = document.createElement('h3');
+        tocTitle.textContent = 'Table of Contents';
+        
+        const tocList = document.createElement('ul');
+        
+        Array.from(sections).forEach((section, index) => {
+            const id = `section-${index + 1}`;
+            section.id = id;
+            
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = `#${id}`;
+            link.textContent = section.textContent;
+            
+            listItem.appendChild(link);
+            tocList.appendChild(listItem);
+        });
+        
+        toc.appendChild(tocTitle);
+        toc.appendChild(tocList);
 
         // Insert TOC after privacy header
         const privacyHeader = document.querySelector('.privacy-header');
@@ -214,7 +225,15 @@ function addSearchFunctionality() {
             if (!noResults) {
                 noResults = document.createElement('div');
                 noResults.className = 'no-results';
-                noResults.innerHTML = '<i class="fas fa-search"></i><p>No results found for "' + query + '"</p>';
+                // Create no results message safely
+                const searchIcon = document.createElement('i');
+                searchIcon.className = 'fas fa-search';
+                
+                const messageP = document.createElement('p');
+                messageP.textContent = `No results found for "${query}"`;
+                
+                noResults.appendChild(searchIcon);
+                noResults.appendChild(messageP);
                 document.querySelector('.privacy-content').appendChild(noResults);
             }
         } else if (noResults) {
@@ -246,7 +265,16 @@ function highlightText(element, query) {
             if (regex.test(text)) {
                 const highlightedText = text.replace(regex, '<span class="highlight">$1</span>');
                 const span = document.createElement('span');
-                span.innerHTML = highlightedText;
+                // Create highlight safely
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = highlightedText;
+                const highlightSpan = tempDiv.querySelector('.highlight');
+                if (highlightSpan) {
+                    span.appendChild(document.createTextNode(highlightSpan.textContent));
+                    span.className = 'highlight';
+                } else {
+                    span.textContent = text;
+                }
                 node.parentNode.replaceChild(span, node);
             }
         } else if (node.nodeType === 1) { // Element node
