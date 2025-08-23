@@ -57,7 +57,7 @@
   "za": { "message": "按字母Z-A", "description": "排序选项" },
   "longest": { "message": "最多字符", "description": "排序选项" },
   "shortest": { "message": "最少字符", "description": "排序选项" },
-  "premiumFeatures": { "message": "专业版功能", "description": "专业版功能部分标题" },
+  "premiumFeaturesOld": { "message": "专业版功能", "description": "专业版功能部分标题 (deprecated)" },
   "enablePremium": { "message": "启用专业版模式", "description": "启用专业版模式标签" },
   "premiumIncludes": { "message": "专业版包括：", "description": "专业版功能包括标签" },
   "unlimitedHistory": { "message": "无限历史记录", "description": "无限历史记录功能" },

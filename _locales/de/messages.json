@@ -99,9 +99,9 @@
     "message": "Support",
     "description": "Support Link"
   },
-  "upgradePro": {
+  "upgradeProOld": {
     "message": "Pro-Version freischalten",
-    "description": "Upgrade Pro Button-Beschriftung"
+    "description": "Upgrade Pro Button-Beschriftung (deprecated)"
   },
   "copied": {
     "message": "In die Zwischenablage kopiert!",
@@ -202,7 +202,7 @@
     "message": "Letzten Zwischenablageeintrag kopieren",
     "description": "Befehl Beschreibung"
   },
-  "items": {
+  "itemsCount": {
     "message": "Elemente",
     "description": "Label für Anzahl der Elemente"
   },
