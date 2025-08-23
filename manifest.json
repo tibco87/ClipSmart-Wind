@@ -13,7 +13,7 @@
   },
   
   "browser_action": {
-    "default_popup": "popup/popup.html",
+    "default_popup": "popup/popup-firefox.html",
     "default_icon": {
       "16": "assets/icon-16.png",
       "32": "assets/icon-32.png",
@@ -23,7 +23,7 @@
   },
   
   "background": {
-    "scripts": ["background/background.js"],
+    "scripts": ["background/background-firefox.js"],
     "persistent": false
   },
   
@@ -64,7 +64,7 @@
         "https://tibco87.github.io/*",
         "https://*.github.io/*"
       ],
-      "js": ["content/content.js"],
+      "js": ["content/content-firefox.js"],
       "run_at": "document_idle"
     },
     {

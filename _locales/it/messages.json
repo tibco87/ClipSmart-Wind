@@ -278,7 +278,7 @@
     "message": "Traduzioni illimitate con Pro!",
     "description": "Banner o pulsante per traduzioni illimitate con versione Pro"
   },
-  "items": {
+  "itemsOld": {
     "message": "elementi",
     "description": "Items label"
   },
@@ -370,11 +370,11 @@
     "message": "Seleziona lingua di traduzione:",
     "description": "Seleziona lingua di traduzione etichetta"
   },
-  "translating": {
+  "translatingOld": {
     "message": "Traduzione in corso...",
     "description": "Testo di caricamento traduzione"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "Traduzione fallita.",
     "description": "Messaggio di errore traduzione"
   },

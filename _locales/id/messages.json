@@ -366,7 +366,7 @@
     "message": "Pilih bahasa terjemahan:",
     "description": "Select translation language label"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "Terjemahan gagal.",
     "description": "Translation failed message"
   },

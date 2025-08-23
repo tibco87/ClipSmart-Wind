@@ -366,7 +366,7 @@
     "message": "Vyberte jazyk prekladu:",
     "description": "Select translation language label"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "Preklad zlyhal.",
     "description": "Translation failed message"
   },

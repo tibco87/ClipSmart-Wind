@@ -64,7 +64,7 @@
   "unlimitedHistory": { "message": "Необмежена історія", "description": "Функція необмеженої історії" },
   "exportTxtCsvPdf": { "message": "Експорт в TXT/CSV/PDF", "description": "Функція експорту" },
   "advancedTagging": { "message": "Розширене тегування", "description": "Функція розширеного тегування" },
-  "unlimitedTranslations": { "message": "Необмежені переклади", "description": "Функція необмежених перекладів" },
+  "unlimitedTranslationsOld": { "message": "Необмежені переклади", "description": "Функція необмежених перекладів" },
   "tooltipTranslate": { "message": "Перекласти", "description": "Tooltip кнопка перекласти" },
   "tooltipPin": { "message": "Закріпити", "description": "Tooltip кнопка закріпити" },
   "tooltipUnpin": {
@@ -77,8 +77,8 @@
   "toggleTheme": { "message": "Перемкнути тему", "description": "Tooltip перемкнути тему" },
   "pdfExportSuccess": { "message": "PDF експорт успішний!", "description": "Сповіщення про успішний PDF експорт" },
   "selectTranslationLanguage": { "message": "Виберіть мову перекладу:", "description": "Виберіть мову перекладу мітка" },
-  "translating": { "message": "Переклад...", "description": "Текст завантаження перекладу" },
-  "translationFailed": { "message": "Переклад не вдався.", "description": "Повідомлення про помилку перекладу" },
+  "translatingOld": { "message": "Переклад...", "description": "Текст завантаження перекладу" },
+  "translationFailedOld": { "message": "Переклад не вдався.", "description": "Повідомлення про помилку перекладу" },
   "themeAuto": { "message": "Авто", "description": "Опція теми авто" },
   "themeLight": { "message": "Світла", "description": "Опція теми світла" },
   "themeDark": { "message": "Темна", "description": "Опція теми темна" },
@@ -89,7 +89,7 @@
     "message": "Необмежені переклади з Pro!",
     "description": "Банер або кнопка для необмежених перекладів у версії Pro"
   },
-  "items": {
+  "itemsOld": {
     "message": "елементи",
     "description": "Items label"
   },

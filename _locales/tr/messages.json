@@ -278,7 +278,7 @@
     "message": "Pro ile sınırsız çeviri!",
     "description": "Pro sürümü ile sınırsız çeviri için banner veya düğme"
   },
-  "items": {
+  "itemsOld": {
     "message": "öğe",
     "description": "Items label"
   },
@@ -370,11 +370,11 @@
     "message": "Çeviri dilini seçin:",
     "description": "Çeviri dili seç etiketi"
   },
-  "translating": {
+  "translatingOld": {
     "message": "Çeviriliyor...",
     "description": "Çeviri yükleme metni"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "Çeviri başarısız oldu.",
     "description": "Çeviri hata mesajı"
   },

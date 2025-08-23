@@ -262,7 +262,7 @@
     "message": "Tagging avancé",
     "description": "Fonctionnalité tagging avancé"
   },
-  "unlimitedTranslations": {
+  "unlimitedTranslationsOld": {
     "message": "Traductions illimitées",
     "description": "Fonctionnalité traductions illimitées"
   },
@@ -318,7 +318,7 @@
     "message": "30 jours",
     "description": "Suppression auto 30 jours"
   },
-  "upgradePro": {
+  "upgradeProOld": {
     "message": "Passer à Pro",
     "description": "Texte du bouton passer à Pro"
   },
@@ -338,7 +338,7 @@
     "message": "Traductions illimitées avec Pro !",
     "description": "Bannière ou bouton pour traductions illimitées avec la version Pro"
   },
-  "items": {
+  "itemsOld": {
     "message": "éléments",
     "description": "Items count label"
   },
@@ -374,11 +374,11 @@
     "message": "Sélectionnez la langue de traduction :",
     "description": "Sélectionner la langue de traduction label"
   },
-  "translating": {
+  "translatingOld": {
     "message": "Traduction en cours...",
     "description": "Texte de chargement de traduction"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "La traduction a échoué.",
     "description": "Message d'échec de traduction"
   },

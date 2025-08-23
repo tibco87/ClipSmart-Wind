@@ -90,7 +90,7 @@
   "unlimitedHistory": { "message": "असीमित इतिहास", "description": "असीमित इतिहास सुविधा" },
   "exportTxtCsvPdf": { "message": "TXT/CSV/PDF में निर्यात करें", "description": "निर्यात सुविधा" },
   "advancedTagging": { "message": "उन्नत टैगिंग", "description": "उन्नत टैगिंग सुविधा" },
-  "unlimitedTranslations": { "message": "असीमित अनुवाद", "description": "असीमित अनुवाद सुविधा" },
+  "unlimitedTranslationsOld": { "message": "असीमित अनुवाद", "description": "असीमित अनुवाद सुविधा" },
   "tooltipTranslate": { "message": "अनुवाद करें", "description": "अनुवाद बटन टूलटिप" },
   "tooltipPin": { "message": "पिन करें", "description": "पिन बटन टूलटिप" },
   "tooltipUnpin": {
@@ -113,8 +113,8 @@
   },
   "pdfExportSuccess": { "message": "PDF निर्यात सफल!", "description": "PDF निर्यात सफलता सूचना" },
   "selectTranslationLanguage": { "message": "अनुवाद भाषा चुनें:", "description": "अनुवाद भाषा चुनें लेबल" },
-  "translating": { "message": "अनुवाद हो रहा है...", "description": "अनुवाद लोडिंग टेक्स्ट" },
-  "translationFailed": { "message": "अनुवाद विफल।", "description": "अनुवाद विफलता संदेश" },
+  "translatingOld": { "message": "अनुवाद हो रहा है...", "description": "अनुवाद लोडिंग टेक्स्ट" },
+  "translationFailedOld": { "message": "अनुवाद विफल।", "description": "अनुवाद विफलता संदेश" },
   "subscriptionDetails": {
     "message": "सब्स्क्रिप्शन विवरण",
     "description": "Subscription details section title"
@@ -175,11 +175,11 @@
     "message": "€3,99/महीना",
     "description": "Monthly plan price"
   },
-  "premiumFeatures": {
+  "premiumFeaturesOld": {
     "message": "प्रीमियम सुविधाएं",
     "description": "Premium features section title"
   },
-  "enablePremium": {
+  "enablePremiumOld": {
     "message": "प्रीमियम मोड सक्षम करें",
     "description": "Enable premium mode label"
   },
@@ -187,19 +187,19 @@
     "message": "प्रीमियम मोड सक्रिय",
     "description": "Premium mode active label"
   },
-  "premiumIncludes": {
+  "premiumIncludesOld": {
     "message": "प्रीमियम सुविधाओं में शामिल हैं:",
     "description": "Premium features include label"
   },
-  "unlimitedHistory": {
+  "unlimitedHistoryOld": {
     "message": "असीमित इतिहास",
     "description": "Unlimited history feature"
   },
-  "exportTxtCsvPdf": {
+  "exportTxtCsvPdfOld": {
     "message": "TXT/CSV/PDF में निर्यात करें",
     "description": "Export feature"
   },
-  "advancedTagging": {
+  "advancedTaggingOld": {
     "message": "उन्नत टैगिंग",
     "description": "Advanced tagging feature"
   }

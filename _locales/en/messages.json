@@ -242,7 +242,7 @@
     "message": "Copy last clipboard item",
     "description": "Command description"
   },
-  "items": {
+  "itemsOld": {
     "message": "items",
     "description": "Label for number of items"
   },
@@ -370,11 +370,11 @@
     "message": "Select translation language:",
     "description": "Select translation language label"
   },
-  "translating": {
+  "translatingOld": {
     "message": "Translating...",
     "description": "Translating loading text"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "Translation failed.",
     "description": "Translation failed message"
   },

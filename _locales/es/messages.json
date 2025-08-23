@@ -67,7 +67,7 @@
   "unlimitedHistory": { "message": "Historial ilimitado", "description": "Función historial ilimitado" },
   "exportTxtCsvPdf": { "message": "Export to TXT/CSV/PDF", "description": "Función exportar" },
   "advancedTagging": { "message": "Etiquetado avanzado", "description": "Función etiquetado avanzado" },
-  "unlimitedTranslations": { "message": "Traducciones ilimitadas", "description": "Función traducciones ilimitadas" },
+  "unlimitedTranslationsOld": { "message": "Traducciones ilimitadas", "description": "Función traducciones ilimitadas" },
   "tooltipTranslate": { "message": "Traducir", "description": "Tooltip botón traducir" },
   "tooltipPin": { "message": "Fijar", "description": "Tooltip botón fijar" },
   "tooltipUnpin": { "message": "Desfijar", "description": "Tooltip for unpin button" },
@@ -80,11 +80,11 @@
     "message": "Seleccione idioma de traducción:",
     "description": "Seleccionar idioma de traducción etiqueta"
   },
-  "translating": {
+  "translatingOld": {
     "message": "Traduciendo...",
     "description": "Texto de carga de traducción"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "La traducción falló.",
     "description": "Mensaje de fallo de traducción"
   },

@@ -366,7 +366,7 @@
     "message": "Fordítási nyelv kiválasztása:",
     "description": "Select translation language label"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "A fordítás sikertelen.",
     "description": "Translation failed message"
   },

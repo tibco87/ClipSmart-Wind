@@ -174,7 +174,7 @@
     "message": "高级功能",
     "description": "Premium features section title"
   },
-  "enablePremium": {
+  "enablePremiumOld": {
     "message": "启用高级模式",
     "description": "Enable premium mode label"
   },
@@ -182,19 +182,19 @@
     "message": "高级模式已激活",
     "description": "Premium mode active label"
   },
-  "premiumIncludes": {
+  "premiumIncludesOld": {
     "message": "高级功能包括:",
     "description": "Premium features include label"
   },
-  "unlimitedHistory": {
+  "unlimitedHistoryOld": {
     "message": "无限历史记录",
     "description": "Unlimited history feature"
   },
-  "exportTxtCsvPdf": {
+  "exportTxtCsvPdfOld": {
     "message": "导出到TXT/CSV/PDF",
     "description": "Export feature"
   },
-  "advancedTagging": {
+  "advancedTaggingOld": {
     "message": "高级标签",
     "description": "Advanced tagging feature"
   }

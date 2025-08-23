@@ -64,7 +64,7 @@
   "unlimitedHistory": { "message": "Nieograniczona historia", "description": "Funkcja nieograniczonej historii" },
   "exportTxtCsvPdf": { "message": "Eksportuj do TXT/CSV/PDF", "description": "Funkcja eksportu" },
   "advancedTagging": { "message": "Zaawansowane tagowanie", "description": "Funkcja zaawansowanego tagowania" },
-  "unlimitedTranslations": { "message": "Nieograniczone tłumaczenia", "description": "Funkcja nieograniczonych tłumaczeń" },
+  "unlimitedTranslationsOld": { "message": "Nieograniczone tłumaczenia", "description": "Funkcja nieograniczonych tłumaczeń" },
   "tooltipTranslate": { "message": "Tłumacz", "description": "Tooltip przycisk tłumacz" },
   "tooltipPin": { "message": "Przypnij", "description": "Tooltip przycisk przypnij" },
   "tooltipUnpin": {
@@ -77,8 +77,8 @@
   "toggleTheme": { "message": "Przełącz motyw", "description": "Tooltip przełącz motyw" },
   "pdfExportSuccess": { "message": "Eksport PDF udany!", "description": "Powiadomienie o udanym eksporcie PDF" },
   "selectTranslationLanguage": { "message": "Wybierz język tłumaczenia:", "description": "Wybierz język tłumaczenia etykieta" },
-  "translating": { "message": "Tłumaczenie...", "description": "Tekst ładowania tłumaczenia" },
-  "translationFailed": { "message": "Tłumaczenie nie powiodło się.", "description": "Komunikat o błędzie tłumaczenia" },
+  "translatingOld": { "message": "Tłumaczenie...", "description": "Tekst ładowania tłumaczenia" },
+  "translationFailedOld": { "message": "Tłumaczenie nie powiodło się.", "description": "Komunikat o błędzie tłumaczenia" },
   "themeAuto": { "message": "Auto", "description": "Opcja motyw auto" },
   "themeLight": { "message": "Jasny", "description": "Opcja motyw jasny" },
   "themeDark": { "message": "Ciemny", "description": "Opcja motyw ciemny" },
@@ -89,7 +89,7 @@
     "message": "Nieograniczone tłumaczenia z Pro!",
     "description": "Baner lub przycisk dla nieograniczonych tłumaczeń w wersji Pro"
   },
-  "items": {
+  "itemsOld": {
     "message": "elementy",
     "description": "Items label"
   },

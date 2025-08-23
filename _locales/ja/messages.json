@@ -112,8 +112,8 @@
   "thirtyDays": { "message": "30日", "description": "自動削除30日" },
   "pdfExportSuccess": { "message": "PDFエクスポート成功！", "description": "PDFエクスポート成功通知" },
   "selectTranslationLanguage": { "message": "翻訳言語を選択：", "description": "翻訳言語選択ラベル" },
-  "translating": { "message": "翻訳中...", "description": "翻訳読み込みテキスト" },
-  "translationFailed": { "message": "翻訳に失敗しました。", "description": "翻訳失敗メッセージ" },
+  "translatingOld": { "message": "翻訳中...", "description": "翻訳読み込みテキスト" },
+  "translationFailedOld": { "message": "翻訳に失敗しました。", "description": "翻訳失敗メッセージ" },
   "subscriptionDetails": {
     "message": "サブスクリプション詳細",
     "description": "Subscription details section title"
@@ -174,11 +174,11 @@
     "message": "€3,99/月",
     "description": "Monthly plan price"
   },
-  "premiumFeatures": {
+  "premiumFeaturesOld": {
     "message": "プレミアム機能",
     "description": "Premium features section title"
   },
-  "enablePremium": {
+  "enablePremiumOld": {
     "message": "プレミアムモードを有効にする",
     "description": "Enable premium mode label"
   },
@@ -186,19 +186,19 @@
     "message": "プレミアムモード有効",
     "description": "Premium mode active label"
   },
-  "premiumIncludes": {
+  "premiumIncludesOld": {
     "message": "プレミアム機能には以下が含まれます:",
     "description": "Premium features include label"
   },
-  "unlimitedHistory": {
+  "unlimitedHistoryOld": {
     "message": "無制限履歴",
     "description": "Unlimited history feature"
   },
-  "exportTxtCsvPdf": {
+  "exportTxtCsvPdfOld": {
     "message": "TXT/CSV/PDFにエクスポート",
     "description": "Export feature"
   },
-  "advancedTagging": {
+  "advancedTaggingOld": {
     "message": "高度なタグ付け",
     "description": "Advanced tagging feature"
   }

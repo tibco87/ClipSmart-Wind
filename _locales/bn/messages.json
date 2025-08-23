@@ -366,7 +366,7 @@
     "message": "অনুবাদের ভাষা নির্বাচন করুন:",
     "description": "Select translation language label"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "অনুবাদ ব্যর্থ হয়েছে।",
     "description": "Translation failed message"
   },

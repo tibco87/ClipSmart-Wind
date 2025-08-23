@@ -106,8 +106,8 @@
   "toggleTheme": { "message": "테마 전환", "description": "테마 전환 툴팁" },
   "pdfExportSuccess": { "message": "PDF 내보내기 성공!", "description": "PDF 내보내기 성공 알림" },
   "selectTranslationLanguage": { "message": "번역 언어 선택:", "description": "번역 언어 선택 라벨" },
-  "translating": { "message": "번역 중...", "description": "번역 로딩 텍스트" },
-  "translationFailed": { "message": "번역에 실패했습니다.", "description": "번역 실패 메시지" },
+  "translatingOld": { "message": "번역 중...", "description": "번역 로딩 텍스트" },
+  "translationFailedOld": { "message": "번역에 실패했습니다.", "description": "번역 실패 메시지" },
   "themeAuto": { "message": "자동", "description": "테마 옵션 자동" },
   "themeLight": { "message": "라이트", "description": "테마 옵션 라이트" },
   "themeDark": { "message": "다크", "description": "테마 옵션 다크" },
@@ -174,11 +174,11 @@
     "message": "€3,99/월",
     "description": "Monthly plan price"
   },
-  "premiumFeatures": {
+  "premiumFeaturesOld": {
     "message": "프리미엄 기능",
     "description": "Premium features section title"
   },
-  "enablePremium": {
+  "enablePremiumOld": {
     "message": "프리미엄 모드 활성화",
     "description": "Enable premium mode label"
   },
@@ -186,19 +186,19 @@
     "message": "프리미엄 모드 활성",
     "description": "Premium mode active label"
   },
-  "premiumIncludes": {
+  "premiumIncludesOld": {
     "message": "프리미엄 기능에는 다음이 포함됩니다:",
     "description": "Premium features include label"
   },
-  "unlimitedHistory": {
+  "unlimitedHistoryOld": {
     "message": "무제한 기록",
     "description": "Unlimited history feature"
   },
-  "exportTxtCsvPdf": {
+  "exportTxtCsvPdfOld": {
     "message": "TXT/CSV/PDF로 내보내기",
     "description": "Export feature"
   },
-  "advancedTagging": {
+  "advancedTaggingOld": {
     "message": "고급 태그 지정",
     "description": "Advanced tagging feature"
   }

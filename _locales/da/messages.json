@@ -334,7 +334,7 @@
     "message": "Luk",
     "description": "Luk oversættelse knap"
   },
-  "items": {
+  "itemsOld": {
     "message": "elementer",
     "description": "Items count label"
   },
@@ -370,11 +370,11 @@
     "message": "Vælg oversættelsessprog:",
     "description": "Vælg oversættelsessprog etiket"
   },
-  "translating": {
+  "translatingOld": {
     "message": "Oversætter...",
     "description": "Oversættelse indlæsning tekst"
   },
-  "translationFailed": {
+  "translationFailedOld": {
     "message": "Oversættelse mislykkedes.",
     "description": "Oversættelse fejl besked"
   },
