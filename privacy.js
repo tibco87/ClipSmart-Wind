@@ -265,16 +265,23 @@ function highlightText(element, query) {
             if (regex.test(text)) {
                 const highlightedText = text.replace(regex, '<span class="highlight">$1</span>');
                 const span = document.createElement('span');
-                // Create highlight safely
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = highlightedText;
-                const highlightSpan = tempDiv.querySelector('.highlight');
-                if (highlightSpan) {
-                    span.appendChild(document.createTextNode(highlightSpan.textContent));
-                    span.className = 'highlight';
-                } else {
-                    span.textContent = text;
+                // Create highlight safely without innerHTML
+                const parts = text.split(regex);
+                const fragment = document.createDocumentFragment();
+                
+                for (let i = 0; i < parts.length; i++) {
+                    if (parts[i]) {
+                        fragment.appendChild(document.createTextNode(parts[i]));
+                    }
+                    if (i < parts.length - 1) {
+                        const highlightSpan = document.createElement('span');
+                        highlightSpan.className = 'highlight';
+                        highlightSpan.textContent = query;
+                        fragment.appendChild(highlightSpan);
+                    }
                 }
+                
+                span.appendChild(fragment);
                 node.parentNode.replaceChild(span, node);
             }
         } else if (node.nodeType === 1) { // Element node
