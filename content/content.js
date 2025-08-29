@@ -8,14 +8,66 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         sendResponse({ success: true });
     }
     if (request.action === "getClipboardText") {
+        console.log('📋 Content script: getClipboardText požiadavka prijatá');
+        
         if (navigator.clipboard && navigator.clipboard.readText) {
             navigator.clipboard.readText()
-                .then(text => sendResponse({ text }))
-                .catch(() => sendResponse({ text: "" }));
+                .then(text => {
+                    console.log('📋 Clipboard obsah načítaný:', text ? text.substring(0, 50) + '...' : '(prázdne)');
+                    sendResponse({ text });
+                })
+                .catch((error) => {
+                    console.error('❌ Chyba pri čítaní clipboard:', error);
+                    sendResponse({ text: "", error: error.message });
+                });
         } else {
-            sendResponse({ text: "" });
+            console.log('⚠️ Clipboard API nie je dostupné, používam fallback');
+            sendResponse({ text: "", error: "Clipboard API not available" });
         }
         return true; // async odpoveď
+    }
+});
+
+// Add clipboard change event listener
+document.addEventListener('copy', (event) => {
+    console.log('🎯 Copy event zachytený v content scripte');
+    
+    // Get selected text
+    const selection = window.getSelection();
+    const selectedText = selection ? selection.toString() : '';
+    
+    if (selectedText) {
+        console.log('📝 Vybraný text:', selectedText.substring(0, 50) + '...');
+        
+        // Send to background script
+        chrome.runtime.sendMessage({
+            action: 'clipboardChanged',
+            text: selectedText,
+            source: 'copy-event'
+        }).catch(error => {
+            console.error('❌ Chyba pri posielaní správy:', error);
+        });
+    }
+});
+
+// Add paste event listener for better monitoring
+document.addEventListener('paste', (event) => {
+    console.log('📋 Paste event zachytený v content scripte');
+    
+    // Get pasted text
+    const pastedText = event.clipboardData ? event.clipboardData.getData('text') : '';
+    
+    if (pastedText) {
+        console.log('📝 Vložený text:', pastedText.substring(0, 50) + '...');
+        
+        // Send to background script
+        chrome.runtime.sendMessage({
+            action: 'clipboardChanged',
+            text: pastedText,
+            source: 'paste-event'
+        }).catch(error => {
+            console.error('❌ Chyba pri posielaní správy:', error);
+        });
     }
 });
 

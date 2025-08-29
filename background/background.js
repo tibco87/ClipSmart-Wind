@@ -80,7 +80,17 @@ chrome.runtime.onInstalled.addListener(async (details) => {
         });
 
         await chrome.alarms.create('checkClipboard', {
-            periodInMinutes: 1/60 // Every second
+            periodInMinutes: 5/60 // Every 5 seconds instead of every second
+        });
+
+        // NEW: Add alarm for checking Pro status and subscription expiry
+        await chrome.alarms.create('checkProStatus', {
+            periodInMinutes: 60 * 6 // Every 6 hours
+        });
+
+        // NEW: Add alarm for checking subscription expiry (daily)
+        await chrome.alarms.create('checkSubscriptionExpiry', {
+            periodInMinutes: 60 * 24 // Daily
         });
     } catch (error) {
         console.error('Failed to create alarms:', error);
@@ -95,27 +105,43 @@ chrome.runtime.onInstalled.addListener(async (details) => {
             try {
                 // Získaj aktívny tab
                 const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-                if (!tab || !tab.id) return;
+                if (!tab || !tab.id) {
+                    console.log('📱 Žiadny aktívny tab pre clipboard kontrolu');
+                    return;
+                }
+
+                console.log('🔍 Kontrolujem clipboard pre tab:', tab.url);
 
                 // Pošli správu content scriptu, aby prečítal schránku
                 chrome.tabs.sendMessage(tab.id, { action: "getClipboardText" }, async (response) => {
                     if (chrome.runtime.lastError) {
                         // Content script nie je načítaný v tomto tabe, ignoruj chybu
+                        console.log('⚠️ Content script nie je načítaný v tabe:', tab.url);
                         return;
                     }
+                    
                     const text = response?.text;
+                    console.log('📋 Clipboard obsah:', text ? text.substring(0, 50) + '...' : '(prázdne)');
+                    
                     if (text && text !== this.lastText) {
+                        console.log('✅ Nový text načítaný, pridávam do histórie');
                         await this.addItem(text);
+                    } else if (text === this.lastText) {
+                        console.log('ℹ️ Text sa nezmenil');
                     }
                 });
             } catch (error) {
-                console.error('Clipboard check error:', error);
+                console.error('❌ Clipboard check error:', error);
             }
         },
 
     async addItem(text) {
-        if (!text || text === this.lastText) return;
+        if (!text || text === this.lastText) {
+            console.log('ℹ️ Text sa nezmenil alebo je prázdny');
+            return;
+        }
         
+        console.log('➕ Pridávam novú položku:', text.substring(0, 50) + '...');
         this.lastText = text;
         
         // Get current items and check ExtensionPay status
@@ -123,12 +149,18 @@ chrome.runtime.onInstalled.addListener(async (details) => {
         let items = data.clipboardItems || [];
         let isPro = data.isPro || false;
         
+        console.log('📊 Aktuálny stav:', {
+            pocetPoloziek: items.length,
+            isPro: isPro
+        });
+        
         // Check ExtensionPay data to ensure isPro is correct
         isPro = await this.checkExtensionPayStatus(isPro);
         
         // Check if item already exists
         const existingIndex = items.findIndex(item => item.text === text);
         if (existingIndex !== -1) {
+            console.log('🔄 Položka už existuje, presúvam na vrch');
             // Move to top
             const [existing] = items.splice(existingIndex, 1);
             existing.timestamp = Date.now();
@@ -138,6 +170,7 @@ chrome.runtime.onInstalled.addListener(async (details) => {
             }
             items.unshift(existing);
         } else {
+            console.log('🆕 Vytváram novú položku');
             // Create new item
             const newItem = {
                 id: this.generateId(),
@@ -148,8 +181,15 @@ chrome.runtime.onInstalled.addListener(async (details) => {
                 charCount: text.length // Pridaj charCount pre zoradenie podľa dĺžky
             };
             
+            console.log('📝 Nová položka:', {
+                id: newItem.id,
+                type: newItem.type,
+                charCount: newItem.charCount
+            });
+            
             // Check limits for free users
             if (!isPro && items.length >= 20) {
+                console.log('⚠️ Dosiahnutý limit pre free používateľov, odstraňujem najstaršiu položku');
                 // Remove oldest item
                 items.pop();
             }
@@ -159,6 +199,7 @@ chrome.runtime.onInstalled.addListener(async (details) => {
         
         // Save items
         await chrome.storage.local.set({ clipboardItems: items });
+        console.log('💾 Položky uložené, celkový počet:', items.length);
         
         // Update badge
         this.updateBadge(items.length);
@@ -254,6 +295,18 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         // Handle URL changes - could be used for tracking navigation
         console.log('URL changed:', request.url);
         sendResponse({ success: true });
+    } else if (request.action === 'clipboardChanged') {
+        // Handle clipboard changes from content script events
+        console.log('📋 Clipboard changed event:', {
+            text: request.text ? request.text.substring(0, 50) + '...' : '(prázdne)',
+            source: request.source
+        });
+        
+        if (request.text) {
+            clipboardMonitor.addItem(request.text);
+        }
+        
+        sendResponse({ success: true });
     }
 });
 
@@ -292,8 +345,142 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         cleanupOldItems();
     } else if (alarm.name === 'checkClipboard') {
         clipboardMonitor.checkClipboard();
+    } else if (alarm.name === 'checkProStatus') {
+        // NEW: Check Pro status every 6 hours
+        checkProStatus();
+    } else if (alarm.name === 'checkSubscriptionExpiry') {
+        // NEW: Check subscription expiry daily
+        checkSubscriptionExpiry();
     }
 });
+
+// NEW: Function to check Pro status and sync with ExtensionPay
+async function checkProStatus() {
+    try {
+        console.log('🔍 Checking Pro status...');
+        
+        // Get current Pro status from storage
+        const storage = await chrome.storage.local.get(['isPro', 'extensionpay_user']);
+        const currentIsPro = storage.isPro || false;
+        
+        // Try to get ExtensionPay data
+        if (typeof self.ExtPay !== 'undefined') {
+            const extpay = self.ExtPay(EXTENSION_ID);
+            
+            try {
+                const user = await extpay.getUser();
+                console.log('💰 ExtensionPay user data:', {
+                    paid: user.paid,
+                    paidAt: user.paidAt,
+                    plan: user.plan,
+                    subscriptions: user.subscriptions
+                });
+                
+                // Update Pro status if it changed
+                if (user.paid !== currentIsPro) {
+                    console.log(`🔄 Pro status changed from ${currentIsPro} to ${user.paid}`);
+                    await chrome.storage.local.set({ 
+                        isPro: user.paid,
+                        extensionpay_user: user,
+                        lastProStatusCheck: Date.now()
+                    });
+                    
+                    // Update badge if needed
+                    if (user.paid) {
+                        console.log('✅ Pro status activated');
+                    } else {
+                        console.log('⚠️ Pro status deactivated');
+                    }
+                }
+                
+                // Save ExtensionPay user data
+                await chrome.storage.local.set({ 
+                    extensionpay_user: user,
+                    lastProStatusCheck: Date.now()
+                });
+                
+            } catch (error) {
+                console.log('⚠️ ExtensionPay check failed, using cached status:', error.message);
+                // Use cached status if ExtensionPay is unavailable
+                const lastCheck = storage.lastProStatusCheck || 0;
+                const daysSinceCheck = (Date.now() - lastCheck) / (1000 * 60 * 60 * 24);
+                
+                if (daysSinceCheck > 7) {
+                    console.log('⚠️ Pro status is older than 7 days, deactivating Pro features');
+                    await chrome.storage.local.set({ isPro: false });
+                }
+            }
+        } else {
+            console.log('⚠️ ExtensionPay not available, using cached status');
+        }
+        
+    } catch (error) {
+        console.error('❌ Error checking Pro status:', error);
+    }
+}
+
+// NEW: Function to check subscription expiry and show notifications
+async function checkSubscriptionExpiry() {
+    try {
+        console.log('📅 Checking subscription expiry...');
+        
+        const storage = await chrome.storage.local.get(['extensionpay_user', 'lastExpiryNotification']);
+        const user = storage.extensionpay_user;
+        const lastNotification = storage.lastExpiryNotification;
+        
+        if (user && user.paid && user.paidAt) {
+            const paidDate = new Date(user.paidAt);
+            let expiryDate;
+            
+            // Determine expiry date based on subscription type
+            if (user.plan && user.plan.interval === 'year') {
+                expiryDate = new Date(paidDate);
+                expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+            } else {
+                // Default to monthly
+                expiryDate = new Date(paidDate);
+                expiryDate.setMonth(expiryDate.getMonth() + 1);
+            }
+            
+            const daysUntilExpiry = Math.floor((expiryDate - new Date()) / (1000 * 60 * 60 * 24));
+            const today = new Date().toDateString();
+            
+            console.log('📅 Subscription expiry check:', {
+                paidDate: paidDate.toLocaleDateString(),
+                expiryDate: expiryDate.toLocaleDateString(),
+                daysUntilExpiry: daysUntilExpiry,
+                lastNotification: lastNotification
+            });
+            
+            // Show notification 3 days before expiry (Chrome compatible)
+            if (daysUntilExpiry <= 3 && daysUntilExpiry > 0) {
+                if (lastNotification !== today) {
+                    console.log(`⚠️ Subscription expires in ${daysUntilExpiry} days - showing console warning`);
+                    
+                    // For Chrome, we'll use console warnings instead of notifications
+                    console.warn(`🚨 CLIPSMART PRO EXPIRES SOON: Your subscription expires in ${daysUntilExpiry} days!`);
+                    console.warn(`💳 Please renew your subscription to maintain uninterrupted access.`);
+                    
+                    // Save notification date
+                    await chrome.storage.local.set({ lastExpiryNotification: today });
+                }
+            }
+            
+            // Deactivate Pro if expired
+            if (daysUntilExpiry <= 0) {
+                console.log('❌ Subscription expired, deactivating Pro features');
+                await chrome.storage.local.set({ isPro: false });
+                
+                // Show expiry warning in console (Chrome compatible)
+                console.error(`🚨 CLIPSMART PRO EXPIRED: Your subscription has expired!`);
+                console.error(`💳 Please renew your subscription to access Premium features.`);
+            }
+        }
+        
+    } catch (error) {
+        console.error('❌ Error checking subscription expiry:', error);
+    }
+}
 
 // Clean up old items
 async function cleanupOldItems() {

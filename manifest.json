@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "__MSG_appName__",
   "description": "__MSG_appDescription__",
   "version": "1.0.6",
@@ -12,8 +12,8 @@
     "128": "assets/icon-128.png"
   },
   
-  "browser_action": {
-    "default_popup": "popup/popup-firefox.html",
+  "action": {
+    "default_popup": "popup/popup.html",
     "default_icon": {
       "16": "assets/icon-16.png",
       "32": "assets/icon-32.png",
@@ -23,8 +23,7 @@
   },
   
   "background": {
-    "scripts": ["background/background-firefox.js"],
-    "persistent": false
+    "service_worker": "background/background.js"
   },
   
   "permissions": [
@@ -33,15 +32,18 @@
     "storage",
     "activeTab",
     "contextMenus",
-    "alarms",
-    "https://ipapi.co/",
-    "https://extensionpay.com/",
-    "https://translate.googleapis.com/",
-    "https://clipsmart-translation-proxy.vercel.app/"
+    "alarms"
+  ],
+  
+  "host_permissions": [
+    "https://ipapi.co/*",
+    "https://extensionpay.com/*",
+    "https://translate.googleapis.com/*",
+    "https://clipsmart-translation-proxy.vercel.app/*"
   ],
   
   "commands": {
-    "_execute_browser_action": {
+    "_execute_action": {
       "suggested_key": {
         "default": "Ctrl+Shift+V",
         "mac": "Command+Shift+V"
@@ -64,7 +66,7 @@
         "https://tibco87.github.io/*",
         "https://*.github.io/*"
       ],
-      "js": ["content/content-firefox.js"],
+      "js": ["content/content.js"],
       "run_at": "document_idle"
     },
     {
@@ -75,11 +77,16 @@
   ],
   
   "web_accessible_resources": [
-    "welcome.html",
-    "welcome.css", 
-    "welcome.js",
-    "privacy.html",
-    "privacy.css",
-    "privacy.js"
+    {
+      "resources": [
+        "welcome.html",
+        "welcome.css", 
+        "welcome.js",
+        "privacy.html",
+        "privacy.css",
+        "privacy.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
   ]
 }

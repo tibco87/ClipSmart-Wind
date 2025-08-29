@@ -580,6 +580,261 @@ class ClipSmart {
         console.log('🔍 DOM ready state:', document.readyState);
         console.log('🔍 Body exists:', !!document.body);
         
+        // Add storage listener for real-time updates
+        chrome.storage.onChanged.addListener((changes, namespace) => {
+            if (namespace === 'local') {
+                let needsUpdate = false;
+                
+                if (changes.clipboardItems) {
+                    console.log('📋 Clipboard items changed in storage, updating popup...');
+                    needsUpdate = true;
+                }
+                
+                if (changes.isPro) {
+                    console.log('💰 Pro status changed, updating UI...');
+                    this.isPro = changes.isPro.newValue;
+                    this.updateLimits();
+                    this.updateUIText();
+                    this.updatePremiumModeCheckbox();
+                    this.updateUpgradeButton();
+                    this.updateTranslationQuota();
+                    needsUpdate = true;
+                }
+                
+                if (changes.settings) {
+                    console.log('⚙️ Settings changed, updating UI...');
+                    this.settings = changes.settings.newValue;
+                    this.applyTheme();
+                    this.updateUIText();
+                    needsUpdate = true;
+                }
+                
+                if (changes.sortOrder) {
+                    console.log('🔄 Sort order changed, updating UI...');
+                    this.sortOrder = changes.sortOrder.newValue;
+                    needsUpdate = true;
+                }
+                
+                if (changes.tags) {
+                    console.log('🏷️ Tags changed, updating UI...');
+                    this.tags = new Set(changes.tags.newValue || []);
+                    needsUpdate = true;
+                }
+                
+                if (changes.translationsUsed) {
+                    console.log('🌐 Translation count changed, updating UI...');
+                    this.translationsUsed = changes.translationsUsed.newValue || 0;
+                    this.updateTranslationQuota();
+                    needsUpdate = true;
+                }
+                
+                if (changes.subscriptionPlan || changes.subscriptionInterval) {
+                    console.log('💎 Subscription info changed, updating UI...');
+                    if (changes.subscriptionPlan) {
+                        this.subscriptionPlan = changes.subscriptionPlan.newValue;
+                    }
+                    if (changes.subscriptionInterval) {
+                        this.subscriptionInterval = changes.subscriptionInterval.newValue;
+                    }
+                    this.updateSubscriptionInfo();
+                    needsUpdate = true;
+                }
+                
+                if (changes.extensionpay_user) {
+                    console.log('🔑 ExtensionPay user data changed, updating UI...');
+                    // Re-check ExtensionPay status
+                    this.checkExtensionPayStatus().then(() => {
+                        this.updateLimits();
+                        this.updateUIText();
+                        this.updatePremiumModeCheckbox();
+                        this.updateUpgradeButton();
+                        this.updateTranslationQuota();
+                        this.updateSubscriptionInfo();
+                    });
+                    needsUpdate = true;
+                }
+                
+                if (changes.installDate) {
+                    console.log('📅 Install date changed in local storage, updating UI...');
+                    // Re-check ExtensionPay status
+                    this.checkExtensionPayStatus().then(() => {
+                        this.updateLimits();
+                        this.updateUIText();
+                        this.updatePremiumModeCheckbox();
+                        this.updateUpgradeButton();
+                        this.updateTranslationQuota();
+                        this.updateSubscriptionInfo();
+                    });
+                    needsUpdate = true;
+                }
+                
+                if (changes.extensionpay_api_key) {
+                    console.log('🔑 ExtensionPay API key changed in local storage, updating UI...');
+                    // Re-check ExtensionPay status
+                    this.checkExtensionPayStatus().then(() => {
+                        this.updateLimits();
+                        this.updateUIText();
+                        this.updatePremiumModeCheckbox();
+                        this.updateUpgradeButton();
+                        this.updateTranslationQuota();
+                        this.updateSubscriptionInfo();
+                    });
+                    needsUpdate = true;
+                }
+                
+                if (changes.extensionpay_user) {
+                    console.log('🔑 ExtensionPay user data changed in local storage, updating UI...');
+                    // Re-check ExtensionPay status
+                    this.checkExtensionPayStatus().then(() => {
+                        this.updateLimits();
+                        this.updateUIText();
+                        this.updatePremiumModeCheckbox();
+                        this.updateUpgradeButton();
+                        this.updateTranslationQuota();
+                        this.updateSubscriptionInfo();
+                    });
+                    needsUpdate = true;
+                }
+                
+                if (changes.translationsThisMonth) {
+                    console.log('🌐 Monthly translation count changed, updating UI...');
+                    this.checkTranslationLimit().then(() => {
+                        this.updateTranslationQuota();
+                    });
+                    needsUpdate = true;
+                }
+                
+                if (needsUpdate) {
+                    this.loadData().then(() => {
+                        this.renderContent();
+                        this.updateItemCount();
+                        console.log('✅ Popup updated with new data');
+                    });
+                }
+            }
+        });
+        
+        // Also listen for sync storage changes
+        chrome.storage.onChanged.addListener((changes, namespace) => {
+            if (namespace === 'sync') {
+                if (changes.extensionpay_user) {
+                    console.log('🔑 ExtensionPay user data changed in sync storage, updating UI...');
+                    // Re-check ExtensionPay status
+                    this.checkExtensionPayStatus().then(() => {
+                        this.updateLimits();
+                        this.updateUIText();
+                        this.updatePremiumModeCheckbox();
+                        this.updateUpgradeButton();
+                        this.updateTranslationQuota();
+                        this.updateSubscriptionInfo();
+                    });
+                }
+                
+                if (changes.clipboardItems) {
+                    console.log('📋 Clipboard items changed in sync storage, updating UI...');
+                    this.loadData().then(() => {
+                        this.renderContent();
+                        this.updateItemCount();
+                        console.log('✅ Popup updated with sync storage data');
+                    });
+                }
+                
+                if (changes.settings) {
+                    console.log('⚙️ Settings changed in sync storage, updating UI...');
+                    this.settings = changes.settings.newValue;
+                    this.applyTheme();
+                    this.updateUIText();
+                    this.renderContent();
+                }
+                
+                if (changes.sortOrder) {
+                    console.log('🔄 Sort order changed in sync storage, updating UI...');
+                    this.sortOrder = changes.sortOrder.newValue;
+                    this.renderContent();
+                }
+                
+                if (changes.tags) {
+                    console.log('🏷️ Tags changed in sync storage, updating UI...');
+                    this.tags = new Set(changes.tags.newValue || []);
+                    this.renderContent();
+                }
+                
+                if (changes.isPro) {
+                    console.log('💰 Pro status changed in sync storage, updating UI...');
+                    this.isPro = changes.isPro.newValue;
+                    this.updateLimits();
+                    this.updateUIText();
+                    this.updatePremiumModeCheckbox();
+                    this.updateUpgradeButton();
+                    this.updateTranslationQuota();
+                    this.updateSubscriptionInfo();
+                }
+                
+                if (changes.subscriptionPlan || changes.subscriptionInterval) {
+                    console.log('💎 Subscription info changed in sync storage, updating UI...');
+                    if (changes.subscriptionPlan) {
+                        this.subscriptionPlan = changes.subscriptionPlan.newValue;
+                    }
+                    if (changes.subscriptionInterval) {
+                        this.subscriptionInterval = changes.subscriptionInterval.newValue;
+                    }
+                    this.updateSubscriptionInfo();
+                }
+                
+                if (changes.translationsThisMonth) {
+                    console.log('🌐 Monthly translation count changed in sync storage, updating UI...');
+                    this.checkTranslationLimit().then(() => {
+                        this.updateTranslationQuota();
+                    });
+                }
+                
+                if (changes.translationsUsed) {
+                    console.log('🌐 Translation count changed in sync storage, updating UI...');
+                    this.translationsUsed = changes.translationsUsed.newValue || 0;
+                    this.updateTranslationQuota();
+                }
+                
+                if (changes.installDate) {
+                    console.log('📅 Install date changed in sync storage, updating UI...');
+                    // Re-check ExtensionPay status
+                    this.checkExtensionPayStatus().then(() => {
+                        this.updateLimits();
+                        this.updateUIText();
+                        this.updatePremiumModeCheckbox();
+                        this.updateUpgradeButton();
+                        this.updateTranslationQuota();
+                        this.updateSubscriptionInfo();
+                    });
+                }
+                
+                if (changes.extensionpay_api_key) {
+                    console.log('🔑 ExtensionPay API key changed in sync storage, updating UI...');
+                    // Re-check ExtensionPay status
+                    this.checkExtensionPayStatus().then(() => {
+                        this.updateLimits();
+                        this.updateUIText();
+                        this.updatePremiumModeCheckbox();
+                        this.updateUpgradeButton();
+                        this.updateTranslationQuota();
+                        this.updateSubscriptionInfo();
+                    });
+                }
+                
+                if (changes.extensionpay_user) {
+                    console.log('🔑 ExtensionPay user data changed in sync storage, updating UI...');
+                    // Re-check ExtensionPay status
+                    this.checkExtensionPayStatus().then(() => {
+                        this.updateLimits();
+                        this.updateUIText();
+                        this.updatePremiumModeCheckbox();
+                        this.updateUpgradeButton();
+                        this.updateTranslationQuota();
+                        this.updateSubscriptionInfo();
+                    });
+                }
+            }
+        });
+        
         // Tab navigation
         document.querySelectorAll('.tab-button').forEach(button => {
             button.addEventListener('click', (e) => {
