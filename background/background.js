@@ -25,6 +25,146 @@ importScripts('../js/extpay.js');
 
 // ExtensionPay is loaded as a global function
 
+// NEW: Pro Status Manager for Chrome Sync + ExtensionPay
+class ProStatusManager {
+    constructor() {
+        this.syncInterval = 6 * 60 * 60 * 1000; // 6 hodín
+        this.setupSync();
+    }
+    
+    async setupSync() {
+        console.log('🚀 ProStatusManager: Inicializujem Chrome Sync + ExtensionPay');
+        
+        // 1. Skontroluj ExtensionPay
+        await this.checkExtensionPay();
+        
+        // 2. Nastav interval pre synchronizáciu
+        setInterval(() => {
+            this.syncProStatus();
+        }, this.syncInterval);
+        
+        // 3. Okamžitá synchronizácia pri štarte
+        setTimeout(() => {
+            this.syncProStatus();
+        }, 5000); // 5 sekúnd po štarte
+    }
+    
+    async checkExtensionPay() {
+        try {
+            if (typeof self.ExtPay !== 'undefined') {
+                const extpay = self.ExtPay(EXTENSION_ID);
+                const user = await extpay.getUser();
+                
+                if (user.paid) {
+                    console.log('💰 ExtensionPay: Používateľ má zaplatenú Pro verziu');
+                    
+                    // Ulož do Chrome Sync Storage
+                    await chrome.storage.sync.set({
+                        isPro: true,
+                        subscriptionData: user,
+                        lastSync: Date.now(),
+                        source: 'extensionpay',
+                        extensionId: EXTENSION_ID
+                    });
+                    
+                    // Ulož aj do local storage pre rýchly prístup
+                    await chrome.storage.local.set({
+                        isPro: true,
+                        extensionpay_user: user,
+                        lastProStatusCheck: Date.now()
+                    });
+                    
+                    console.log('✅ Pro status synced to Chrome Sync + Local Storage');
+                    return true;
+                } else {
+                    console.log('ℹ️ ExtensionPay: Používateľ nemá Pro verziu');
+                    return false;
+                }
+            } else {
+                console.log('⚠️ ExtensionPay not available');
+                return false;
+            }
+        } catch (error) {
+            console.error('❌ ExtensionPay check error:', error);
+            return false;
+        }
+    }
+    
+    async syncProStatus() {
+        try {
+            console.log('🔄 ProStatusManager: Synchronizujem Pro status...');
+            
+            // 1. Skús ExtensionPay
+            const extpayStatus = await this.checkExtensionPay();
+            
+            if (extpayStatus) {
+                console.log('✅ Pro status aktívny cez ExtensionPay');
+                return true;
+            }
+            
+            // 2. Fallback na Chrome Sync
+            const syncData = await chrome.storage.sync.get(['isPro', 'subscriptionData', 'lastSync', 'extensionId']);
+            
+            if (syncData.isPro && syncData.lastSync && syncData.extensionId === EXTENSION_ID) {
+                const daysSinceSync = (Date.now() - syncData.lastSync) / (1000 * 60 * 60 * 24);
+                
+                if (daysSinceSync < 30) {
+                    console.log('✅ Using cached Pro status from Chrome Sync (age: ' + daysSinceSync.toFixed(1) + ' days)');
+                    
+                    // Synchronizuj do local storage
+                    await chrome.storage.local.set({
+                        isPro: true,
+                        subscriptionData: syncData.subscriptionData,
+                        lastProStatusCheck: Date.now(),
+                        source: 'chrome_sync'
+                    });
+                    
+                    return true;
+                } else {
+                    console.log('⚠️ Chrome Sync data is too old (' + daysSinceSync.toFixed(1) + ' days), removing');
+                    await chrome.storage.sync.remove(['isPro', 'subscriptionData', 'lastSync', 'source']);
+                }
+            }
+            
+            // 3. Ak nič nefunguje, deaktivuj Pro
+            console.log('⚠️ No valid Pro status found, deactivating Pro features');
+            await chrome.storage.local.set({ isPro: false });
+            return false;
+            
+        } catch (error) {
+            console.error('❌ Sync error:', error);
+            return false;
+        }
+    }
+    
+    async getProStatus() {
+        try {
+            // 1. Skontroluj local storage
+            const localData = await chrome.storage.local.get(['isPro', 'lastProStatusCheck']);
+            
+            if (localData.isPro && localData.lastProStatusCheck) {
+                const hoursSinceCheck = (Date.now() - localData.lastProStatusCheck) / (1000 * 60 * 60);
+                
+                if (hoursSinceCheck < 24) {
+                    console.log('✅ Using local Pro status (checked ' + hoursSinceCheck.toFixed(1) + ' hours ago)');
+                    return localData.isPro;
+                }
+            }
+            
+            // 2. Ak local data je staré, synchronizuj
+            console.log('🔄 Local Pro status is old, syncing...');
+            return await this.syncProStatus();
+            
+        } catch (error) {
+            console.error('❌ Get Pro status error:', error);
+            return false;
+        }
+    }
+}
+
+// Initialize ProStatusManager
+let proStatusManager;
+
 // Initialize extension
 chrome.runtime.onInstalled.addListener(async (details) => {
     if (details.reason === 'install') {
@@ -46,7 +186,10 @@ chrome.runtime.onInstalled.addListener(async (details) => {
         chrome.tabs.create({ url: chrome.runtime.getURL('welcome.html') });
     }
 
-            // Initialize ExtensionPay
+    // Initialize ProStatusManager for Chrome Sync
+    proStatusManager = new ProStatusManager();
+
+    // Initialize ExtensionPay
     setTimeout(() => {
         if (typeof self.ExtPay !== 'undefined') {
             // Use the production Extension ID from Chrome Web Store
@@ -236,27 +379,33 @@ chrome.runtime.onInstalled.addListener(async (details) => {
         chrome.action.setBadgeBackgroundColor({ color: '#2196f3' });
     },
 
-    // New function to check ExtensionPay status
+    // New function to check ExtensionPay status using ProStatusManager
     async checkExtensionPayStatus(currentIsPro) {
         try {
-            // Check ExtensionPay storage for user data
-            const syncData = await chrome.storage.sync.get(['extensionpay_user']);
-            const localData = await chrome.storage.local.get(['extensionpay_user']);
-            
-            const extensionpayUser = syncData.extensionpay_user || localData.extensionpay_user;
-            
-            if (extensionpayUser && extensionpayUser.paid && !currentIsPro) {
-                console.log('💰 Found paid user in ExtensionPay data, updating isPro status');
-                await chrome.storage.local.set({ isPro: true });
-                return true;
-            } else if (extensionpayUser && !extensionpayUser.paid && currentIsPro) {
-                console.log('⚠️ User is not paid in ExtensionPay data, updating isPro status');
-                await chrome.storage.local.set({ isPro: false });
-                return false;
+            if (proStatusManager) {
+                const proStatus = await proStatusManager.getProStatus();
+                console.log('🔄 ProStatusManager: Pro status:', proStatus);
+                return proStatus;
+            } else {
+                console.log('⚠️ ProStatusManager not available, using fallback');
+                // Fallback na pôvodnú logiku
+                const syncData = await chrome.storage.sync.get(['extensionpay_user']);
+                const localData = await chrome.storage.local.get(['extensionpay_user']);
+                
+                const extensionpayUser = syncData.extensionpay_user || localData.extensionpay_user;
+                
+                if (extensionpayUser && extensionpayUser.paid && !currentIsPro) {
+                    console.log('💰 Found paid user in ExtensionPay data, updating isPro status');
+                    await chrome.storage.local.set({ isPro: true });
+                    return true;
+                } else if (extensionpayUser && !extensionpayUser.paid && currentIsPro) {
+                    console.log('⚠️ User is not paid in ExtensionPay data, updating isPro status');
+                    await chrome.storage.local.set({ isPro: false });
+                    return false;
+                }
+                
+                return currentIsPro;
             }
-            
-            return currentIsPro;
-            
         } catch (error) {
             console.error('❌ Error checking ExtensionPay status:', error);
             return currentIsPro;
@@ -307,6 +456,21 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         }
         
         sendResponse({ success: true });
+    } else if (request.action === 'syncProStatus') {
+        // NEW: Handle Pro status sync request from popup
+        console.log('🔄 Popup requested Pro status sync');
+        
+        if (proStatusManager) {
+            proStatusManager.syncProStatus().then(proStatus => {
+                sendResponse({ success: true, isPro: proStatus });
+            }).catch(error => {
+                sendResponse({ success: false, error: error.message });
+            });
+        } else {
+            sendResponse({ success: false, error: 'ProStatusManager not available' });
+        }
+        
+        return true; // async response
     }
 });
 
@@ -354,64 +518,72 @@ chrome.alarms.onAlarm.addListener((alarm) => {
     }
 });
 
-// NEW: Function to check Pro status and sync with ExtensionPay
+// NEW: Function to check Pro status using ProStatusManager
 async function checkProStatus() {
     try {
         console.log('🔍 Checking Pro status...');
         
-        // Get current Pro status from storage
-        const storage = await chrome.storage.local.get(['isPro', 'extensionpay_user']);
-        const currentIsPro = storage.isPro || false;
-        
-        // Try to get ExtensionPay data
-        if (typeof self.ExtPay !== 'undefined') {
-            const extpay = self.ExtPay(EXTENSION_ID);
+        if (proStatusManager) {
+            const proStatus = await proStatusManager.syncProStatus();
+            console.log('✅ ProStatusManager: Pro status synchronized:', proStatus);
+            return proStatus;
+        } else {
+            console.log('⚠️ ProStatusManager not available, using fallback');
             
-            try {
-                const user = await extpay.getUser();
-                console.log('💰 ExtensionPay user data:', {
-                    paid: user.paid,
-                    paidAt: user.paidAt,
-                    plan: user.plan,
-                    subscriptions: user.subscriptions
-                });
+            // Get current Pro status from storage
+            const storage = await chrome.storage.local.get(['isPro', 'extensionpay_user']);
+            const currentIsPro = storage.isPro || false;
+            
+            // Try to get ExtensionPay data
+            if (typeof self.ExtPay !== 'undefined') {
+                const extpay = self.ExtPay(EXTENSION_ID);
                 
-                // Update Pro status if it changed
-                if (user.paid !== currentIsPro) {
-                    console.log(`🔄 Pro status changed from ${currentIsPro} to ${user.paid}`);
+                try {
+                    const user = await extpay.getUser();
+                    console.log('💰 ExtensionPay user data:', {
+                        paid: user.paid,
+                        paidAt: user.paidAt,
+                        plan: user.plan,
+                        subscriptions: user.subscriptions
+                    });
+                    
+                    // Update Pro status if it changed
+                    if (user.paid !== currentIsPro) {
+                        console.log(`🔄 Pro status changed from ${currentIsPro} to ${user.paid}`);
+                        await chrome.storage.local.set({ 
+                            isPro: user.paid,
+                            extensionpay_user: user,
+                            lastProStatusCheck: Date.now()
+                        });
+                        
+                        // Update badge if needed
+                        if (user.paid) {
+                            console.log('✅ Pro status activated');
+                        } else {
+                            console.log('⚠️ Pro status deactivated');
+                        }
+                    }
+                    
+                    // Save ExtensionPay user data
                     await chrome.storage.local.set({ 
-                        isPro: user.paid,
                         extensionpay_user: user,
                         lastProStatusCheck: Date.now()
                     });
                     
-                    // Update badge if needed
-                    if (user.paid) {
-                        console.log('✅ Pro status activated');
-                    } else {
-                        console.log('⚠️ Pro status deactivated');
+                } catch (error) {
+                    console.log('⚠️ ExtensionPay check failed, using cached status:', error.message);
+                    // Use cached status if ExtensionPay is unavailable
+                    const lastCheck = storage.lastProStatusCheck || 0;
+                    const daysSinceCheck = (Date.now() - lastCheck) / (1000 * 60 * 60 * 24);
+                    
+                    if (daysSinceCheck > 7) {
+                        console.log('⚠️ Pro status is older than 7 days, deactivating Pro features');
+                        await chrome.storage.local.set({ isPro: false });
                     }
                 }
-                
-                // Save ExtensionPay user data
-                await chrome.storage.local.set({ 
-                    extensionpay_user: user,
-                    lastProStatusCheck: Date.now()
-                });
-                
-            } catch (error) {
-                console.log('⚠️ ExtensionPay check failed, using cached status:', error.message);
-                // Use cached status if ExtensionPay is unavailable
-                const lastCheck = storage.lastProStatusCheck || 0;
-                const daysSinceCheck = (Date.now() - lastCheck) / (1000 * 60 * 60 * 24);
-                
-                if (daysSinceCheck > 7) {
-                    console.log('⚠️ Pro status is older than 7 days, deactivating Pro features');
-                    await chrome.storage.local.set({ isPro: false });
-                }
+            } else {
+                console.log('⚠️ ExtensionPay not available, using cached status');
             }
-        } else {
-            console.log('⚠️ ExtensionPay not available, using cached status');
         }
         
     } catch (error) {

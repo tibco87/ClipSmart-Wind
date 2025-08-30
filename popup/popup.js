@@ -477,8 +477,13 @@ class ClipSmart {
 
     async loadData() {
         try {
-            const data = await chrome.storage.local.get(['clipboardItems', 'settings', 'isPro', 'tags', 'sortOrder', 'subscriptionPlan', 'subscriptionInterval']);
-            this.clipboardItems = (data.clipboardItems || []).map(item => {
+            // Load local data
+            const localData = await chrome.storage.local.get(['clipboardItems', 'settings', 'isPro', 'tags', 'sortOrder', 'subscriptionPlan', 'subscriptionInterval']);
+            
+            // NEW: Load Chrome Sync data for Pro status
+            const syncData = await chrome.storage.sync.get(['isPro', 'subscriptionData', 'lastSync', 'extensionId']);
+            
+            this.clipboardItems = (localData.clipboardItems || []).map(item => {
                 if (item.tags) {
                     if (Array.isArray(item.tags)) {
                         item.tags = new Set(item.tags);
@@ -504,19 +509,43 @@ class ClipSmart {
                 return item;
             });
             
+            // NEW: Prioritize Chrome Sync Pro status over local storage
+            let proStatus = localData.isPro || false;
+            
+            if (syncData.isPro && syncData.lastSync && syncData.extensionId === 'nbpndheaoecmgnlmfpleeahoicpcbppj') {
+                const daysSinceSync = (Date.now() - syncData.lastSync) / (1000 * 60 * 60 * 24);
+                
+                if (daysSinceSync < 30) {
+                    console.log('✅ Using Chrome Sync Pro status (age: ' + daysSinceSync.toFixed(1) + ' days)');
+                    proStatus = syncData.isPro;
+                    
+                    // Update local storage with synced status
+                    if (syncData.subscriptionData) {
+                        await chrome.storage.local.set({
+                            isPro: proStatus,
+                            subscriptionData: syncData.subscriptionData,
+                            lastProStatusCheck: Date.now(),
+                            source: 'chrome_sync'
+                        });
+                    }
+                } else {
+                    console.log('⚠️ Chrome Sync data is too old (' + daysSinceSync.toFixed(1) + ' days), using local');
+                }
+            }
+            
             // Load Pro status and subscription info from storage
-            this.isPro = data.isPro || false;
-            this.subscriptionPlan = data.subscriptionPlan || 'unknown';
-            this.subscriptionInterval = data.subscriptionInterval || 'month';
-            this.settings = data.settings || this.getDefaultSettings();
-            this.sortOrder = data.sortOrder || 'newest'; // Načítaj sortOrder z storage
+            this.isPro = proStatus;
+            this.subscriptionPlan = localData.subscriptionPlan || 'unknown';
+            this.subscriptionInterval = localData.subscriptionInterval || 'month';
+            this.settings = localData.settings || this.getDefaultSettings();
+            this.sortOrder = localData.sortOrder || 'newest'; // Načítaj sortOrder z storage
             
             // Load tags
-            if (data.tags) {
-                if (Array.isArray(data.tags)) {
-                    this.tags = new Set(data.tags);
-                } else if (typeof data.tags === 'string') {
-                    this.tags = new Set([data.tags]);
+            if (localData.tags) {
+                if (Array.isArray(localData.tags)) {
+                    this.tags = new Set(localData.tags);
+                } else if (typeof localData.tags === 'string') {
+                    this.tags = new Set([localData.tags]);
                 } else {
                     this.tags = new Set();
                 }
@@ -534,29 +563,50 @@ class ClipSmart {
         }
     }
 
-    // New function to check ExtensionPay status
+    // NEW: Function to sync Pro status with background ProStatusManager
     async checkExtensionPayStatus() {
         try {
-            // Check ExtensionPay storage for user data
-            const syncData = await chrome.storage.sync.get(['extensionpay_user']);
-            const localData = await chrome.storage.local.get(['extensionpay_user']);
+            console.log('🔄 Popup: Requesting Pro status sync from background...');
             
-            const extensionpayUser = syncData.extensionpay_user || localData.extensionpay_user;
+            // Request Pro status sync from background script
+            const response = await chrome.runtime.sendMessage({ action: 'syncProStatus' });
             
-            if (extensionpayUser && extensionpayUser.paid && !this.isPro) {
-                console.log('💰 Found paid user in ExtensionPay data, updating isPro status');
-                this.isPro = true;
-                await chrome.storage.local.set({ isPro: true });
-                console.log('✅ Updated isPro status to true from ExtensionPay data');
-                this.updateUpgradeButton();
-                this.updateUIText(); // Aktualizuje UI vrátane sortSelect
-            } else if (extensionpayUser && !extensionpayUser.paid && this.isPro) {
-                console.log('⚠️ User is not paid in ExtensionPay data, updating isPro status');
-                this.isPro = false;
-                await chrome.storage.local.set({ isPro: false });
-                console.log('✅ Updated isPro status to false from ExtensionPay data');
-                this.updateUpgradeButton();
-                this.updateUIText(); // Aktualizuje UI vrátane sortSelect
+            if (response && response.success) {
+                const newProStatus = response.isPro;
+                
+                if (newProStatus !== this.isPro) {
+                    console.log(`💰 Pro status changed from ${this.isPro} to ${newProStatus}`);
+                    this.isPro = newProStatus;
+                    this.updateUpgradeButton();
+                    this.updateUIText(); // Aktualizuje UI vrátane sortSelect
+                    this.updatePremiumModeCheckbox();
+                }
+                
+                console.log('✅ Pro status synchronized:', newProStatus);
+            } else {
+                console.log('⚠️ Pro status sync failed, using fallback method');
+                
+                // Fallback na pôvodnú logiku
+                const syncData = await chrome.storage.sync.get(['extensionpay_user']);
+                const localData = await chrome.storage.local.get(['extensionpay_user']);
+                
+                const extensionpayUser = syncData.extensionpay_user || localData.extensionpay_user;
+                
+                if (extensionpayUser && extensionpayUser.paid && !this.isPro) {
+                    console.log('💰 Found paid user in ExtensionPay data, updating isPro status');
+                    this.isPro = true;
+                    await chrome.storage.local.set({ isPro: true });
+                    console.log('✅ Updated isPro status to true from ExtensionPay data');
+                    this.updateUpgradeButton();
+                    this.updateUIText(); // Aktualizuje UI vrátane sortSelect
+                } else if (extensionpayUser && !extensionpayUser.paid && this.isPro) {
+                    console.log('⚠️ User is not paid in ExtensionPay data, updating isPro status');
+                    this.isPro = false;
+                    await chrome.storage.local.set({ isPro: false });
+                    console.log('✅ Updated isPro status to false from ExtensionPay data');
+                    this.updateUpgradeButton();
+                    this.updateUIText(); // Aktualizuje UI vrátane sortSelect
+                }
             }
             
         } catch (error) {
@@ -710,6 +760,41 @@ class ClipSmart {
                         this.updateItemCount();
                         console.log('✅ Popup updated with new data');
                     });
+                }
+            }
+            
+            // NEW: Listen for Chrome Sync storage changes
+            if (namespace === 'sync') {
+                if (changes.isPro || changes.subscriptionData) {
+                    console.log('🔄 Chrome Sync Pro status changed, updating popup...');
+                    
+                    if (changes.isPro) {
+                        const newProStatus = changes.isPro.newValue;
+                        if (newProStatus !== this.isPro) {
+                            console.log(`💰 Sync: Pro status changed from ${this.isPro} to ${newProStatus}`);
+                            this.isPro = newProStatus;
+                            this.updateLimits();
+                            this.updateUIText();
+                            this.updatePremiumModeCheckbox();
+                            this.updateUpgradeButton();
+                            this.updateTranslationQuota();
+                            this.renderContent();
+                            this.updateItemCount();
+                        }
+                    }
+                    
+                    if (changes.subscriptionData) {
+                        console.log('💎 Sync: Subscription data changed');
+                        const subscriptionData = changes.subscriptionData.newValue;
+                        if (subscriptionData) {
+                            // Update subscription info from sync data
+                            if (subscriptionData.plan) {
+                                this.subscriptionPlan = subscriptionData.plan.nickname || 'unknown';
+                                this.subscriptionInterval = subscriptionData.plan.interval || 'month';
+                            }
+                            this.updateSubscriptionInfo();
+                        }
+                    }
                 }
             }
         });
