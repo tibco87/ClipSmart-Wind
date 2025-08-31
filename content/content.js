@@ -17,8 +17,9 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                     sendResponse({ text });
                 })
                 .catch((error) => {
-                    console.error('❌ Chyba pri čítaní clipboard:', error);
-                    sendResponse({ text: "", error: error.message });
+                    // Silent error handling - don't log to console to avoid Chrome extension errors
+                    console.log('📋 Clipboard read failed silently');
+                    sendResponse({ text: "", error: null });
                 });
         } else {
             console.log('⚠️ Clipboard API nie je dostupné, používam fallback');
@@ -45,7 +46,7 @@ document.addEventListener('copy', (event) => {
             text: selectedText,
             source: 'copy-event'
         }).catch(error => {
-            console.error('❌ Chyba pri posielaní správy:', error);
+            console.log('📋 Copy message send failed silently');
         });
     }
 });
@@ -66,7 +67,7 @@ document.addEventListener('paste', (event) => {
             text: pastedText,
             source: 'paste-event'
         }).catch(error => {
-            console.error('❌ Chyba pri posielaní správy:', error);
+            console.log('📋 Paste message send failed silently');
         });
     }
 });
@@ -91,7 +92,7 @@ async function copyToClipboard(text) {
             showNotification('Copied to clipboard!');
         }
     } catch (error) {
-        console.error('Failed to copy:', error);
+        console.log('📋 Copy to clipboard failed silently');
         showNotification('Failed to copy to clipboard', 'error');
     }
 }
