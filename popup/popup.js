@@ -1583,11 +1583,26 @@ class ClipSmart {
 
         try {
             const translation = await new Promise((resolve, reject) => {
+                // Add timeout to prevent hanging
+                const timeout = setTimeout(() => {
+                    reject(new Error('Translation timeout'));
+                }, 10000); // 10 second timeout
+                
                 chrome.runtime.sendMessage(
                     { action: 'translateText', text, targetLang },
                     (response) => {
-                        if (response && response.success) resolve(response.translation);
-                        else reject(response?.error || 'Translation failed');
+                        clearTimeout(timeout);
+                        
+                        if (chrome.runtime.lastError) {
+                            reject(new Error(chrome.runtime.lastError.message));
+                            return;
+                        }
+                        
+                        if (response && response.success) {
+                            resolve(response.translation);
+                        } else {
+                            reject(new Error(response?.error || 'Translation failed'));
+                        }
                     }
                 );
             });

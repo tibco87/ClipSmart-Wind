@@ -436,21 +436,39 @@ chrome.runtime.onInstalled.addListener(async (details) => {
 const TRANSLATE_PROXY_URL = 'https://clipsmart-translation-proxy.vercel.app/translate';
 
 // Listen for messages from popup.js for translation
-chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === 'translateText') {
         const { text, targetLang } = request;
         
-        translateText(text, targetLang)
-            .then(translation => {
-                sendResponse({ success: true, translation });
-            })
-            .catch(error => {
-                // Silent error handling - don't log to console to avoid Chrome extension errors
-                console.log('📋 Translation error silently:', error?.message || 'Unknown error');
-                sendResponse({ success: false, error: error.message });
-            });
+        // Handle translation with proper error handling
+        try {
+            translateText(text, targetLang)
+                .then(translation => {
+                    try {
+                        sendResponse({ success: true, translation });
+                    } catch (sendError) {
+                        console.log('📋 SendResponse failed silently:', sendError?.message || 'Unknown error');
+                    }
+                })
+                .catch(error => {
+                    try {
+                        // Silent error handling - don't log to console to avoid Chrome extension errors
+                        console.log('📋 Translation error silently:', error?.message || 'Unknown error');
+                        sendResponse({ success: false, error: error.message });
+                    } catch (sendError) {
+                        console.log('📋 SendResponse failed silently:', sendError?.message || 'Unknown error');
+                    }
+                });
+        } catch (error) {
+            try {
+                console.log('📋 Translation handler error silently:', error?.message || 'Unknown error');
+                sendResponse({ success: false, error: 'Translation handler error' });
+            } catch (sendError) {
+                console.log('📋 SendResponse failed silently:', sendError?.message || 'Unknown error');
+            }
+        }
         
-        return true; // async response
+        return true; // Keep message channel open
     } else if (request.action === 'getApiKey') {
         // Return API key for translations (stored securely)
         chrome.storage.local.get(['openaiApiKey'], (data) => {
@@ -516,13 +534,13 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
         if (ratingManager) {
             switch (request.ratingAction) {
                 case 'completed':
-                    await ratingManager.markRatingCompleted(request.rating, request.feedback);
+                    ratingManager.markRatingCompleted(request.rating, request.feedback);
                     break;
                 case 'later':
-                    await ratingManager.scheduleRatingForLater();
+                    ratingManager.scheduleRatingForLater();
                     break;
                 case 'skipped':
-                    await ratingManager.skipRating();
+                    ratingManager.skipRating();
                     break;
                 default:
                     console.log('⚠️ Unknown rating action:', request.ratingAction);
