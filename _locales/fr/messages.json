@@ -399,7 +399,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "Plan mensuel", 
+    "message": "Plan mensuel",
     "description": "Monthly subscription plan name"
   },
   "plan": {
@@ -449,5 +449,37 @@
   "monthlyPrice": {
     "message": "€3,99/mois",
     "description": "Monthly plan price"
+  },
+  "rateUs": {
+    "message": "Évaluer ClipSmart",
+    "description": "Rating modal title"
+  },
+  "rateUsDescription": {
+    "message": "Comment évalueriez-vous votre expérience ?",
+    "description": "Rating modal subtitle"
+  },
+  "rateInChromeStore": {
+    "message": "Évaluer sur Chrome Web Store",
+    "description": "Rate button text"
+  },
+  "later": {
+    "message": "Plus tard",
+    "description": "Later button text"
+  },
+  "alreadyRated": {
+    "message": "Déjà évalué",
+    "description": "Already rated button text"
+  },
+  "feedbackPlaceholder": {
+    "message": "Dites-nous ce que vous aimez ou ce que nous devrions améliorer...",
+    "description": "Feedback textarea placeholder"
+  },
+  "submitFeedback": {
+    "message": "Envoyer le feedback",
+    "description": "Submit feedback button text"
+  },
+  "skip": {
+    "message": "Passer",
+    "description": "Skip button text"
   }
-} 
+}

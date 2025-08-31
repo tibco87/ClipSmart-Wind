@@ -441,5 +441,37 @@
   "rateMeTooltip": {
     "message": "Ohodnoťte nás v Chrome Web Store",
     "description": "Rate Me button tooltip"
+  },
+  "rateUs": {
+    "message": "Ohodnoťte ClipSmart",
+    "description": "Rating modal title"
+  },
+  "rateUsDescription": {
+    "message": "Jak byste ohodnotili vaši zkušenost?",
+    "description": "Rating modal subtitle"
+  },
+  "rateInChromeStore": {
+    "message": "Ohodnotit v Chrome Web Store",
+    "description": "Rate button text"
+  },
+  "later": {
+    "message": "Později",
+    "description": "Later button text"
+  },
+  "alreadyRated": {
+    "message": "Už ohodnoceno",
+    "description": "Already rated button text"
+  },
+  "feedbackPlaceholder": {
+    "message": "Řekněte nám, co se vám líbí nebo co bychom měli vylepšit...",
+    "description": "Feedback textarea placeholder"
+  },
+  "submitFeedback": {
+    "message": "Odeslat feedback",
+    "description": "Submit feedback button text"
+  },
+  "skip": {
+    "message": "Přeskočit",
+    "description": "Skip button text"
   }
 }

@@ -383,7 +383,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "Gói hàng tháng", 
+    "message": "Gói hàng tháng",
     "description": "Monthly subscription plan name"
   },
   "plan": {
@@ -433,5 +433,37 @@
   "monthlyPrice": {
     "message": "€3,99/tháng",
     "description": "Monthly plan price"
+  },
+  "rateUs": {
+    "message": "Đánh giá ClipSmart",
+    "description": "Rating modal title"
+  },
+  "rateUsDescription": {
+    "message": "Bạn đánh giá trải nghiệm của mình như thế nào?",
+    "description": "Rating modal subtitle"
+  },
+  "rateInChromeStore": {
+    "message": "Đánh giá trên Chrome Web Store",
+    "description": "Rate button text"
+  },
+  "later": {
+    "message": "Sau",
+    "description": "Later button text"
+  },
+  "alreadyRated": {
+    "message": "Đã đánh giá",
+    "description": "Already rated button text"
+  },
+  "feedbackPlaceholder": {
+    "message": "Hãy cho chúng tôi biết bạn thích gì hoặc chúng tôi nên cải thiện gì...",
+    "description": "Feedback textarea placeholder"
+  },
+  "submitFeedback": {
+    "message": "Gửi phản hồi",
+    "description": "Submit feedback button text"
+  },
+  "skip": {
+    "message": "Bỏ qua",
+    "description": "Skip button text"
   }
 }

@@ -465,5 +465,37 @@
   "rateMeTooltip": {
     "message": "Chrome Web Store पर हमें रेट करें",
     "description": "Rate Me button tooltip"
+  },
+  "rateUs": {
+    "message": "ClipSmart को रेट करें",
+    "description": "Rating modal title"
+  },
+  "rateUsDescription": {
+    "message": "आप अपने अनुभव को कैसे रेट करेंगे?",
+    "description": "Rating modal subtitle"
+  },
+  "rateInChromeStore": {
+    "message": "Chrome Web Store में रेट करें",
+    "description": "Rate button text"
+  },
+  "later": {
+    "message": "बाद में",
+    "description": "Later button text"
+  },
+  "alreadyRated": {
+    "message": "पहले से ही रेट किया गया",
+    "description": "Already rated button text"
+  },
+  "feedbackPlaceholder": {
+    "message": "हमें बताएं कि आपको क्या पसंद है या हमें क्या सुधारना चाहिए...",
+    "description": "Feedback textarea placeholder"
+  },
+  "submitFeedback": {
+    "message": "फीडबैक सबमिट करें",
+    "description": "Submit feedback button text"
+  },
+  "skip": {
+    "message": "छोड़ें",
+    "description": "Skip button text"
   }
 }

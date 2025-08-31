@@ -437,5 +437,37 @@
   "rateMeTooltip": {
     "message": "Beri rating kami di Chrome Web Store",
     "description": "Rate Me button tooltip"
+  },
+  "rateUs": {
+    "message": "Beri Rating ClipSmart",
+    "description": "Rating modal title"
+  },
+  "rateUsDescription": {
+    "message": "Bagaimana Anda menilai pengalaman Anda?",
+    "description": "Rating modal subtitle"
+  },
+  "rateInChromeStore": {
+    "message": "Beri Rating di Chrome Web Store",
+    "description": "Rate button text"
+  },
+  "later": {
+    "message": "Nanti",
+    "description": "Later button text"
+  },
+  "alreadyRated": {
+    "message": "Sudah di-rating",
+    "description": "Already rated button text"
+  },
+  "feedbackPlaceholder": {
+    "message": "Beri tahu kami apa yang Anda suka atau apa yang harus kami tingkatkan...",
+    "description": "Feedback textarea placeholder"
+  },
+  "submitFeedback": {
+    "message": "Kirim Feedback",
+    "description": "Submit feedback button text"
+  },
+  "skip": {
+    "message": "Lewati",
+    "description": "Skip button text"
   }
 }

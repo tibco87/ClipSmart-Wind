@@ -107,6 +107,38 @@
     "message": "Rate us on Chrome Web Store",
     "description": "Rate Me button tooltip"
   },
+  "rateUs": {
+    "message": "Rate ClipSmart",
+    "description": "Rating modal title"
+  },
+  "rateUsDescription": {
+    "message": "How would you rate your experience?",
+    "description": "Rating modal subtitle"
+  },
+  "rateInChromeStore": {
+    "message": "Rate in Chrome Store",
+    "description": "Rate button text"
+  },
+  "later": {
+    "message": "Later",
+    "description": "Later button text"
+  },
+  "alreadyRated": {
+    "message": "Already rated",
+    "description": "Already rated button text"
+  },
+  "feedbackPlaceholder": {
+    "message": "Tell us what you like or what we should improve...",
+    "description": "Feedback textarea placeholder"
+  },
+  "submitFeedback": {
+    "message": "Submit Feedback",
+    "description": "Submit feedback button text"
+  },
+  "skip": {
+    "message": "Skip",
+    "description": "Skip button text"
+  },
   "items": {
     "message": "items",
     "description": "Items count label"

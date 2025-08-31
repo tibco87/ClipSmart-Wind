@@ -1704,6 +1704,11 @@ class ClipSmart {
         
         // Update Rate Me button text
         this.updateRateMeButtonText();
+        
+        // Update rating modal texts if modal is open
+        if (this.ratingModal) {
+            this.updateRatingModalTexts();
+        }
     }
 
     updateTranslationQuota() {
@@ -2605,18 +2610,64 @@ class ClipSmart {
         }
     }
     
+    updateRatingModalTexts() {
+        if (!this.ratingModal) return;
+        
+        // Update modal title and subtitle
+        const title = this.ratingModal.querySelector('.rating-title');
+        if (title) {
+            title.textContent = `🎉 ${this.getMessage('rateUs') || 'Rate ClipSmart'}`;
+        }
+        
+        const subtitle = this.ratingModal.querySelector('.rating-subtitle');
+        if (subtitle) {
+            subtitle.textContent = this.getMessage('rateUsDescription') || 'How would you rate your experience?';
+        }
+        
+        // Update button texts
+        const rateButton = this.ratingModal.querySelector('#rateButton');
+        if (rateButton) {
+            rateButton.textContent = this.getMessage('rateInChromeStore') || 'Rate in Chrome Store';
+        }
+        
+        const laterButton = this.ratingModal.querySelector('#laterButton');
+        if (laterButton) {
+            laterButton.textContent = this.getMessage('later') || 'Later';
+        }
+        
+        const skipButton = this.ratingModal.querySelector('#skipButton');
+        if (skipButton) {
+            skipButton.textContent = this.getMessage('alreadyRated') || 'Already rated';
+        }
+        
+        // Update feedback elements
+        const feedbackTextarea = this.ratingModal.querySelector('#ratingFeedback textarea');
+        if (feedbackTextarea) {
+            feedbackTextarea.placeholder = this.getMessage('feedbackPlaceholder') || 'Tell us what you like or what we should improve...';
+        }
+        
+        const submitButton = this.ratingModal.querySelector('#submitFeedback');
+        if (submitButton) {
+            submitButton.textContent = this.getMessage('submitFeedback') || 'Submit Feedback';
+        }
+        
+        const skipFeedbackButton = this.ratingModal.querySelector('#skipFeedback');
+        if (skipFeedbackButton) {
+            skipFeedbackButton.textContent = this.getMessage('skip') || 'Skip';
+        }
+    }
+    
     openChromeStoreForRating() {
-        console.log('⭐ Opening Chrome Store for rating...');
+        console.log('⭐ Opening rating modal directly...');
         
-        const storeUrl = 'https://chrome.google.com/webstore/detail/clipsmart-smart-clipboard/nbpndheaoecmgnlmfpleeahoicpcbppj';
+        // Show rating modal directly instead of opening Chrome Store
+        this.showRatingModal({
+            storeUrl: 'https://chrome.google.com/webstore/detail/clipsmart-smart-clipboard/nbpndheaoecmgnlmfpleeahoicpcbppj',
+            showFeedback: true,
+            allowSkip: true
+        });
         
-        // Open Chrome Store
-        chrome.tabs.create({ url: storeUrl });
-        
-        // Mark as rated to prevent modal from showing
-        this.handleRatingAction('completed', 5, 'Opened via Rate Me button');
-        
-        console.log('✅ Chrome Store opened for rating');
+        console.log('✅ Rating modal opened directly');
     }
     
     showRatingModal(config) {
@@ -2632,10 +2683,9 @@ class ClipSmart {
             <div class="rating-modal" id="ratingModal">
                 <div class="rating-content">
                     <div class="rating-header">
-                        <div class="rating-title">🎉 Ďakujeme za používanie ClipSmart!</div>
+                        <div class="rating-title">🎉 ${this.getMessage('rateUs') || 'Rate ClipSmart'}</div>
                         <div class="rating-subtitle">
-                            Ak sa vám rozšírenie páči, ohodnoťte ho v Chrome Web Store. 
-                            Pomôže nám to dosiahnuť viac používateľov.
+                            ${this.getMessage('rateUsDescription') || 'How would you rate your experience?'}
                         </div>
                     </div>
 
@@ -2649,25 +2699,25 @@ class ClipSmart {
 
                     <div class="rating-buttons">
                         <button class="rating-btn rating-btn-primary" id="rateButton" style="display: none;">
-                            Ohodnotiť v Chrome Store
+                            ${this.getMessage('rateInChromeStore') || 'Rate in Chrome Store'}
                         </button>
                         <button class="rating-btn rating-btn-secondary" id="laterButton">
-                            Neskôr
+                            ${this.getMessage('later') || 'Later'}
                         </button>
                     </div>
 
                     <button class="rating-btn-skip" id="skipButton">
-                        Už som ohodnotil
+                        ${this.getMessage('alreadyRated') || 'Already rated'}
                     </button>
 
                     <div class="rating-feedback" id="ratingFeedback">
-                        <textarea placeholder="Povedzte nám, čo sa vám páči alebo čo by sme mali vylepšiť..."></textarea>
+                        <textarea placeholder="${this.getMessage('feedbackPlaceholder') || 'Tell us what you like or what we should improve...'}"></textarea>
                         <div class="feedback-buttons">
                             <button class="feedback-btn feedback-btn-primary" id="submitFeedback">
-                                Odoslať feedback
+                                ${this.getMessage('submitFeedback') || 'Submit Feedback'}
                             </button>
                             <button class="feedback-btn feedback-btn-secondary" id="skipFeedback">
-                                Preskočiť
+                                ${this.getMessage('skip') || 'Skip'}
                             </button>
                         </div>
                     </div>

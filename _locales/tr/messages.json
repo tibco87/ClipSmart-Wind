@@ -395,7 +395,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "Aylık plan", 
+    "message": "Aylık plan",
     "description": "Monthly subscription plan name"
   },
   "plan": {
@@ -445,5 +445,37 @@
   "monthlyPrice": {
     "message": "€3,99/ay",
     "description": "Monthly plan price"
+  },
+  "rateUs": {
+    "message": "ClipSmart'i Değerlendir",
+    "description": "Rating modal title"
+  },
+  "rateUsDescription": {
+    "message": "Deneyiminizi nasıl değerlendirirsiniz?",
+    "description": "Rating modal subtitle"
+  },
+  "rateInChromeStore": {
+    "message": "Chrome Web Store'da Değerlendir",
+    "description": "Rate button text"
+  },
+  "later": {
+    "message": "Daha sonra",
+    "description": "Later button text"
+  },
+  "alreadyRated": {
+    "message": "Zaten değerlendirildi",
+    "description": "Already rated button text"
+  },
+  "feedbackPlaceholder": {
+    "message": "Ne hoşlandığınızı veya neyi iyileştirmemiz gerektiğini söyleyin...",
+    "description": "Feedback textarea placeholder"
+  },
+  "submitFeedback": {
+    "message": "Geri Bildirim Gönder",
+    "description": "Submit feedback button text"
+  },
+  "skip": {
+    "message": "Atla",
+    "description": "Skip button text"
   }
-} 
+}
