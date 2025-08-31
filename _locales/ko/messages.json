@@ -453,45 +453,5 @@
   "advancedTaggingOld": {
     "message": "고급 태그 지정",
     "description": "Advanced tagging feature"
-  },
-  "rateMe": {
-    "message": "평가",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Chrome Web Store에서 평가해주세요",
-    "description": "Rate Me button tooltip"
-  },
-  "rateUs": {
-    "message": "ClipSmart 평가",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "경험을 어떻게 평가하시겠습니까?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Chrome Web Store에서 평가",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "나중에",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "이미 평가됨",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "무엇이 마음에 드는지, 무엇을 개선해야 하는지 알려주세요...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "피드백 제출",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "건너뛰기",
-    "description": "Skip button text"
   }
 }

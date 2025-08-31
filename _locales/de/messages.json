@@ -99,14 +99,6 @@
     "message": "Support",
     "description": "Support Link"
   },
-  "rateMe": {
-    "message": "Bewerten",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Bewerten Sie uns im Chrome Web Store",
-    "description": "Rate Me button tooltip"
-  },
   "upgradeProOld": {
     "message": "Pro-Version freischalten",
     "description": "Upgrade Pro Button-Beschriftung (deprecated)"
@@ -437,37 +429,5 @@
   "monthlyPrice": {
     "message": "€3,99/Monat",
     "description": "Monthly plan price"
-  },
-  "rateUs": {
-    "message": "ClipSmart bewerten",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Wie würden Sie Ihre Erfahrung bewerten?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Im Chrome Store bewerten",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Später",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Bereits bewertet",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Sagen Sie uns, was Ihnen gefällt oder was wir verbessern sollten...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Feedback senden",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Überspringen",
-    "description": "Skip button text"
   }
 }

@@ -449,45 +449,5 @@
   "advancedTaggingOld": {
     "message": "高级标签",
     "description": "Advanced tagging feature"
-  },
-  "rateMe": {
-    "message": "评价",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "在Chrome Web Store上评价我们",
-    "description": "Rate Me button tooltip"
-  },
-  "rateUs": {
-    "message": "评价 ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "您如何评价您的体验？",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "在Chrome Web Store评价",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "稍后",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "已评价",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "告诉我们您喜欢什么或我们应该改进什么...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "提交反馈",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "跳过",
-    "description": "Skip button text"
   }
 }

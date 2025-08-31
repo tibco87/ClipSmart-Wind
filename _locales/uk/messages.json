@@ -437,45 +437,5 @@
   "monthlyPrice": {
     "message": "€3,99/місяць",
     "description": "Monthly plan price"
-  },
-  "rateMe": {
-    "message": "Оцінити",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Оцініть нас у Chrome Web Store",
-    "description": "Rate Me button tooltip"
-  },
-  "rateUs": {
-    "message": "Оцінити ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Як би ви оцінили свій досвід?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Оцінити в Chrome Web Store",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Пізніше",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Вже оцінено",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Розкажіть, що вам подобається або що ми повинні покращити...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Надіслати відгук",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Пропустити",
-    "description": "Skip button text"
   }
 }

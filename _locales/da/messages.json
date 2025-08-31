@@ -99,14 +99,6 @@
     "message": "Support",
     "description": "Support link"
   },
-  "rateMe": {
-    "message": "Bedøm",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Bedøm os på Chrome Web Store",
-    "description": "Rate Me button tooltip"
-  },
   "upgradePro": {
     "message": "Opgrader til Pro",
     "description": "Opgrader til Pro knap tekst"
@@ -445,37 +437,5 @@
   "monthlyPrice": {
     "message": "€3,99/måned",
     "description": "Monthly plan price"
-  },
-  "rateUs": {
-    "message": "Bedøm ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Hvordan vil du bedømme din oplevelse?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Bedøm på Chrome Web Store",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Senere",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Allerede bedømt",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Fortæl os hvad du kan lide eller hvad vi skal forbedre...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Send feedback",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Spring over",
-    "description": "Skip button text"
   }
 }

@@ -57,8 +57,7 @@ class ClipSmart {
         // Initialize rating system
         this.initializeRatingSystem();
         
-        // Setup Rate Me button
-        this.setupRateMeButton();
+
         
         if (!window.ExtPay) {
             console.error('❌ ExtensionPay failed to load after 10 retries');
@@ -1702,13 +1701,7 @@ class ClipSmart {
         // Update premium mode checkbox
         this.updatePremiumModeCheckbox();
         
-        // Update Rate Me button text
-        this.updateRateMeButtonText();
-        
-        // Update rating modal texts if modal is open
-        if (this.ratingModal) {
-            this.updateRatingModalTexts();
-        }
+
     }
 
     updateTranslationQuota() {
@@ -2577,98 +2570,7 @@ class ClipSmart {
         });
     }
     
-    setupRateMeButton() {
-        console.log('⭐ Setting up Rate Me button...');
-        
-        // Wait for DOM to be ready
-        setTimeout(() => {
-            const rateMeBtn = document.getElementById('rateMeBtn');
-            if (rateMeBtn) {
-                rateMeBtn.addEventListener('click', () => {
-                    this.openChromeStoreForRating();
-                });
-                
-                // Update button text with localization
-                this.updateRateMeButtonText();
-                
-                console.log('✅ Rate Me button setup complete');
-            } else {
-                console.warn('⚠️ Rate Me button not found in DOM');
-            }
-        }, 100);
-    }
-    
-    updateRateMeButtonText() {
-        const rateMeText = document.getElementById('rateMeText');
-        if (rateMeText) {
-            rateMeText.textContent = this.getMessage('rateMe') || 'Rate Me';
-        }
-        
-        const rateMeBtn = document.getElementById('rateMeBtn');
-        if (rateMeBtn) {
-            rateMeBtn.title = this.getMessage('rateMeTooltip') || 'Rate us on Chrome Web Store';
-        }
-    }
-    
-    updateRatingModalTexts() {
-        if (!this.ratingModal) return;
-        
-        // Update modal title and subtitle
-        const title = this.ratingModal.querySelector('.rating-title');
-        if (title) {
-            title.textContent = `🎉 ${this.getMessage('rateUs') || 'Rate ClipSmart'}`;
-        }
-        
-        const subtitle = this.ratingModal.querySelector('.rating-subtitle');
-        if (subtitle) {
-            subtitle.textContent = this.getMessage('rateUsDescription') || 'How would you rate your experience?';
-        }
-        
-        // Update button texts
-        const rateButton = this.ratingModal.querySelector('#rateButton');
-        if (rateButton) {
-            rateButton.textContent = this.getMessage('rateInChromeStore') || 'Rate in Chrome Store';
-        }
-        
-        const laterButton = this.ratingModal.querySelector('#laterButton');
-        if (laterButton) {
-            laterButton.textContent = this.getMessage('later') || 'Later';
-        }
-        
-        const skipButton = this.ratingModal.querySelector('#skipButton');
-        if (skipButton) {
-            skipButton.textContent = this.getMessage('alreadyRated') || 'Already rated';
-        }
-        
-        // Update feedback elements
-        const feedbackTextarea = this.ratingModal.querySelector('#ratingFeedback textarea');
-        if (feedbackTextarea) {
-            feedbackTextarea.placeholder = this.getMessage('feedbackPlaceholder') || 'Tell us what you like or what we should improve...';
-        }
-        
-        const submitButton = this.ratingModal.querySelector('#submitFeedback');
-        if (submitButton) {
-            submitButton.textContent = this.getMessage('submitFeedback') || 'Submit Feedback';
-        }
-        
-        const skipFeedbackButton = this.ratingModal.querySelector('#skipFeedback');
-        if (skipFeedbackButton) {
-            skipFeedbackButton.textContent = this.getMessage('skip') || 'Skip';
-        }
-    }
-    
-    openChromeStoreForRating() {
-        console.log('⭐ Opening rating modal directly...');
-        
-        // Show rating modal directly instead of opening Chrome Store
-        this.showRatingModal({
-            storeUrl: 'https://chrome.google.com/webstore/detail/clipsmart-smart-clipboard/nbpndheaoecmgnlmfpleeahoicpcbppj',
-            showFeedback: true,
-            allowSkip: true
-        });
-        
-        console.log('✅ Rating modal opened directly');
-    }
+
     
     showRatingModal(config) {
         console.log('🌟 Showing rating modal with config:', config);

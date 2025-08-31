@@ -99,14 +99,6 @@
     "message": "Support",
     "description": "Support länk"
   },
-  "rateMe": {
-    "message": "Betygsätt",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Betygsätt oss på Chrome Web Store",
-    "description": "Rate Me button tooltip"
-  },
   "items": {
     "message": "objekt",
     "description": "Objekt antal etikett"
@@ -433,37 +425,5 @@
   "monthlyPrice": {
     "message": "€3,99/månad",
     "description": "Monthly plan price"
-  },
-  "rateUs": {
-    "message": "Betygsätt ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Hur skulle du betygsätta din upplevelse?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Betygsätt på Chrome Web Store",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Senare",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Redan betygsatt",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Berätta för oss vad du gillar eller vad vi ska förbättra...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Skicka feedback",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Hoppa över",
-    "description": "Skip button text"
   }
 }

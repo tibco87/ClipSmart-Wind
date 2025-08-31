@@ -429,45 +429,5 @@
   "monthlyPrice": {
     "message": "€3,99/hónap",
     "description": "Monthly plan price"
-  },
-  "rateMe": {
-    "message": "Értékelés",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Értékeljen minket a Chrome Web Store-ban",
-    "description": "Rate Me button tooltip"
-  },
-  "rateUs": {
-    "message": "Értékelje a ClipSmart-ot",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Hogyan értékelné az élményét?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Értékelés a Chrome Web Store-ban",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Később",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Már értékelt",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Mondja el, mit szeret vagy mit kellene javítanunk...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Visszajelzés küldése",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Kihagyás",
-    "description": "Skip button text"
   }
 }

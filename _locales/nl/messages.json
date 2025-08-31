@@ -99,14 +99,6 @@
     "message": "Ondersteuning",
     "description": "Ondersteuning link"
   },
-  "rateMe": {
-    "message": "Beoordelen",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Beoordeel ons op Chrome Web Store",
-    "description": "Rate Me button tooltip"
-  },
   "items": {
     "message": "items",
     "description": "Items aantal label"
@@ -433,37 +425,5 @@
   "monthlyPrice": {
     "message": "€3,99/maand",
     "description": "Monthly plan price"
-  },
-  "rateUs": {
-    "message": "Beoordeel ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Hoe zou je je ervaring beoordelen?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Beoordeel in Chrome Web Store",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Later",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Al beoordeeld",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Vertel ons wat je leuk vindt of wat we moeten verbeteren...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Feedback verzenden",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Overslaan",
-    "description": "Skip button text"
   }
 }

@@ -99,14 +99,6 @@
     "message": "Поддержка",
     "description": "Ссылка поддержки"
   },
-  "rateMe": {
-    "message": "Оценить",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Оцените нас в Chrome Web Store",
-    "description": "Rate Me button tooltip"
-  },
   "items": {
     "message": "элементов",
     "description": "Метка количества элементов"
@@ -433,37 +425,5 @@
   "monthlyPrice": {
     "message": "€3,99/месяц",
     "description": "Monthly plan price"
-  },
-  "rateUs": {
-    "message": "Оценить ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Как бы вы оценили свой опыт?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Оценить в Chrome Web Store",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Позже",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Уже оценено",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Расскажите, что вам нравится или что мы должны улучшить...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Отправить отзыв",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Пропустить",
-    "description": "Skip button text"
   }
 }

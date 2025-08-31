@@ -453,45 +453,5 @@
   "advancedTaggingOld": {
     "message": "高度なタグ付け",
     "description": "Advanced tagging feature"
-  },
-  "rateMe": {
-    "message": "評価",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Chrome Web Storeで評価してください",
-    "description": "Rate Me button tooltip"
-  },
-  "rateUs": {
-    "message": "ClipSmartを評価",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "あなたの体験をどのように評価しますか？",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Chrome Web Storeで評価",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "後で",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "既に評価済み",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "何が気に入ったか、何を改善すべきか教えてください...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "フィードバックを送信",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "スキップ",
-    "description": "Skip button text"
   }
 }

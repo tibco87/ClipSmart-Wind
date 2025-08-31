@@ -429,45 +429,5 @@
   "monthlyPrice": {
     "message": "€3.99/شهر",
     "description": "Monthly plan price"
-  },
-  "rateMe": {
-    "message": "قيم",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "قيمنا في Chrome Web Store",
-    "description": "Rate Me button tooltip"
-  },
-  "rateUs": {
-    "message": "قيم ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "كيف تقيم تجربتك؟",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "قيم في Chrome Web Store",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "لاحقاً",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "تم التقييم بالفعل",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "أخبرنا ما يعجبك أو ما يجب علينا تحسينه...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "إرسال التعليق",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "تخطي",
-    "description": "Skip button text"
   }
 }

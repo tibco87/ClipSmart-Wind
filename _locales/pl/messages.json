@@ -437,37 +437,5 @@
   "monthlyPrice": {
     "message": "€3,99/miesiąc",
     "description": "Monthly plan price"
-  },
-  "rateUs": {
-    "message": "Oceń ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Jak oceniasz swoje doświadczenie?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Oceń w Chrome Web Store",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Później",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Już ocenione",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Powiedz nam, co Ci się podoba lub co powinniśmy poprawić...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Wyślij feedback",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Pomiń",
-    "description": "Skip button text"
   }
 }

@@ -429,45 +429,5 @@
   "monthlyPrice": {
     "message": "€৩.৯৯/মাস",
     "description": "Monthly plan price"
-  },
-  "rateMe": {
-    "message": "রেটিং দিন",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Chrome Web Store এ আমাদের রেটিং দিন",
-    "description": "Rate Me button tooltip"
-  },
-  "rateUs": {
-    "message": "ClipSmart কে রেট করুন",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "আপনি আপনার অভিজ্ঞতাকে কীভাবে রেট করবেন?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Chrome Web Store এ রেট করুন",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "পরে",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "ইতিমধ্যে রেট করা হয়েছে",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "আমাদের বলুন আপনি কী পছন্দ করেন বা আমাদের কী উন্নত করা উচিত...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "ফিডব্যাক জমা দিন",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "এড়িয়ে যান",
-    "description": "Skip button text"
   }
 }

@@ -99,46 +99,6 @@
     "message": "Podpora",
     "description": "Support link"
   },
-  "rateMe": {
-    "message": "Ohodnotiť",
-    "description": "Rate Me button text"
-  },
-  "rateMeTooltip": {
-    "message": "Ohodnoťte nás v Chrome Web Store",
-    "description": "Rate Me button tooltip"
-  },
-  "rateUs": {
-    "message": "Ohodnoťte ClipSmart",
-    "description": "Rating modal title"
-  },
-  "rateUsDescription": {
-    "message": "Ako by ste ohodnotili vašu skúsenosť?",
-    "description": "Rating modal subtitle"
-  },
-  "rateInChromeStore": {
-    "message": "Ohodnotiť v Chrome Store",
-    "description": "Rate button text"
-  },
-  "later": {
-    "message": "Neskôr",
-    "description": "Later button text"
-  },
-  "alreadyRated": {
-    "message": "Už som ohodnotil",
-    "description": "Already rated button text"
-  },
-  "feedbackPlaceholder": {
-    "message": "Povedzte nám, čo sa vám páči alebo čo by sme mali vylepšiť...",
-    "description": "Feedback textarea placeholder"
-  },
-  "submitFeedback": {
-    "message": "Odoslať feedback",
-    "description": "Submit feedback button text"
-  },
-  "skip": {
-    "message": "Preskočiť",
-    "description": "Skip button text"
-  },
   "items": {
     "message": "položiek",
     "description": "Items count label"
@@ -419,7 +379,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "Mesačný plán", 
+    "message": "Mesačný plán",
     "description": "Monthly subscription plan name"
   },
   "plan": {
