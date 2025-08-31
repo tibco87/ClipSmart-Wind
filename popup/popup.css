@@ -292,6 +292,222 @@
     }
 }
 
+/* 🌟 Rating Modal Styles */
+.rating-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(4px);
+}
+
+.rating-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.rating-header {
+    margin-bottom: 20px;
+}
+
+.rating-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rating-subtitle {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px 0;
+}
+
+.star {
+    font-size: 32px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #ddd;
+}
+
+.star:hover,
+.star.active {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+.rating-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.rating-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.rating-btn-primary {
+    background: #4CAF50;
+    color: white;
+}
+
+.rating-btn-primary:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.rating-btn-secondary {
+    background: #f5f5f5;
+    color: #666;
+    border: 1px solid #ddd;
+}
+
+.rating-btn-secondary:hover {
+    background: #e8e8e8;
+}
+
+.rating-btn-skip {
+    background: transparent;
+    color: #999;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.rating-btn-skip:hover {
+    color: #666;
+}
+
+.rating-feedback {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    display: none;
+}
+
+.rating-feedback.show {
+    display: block;
+}
+
+.rating-feedback textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+.rating-feedback .feedback-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.rating-feedback .feedback-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.rating-feedback .feedback-btn-primary {
+    background: #2196F3;
+    color: white;
+}
+
+.rating-feedback .feedback-btn-secondary {
+    background: #f5f5f5;
+    color: #666;
+}
+
+/* Dark theme */
+[data-theme="dark"] .rating-content {
+    background: #1a1a1a;
+    color: white;
+}
+
+[data-theme="dark"] .rating-title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .rating-subtitle {
+    color: #cccccc;
+}
+
+[data-theme="dark"] .rating-btn-secondary {
+    background: #2a2a2a;
+    color: #cccccc;
+    border-color: #444;
+}
+
+[data-theme="dark"] .rating-subtitle {
+    color: #cccccc;
+}
+
+[data-theme="dark"] .rating-btn-secondary {
+    background: #2a2a2a;
+    color: #cccccc;
+    border-color: #444;
+}
+
+[data-theme="dark"] .rating-feedback {
+    background: #2a2a2a;
+}
+
+/* Responsive rating modal */
+@media (max-width: 480px) {
+    .rating-content {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .rating-title {
+        font-size: 20px;
+    }
+    
+    .rating-subtitle {
+        font-size: 14px;
+    }
+    
+    .star {
+        font-size: 28px;
+    }
+}
+
 :root {
     /* Light Theme */
     --bg-primary: #ffffff;

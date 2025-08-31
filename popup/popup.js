@@ -19,6 +19,7 @@ class ClipSmart {
         this.locale = 'en';
         this.messages = {};
         this.extpay = null;
+        this.ratingModal = null; // Rating modal instance
         
         this.init();
     }
@@ -52,6 +53,9 @@ class ClipSmart {
             await new Promise(resolve => setTimeout(resolve, 100));
             retries++;
         }
+        
+        // Initialize rating system
+        this.initializeRatingSystem();
         
         if (!window.ExtPay) {
             console.error('❌ ExtensionPay failed to load after 10 retries');
@@ -98,6 +102,15 @@ class ClipSmart {
             console.log('🔍 All user object values:', Object.entries(user));
             
             this.isPro = user.paid;
+            
+            // Notify background script about upgrade completion for rating system
+            if (user.paid) {
+                try {
+                    await chrome.runtime.sendMessage({ action: 'upgradeCompleted' });
+                } catch (error) {
+                    console.log('⚠️ Could not notify background about upgrade completion');
+                }
+            }
             
             // Detect subscription plan type
             if (user.paid) {
@@ -2126,6 +2139,13 @@ class ClipSmart {
         a.download = filename;
         a.click();
         URL.revokeObjectURL(url);
+        
+        // Notify background script about export completion for rating system
+        try {
+            await chrome.runtime.sendMessage({ action: 'exportCompleted' });
+        } catch (error) {
+            console.log('⚠️ Could not notify background about export completion');
+        }
     }
 
     convertToCSV(data) {
@@ -2530,6 +2550,233 @@ class ClipSmart {
             };
             exportBtn.addEventListener('click', toggleMenu);
         }
+    }
+    
+    // 🌟 Rating System Methods
+    
+    initializeRatingSystem() {
+        console.log('🌟 Initializing rating system...');
+        
+        // Listen for rating requests from background
+        chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+            if (message.action === 'showRatingModal') {
+                this.showRatingModal(message.config);
+                sendResponse({ success: true });
+            }
+        });
+    }
+    
+    showRatingModal(config) {
+        console.log('🌟 Showing rating modal with config:', config);
+        
+        // Remove existing modal if any
+        if (this.ratingModal) {
+            this.ratingModal.remove();
+        }
+        
+        // Create rating modal HTML
+        const modalHTML = `
+            <div class="rating-modal" id="ratingModal">
+                <div class="rating-content">
+                    <div class="rating-header">
+                        <div class="rating-title">🎉 Ďakujeme za používanie ClipSmart!</div>
+                        <div class="rating-subtitle">
+                            Ak sa vám rozšírenie páči, ohodnoťte ho v Chrome Web Store. 
+                            Pomôže nám to dosiahnuť viac používateľov.
+                        </div>
+                    </div>
+
+                    <div class="rating-stars" id="ratingStars">
+                        <div class="star" data-rating="1">⭐</div>
+                        <div class="star" data-rating="2">⭐</div>
+                        <div class="star" data-rating="3">⭐</div>
+                        <div class="star" data-rating="4">⭐</div>
+                        <div class="star" data-rating="5">⭐</div>
+                    </div>
+
+                    <div class="rating-buttons">
+                        <button class="rating-btn rating-btn-primary" id="rateButton" style="display: none;">
+                            Ohodnotiť v Chrome Store
+                        </button>
+                        <button class="rating-btn rating-btn-secondary" id="laterButton">
+                            Neskôr
+                        </button>
+                    </div>
+
+                    <button class="rating-btn-skip" id="skipButton">
+                        Už som ohodnotil
+                    </button>
+
+                    <div class="rating-feedback" id="ratingFeedback">
+                        <textarea placeholder="Povedzte nám, čo sa vám páči alebo čo by sme mali vylepšiť..."></textarea>
+                        <div class="feedback-buttons">
+                            <button class="feedback-btn feedback-btn-primary" id="submitFeedback">
+                                Odoslať feedback
+                            </button>
+                            <button class="feedback-btn feedback-btn-secondary" id="skipFeedback">
+                                Preskočiť
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Add modal to body
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+        
+        // Get modal reference
+        this.ratingModal = document.getElementById('ratingModal');
+        
+        // Apply current theme
+        this.ratingModal.setAttribute('data-theme', this.getCurrentTheme());
+        
+        // Bind events
+        this.bindRatingEvents(config);
+        
+        // Focus first star
+        setTimeout(() => {
+            const firstStar = this.ratingModal.querySelector('.star');
+            if (firstStar) firstStar.focus();
+        }, 100);
+    }
+    
+    bindRatingEvents(config) {
+        const modal = this.ratingModal;
+        let currentRating = 0;
+        
+        // Star rating events
+        modal.querySelectorAll('.star').forEach(star => {
+            star.addEventListener('click', (e) => {
+                const rating = parseInt(e.target.dataset.rating);
+                currentRating = rating;
+                this.highlightRatingStars(rating);
+                this.showRatingButton(rating);
+                
+                // Show feedback for low ratings
+                if (rating <= 3) {
+                    this.showRatingFeedback();
+                } else {
+                    this.hideRatingFeedback();
+                }
+            });
+            
+            star.addEventListener('mouseenter', (e) => {
+                const rating = parseInt(e.target.dataset.rating);
+                this.highlightRatingStars(rating);
+            });
+        });
+        
+        // Rating container mouse leave
+        modal.querySelector('#ratingStars').addEventListener('mouseleave', () => {
+            this.highlightRatingStars(currentRating);
+        });
+        
+        // Button events
+        modal.querySelector('#rateButton').addEventListener('click', () => {
+            this.handleRatingAction('completed', currentRating);
+            this.openChromeStore(config.storeUrl);
+        });
+        
+        modal.querySelector('#laterButton').addEventListener('click', () => {
+            this.handleRatingAction('later');
+        });
+        
+        modal.querySelector('#skipButton').addEventListener('click', () => {
+            this.handleRatingAction('skipped');
+        });
+        
+        // Feedback events
+        modal.querySelector('#submitFeedback').addEventListener('click', () => {
+            const feedback = modal.querySelector('#ratingFeedback textarea').value;
+            this.handleRatingAction('completed', currentRating, feedback);
+        });
+        
+        modal.querySelector('#skipFeedback').addEventListener('click', () => {
+            this.hideRatingFeedback();
+        });
+        
+        // Keyboard events
+        modal.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.closeRatingModal();
+            }
+        });
+        
+        // Click outside to close
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                this.closeRatingModal();
+            }
+        });
+    }
+    
+    highlightRatingStars(rating) {
+        const stars = this.ratingModal.querySelectorAll('.star');
+        stars.forEach((star, index) => {
+            if (index < rating) {
+                star.classList.add('active');
+            } else {
+                star.classList.remove('active');
+            }
+        });
+    }
+    
+    showRatingButton(rating) {
+        const rateButton = this.ratingModal.querySelector('#rateButton');
+        rateButton.style.display = 'inline-block';
+        rateButton.textContent = `Ohodnotiť ${rating}⭐ v Chrome Store`;
+    }
+    
+    showRatingFeedback() {
+        const feedback = this.ratingModal.querySelector('#ratingFeedback');
+        feedback.classList.add('show');
+    }
+    
+    hideRatingFeedback() {
+        const feedback = this.ratingModal.querySelector('#ratingFeedback');
+        feedback.classList.remove('show');
+    }
+    
+    async handleRatingAction(action, rating = null, feedback = null) {
+        try {
+            console.log('⭐ Rating action:', action, { rating, feedback });
+            
+            // Send action to background script
+            await chrome.runtime.sendMessage({
+                action: 'ratingAction',
+                ratingAction: action,
+                rating: rating,
+                feedback: feedback
+            });
+            
+            // Close modal
+            this.closeRatingModal();
+            
+        } catch (error) {
+            console.error('❌ Error handling rating action:', error);
+        }
+    }
+    
+    openChromeStore(storeUrl) {
+        // Open Chrome Web Store rating page
+        chrome.tabs.create({ url: storeUrl });
+    }
+    
+    closeRatingModal() {
+        if (this.ratingModal) {
+            this.ratingModal.remove();
+            this.ratingModal = null;
+        }
+    }
+    
+    getCurrentTheme() {
+        // Get current theme from settings or system
+        const theme = this.settings?.theme || 'auto';
+        if (theme === 'auto') {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        return theme;
     }
 }
 

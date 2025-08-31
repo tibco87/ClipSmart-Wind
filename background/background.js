@@ -23,6 +23,9 @@ const EXTPAY_CONFIG = {
 // Load ExtensionPay script
 importScripts('../js/extpay.js');
 
+// Load Rating Manager
+importScripts('./rating-manager.js');
+
 // ExtensionPay is loaded as a global function
 
 // NEW: Pro Status Manager for Chrome Sync + ExtensionPay
@@ -165,6 +168,9 @@ class ProStatusManager {
 // Initialize ProStatusManager
 let proStatusManager;
 
+// Initialize RatingManager
+let ratingManager;
+
 // Initialize extension
 chrome.runtime.onInstalled.addListener(async (details) => {
     if (details.reason === 'install') {
@@ -188,6 +194,9 @@ chrome.runtime.onInstalled.addListener(async (details) => {
 
     // Initialize ProStatusManager for Chrome Sync
     proStatusManager = new ProStatusManager();
+
+    // Initialize RatingManager
+    ratingManager = new RatingManager();
 
     // Initialize ExtensionPay
     setTimeout(() => {
@@ -235,6 +244,11 @@ chrome.runtime.onInstalled.addListener(async (details) => {
         await chrome.alarms.create('checkSubscriptionExpiry', {
             periodInMinutes: 60 * 24 // Daily
         });
+        
+        // NEW: Add alarm for rating system checks (daily)
+        await chrome.alarms.create('checkRatingConditions', {
+            periodInMinutes: 60 * 24 // Daily
+        });
     } catch (error) {
         console.error('Failed to create alarms:', error);
     }
@@ -278,14 +292,19 @@ chrome.runtime.onInstalled.addListener(async (details) => {
             }
         },
 
-    async addItem(text) {
-        if (!text || text === this.lastText) {
-            console.log('ℹ️ Text sa nezmenil alebo je prázdny');
-            return;
-        }
-        
-        console.log('➕ Pridávam novú položku:', text.substring(0, 50) + '...');
-        this.lastText = text;
+            async addItem(text) {
+            if (!text || text === this.lastText) {
+                console.log('ℹ️ Text sa nezmenil alebo je prázdny');
+                return;
+            }
+            
+            console.log('➕ Pridávam novú položku:', text.substring(0, 50) + '...');
+            this.lastText = text;
+            
+            // Notify RatingManager about clipboard change
+            if (ratingManager) {
+                ratingManager.onClipboardChange();
+            }
         
         // Get current items and check ExtensionPay status
         const data = await chrome.storage.local.get(['clipboardItems', 'isPro']);
@@ -417,7 +436,7 @@ chrome.runtime.onInstalled.addListener(async (details) => {
 const TRANSLATE_PROXY_URL = 'https://clipsmart-translation-proxy.vercel.app/translate';
 
 // Listen for messages from popup.js for translation
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
     if (request.action === 'translateText') {
         const { text, targetLang } = request;
         
@@ -471,6 +490,46 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         }
         
         return true; // async response
+    } else if (request.action === 'exportCompleted') {
+        // NEW: Handle export completion for rating system
+        console.log('📤 Export completed, notifying RatingManager');
+        
+        if (ratingManager) {
+            ratingManager.onExportCompleted();
+        }
+        
+        sendResponse({ success: true });
+    } else if (request.action === 'upgradeCompleted') {
+        // NEW: Handle upgrade completion for rating system
+        console.log('💎 Upgrade completed, notifying RatingManager');
+        
+        if (ratingManager) {
+            ratingManager.onUpgradeCompleted();
+        }
+        
+        sendResponse({ success: true });
+    } else if (request.action === 'ratingAction') {
+        // NEW: Handle rating actions from popup
+        console.log('⭐ Rating action:', request.ratingAction);
+        
+        if (ratingManager) {
+            switch (request.ratingAction) {
+                case 'completed':
+                    await ratingManager.markRatingCompleted(request.rating, request.feedback);
+                    break;
+                case 'later':
+                    await ratingManager.scheduleRatingForLater();
+                    break;
+                case 'skipped':
+                    await ratingManager.skipRating();
+                    break;
+                default:
+                    console.log('⚠️ Unknown rating action:', request.ratingAction);
+            }
+        }
+        
+        sendResponse({ success: true });
+        return true; // async response
     }
 });
 
@@ -515,6 +574,11 @@ chrome.alarms.onAlarm.addListener((alarm) => {
     } else if (alarm.name === 'checkSubscriptionExpiry') {
         // NEW: Check subscription expiry daily
         checkSubscriptionExpiry();
+    } else if (alarm.name === 'checkRatingConditions') {
+        // NEW: Check rating conditions daily
+        if (ratingManager) {
+            ratingManager.checkIfShouldShowRating();
+        }
     }
 });
 
