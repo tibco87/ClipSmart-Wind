@@ -445,7 +445,8 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
                 sendResponse({ success: true, translation });
             })
             .catch(error => {
-                console.error('Translation error:', error);
+                // Silent error handling - don't log to console to avoid Chrome extension errors
+                console.log('📋 Translation error silently:', error?.message || 'Unknown error');
                 sendResponse({ success: false, error: error.message });
             });
         
@@ -708,13 +709,13 @@ async function checkSubscriptionExpiry() {
                 await chrome.storage.local.set({ isPro: false });
                 
                 // Show expiry warning in console (Chrome compatible)
-                console.error(`🚨 CLIPSMART PRO EXPIRED: Your subscription has expired!`);
-                console.error(`💳 Please renew your subscription to access Premium features.`);
+                        console.log(`🚨 CLIPSMART PRO EXPIRED: Your subscription has expired!`);
+        console.log(`💳 Please renew your subscription to access Premium features.`);
             }
         }
         
     } catch (error) {
-        console.error('❌ Error checking subscription expiry:', error);
+        console.log('📋 Subscription expiry check failed silently:', error?.message || 'Unknown error');
     }
 }
 
@@ -757,7 +758,7 @@ async function cleanupOldItems() {
             console.log('🗑️ Background cleanup: auto-delete je vypnuté');
         }
     } catch (error) {
-        console.error('❌ Background cleanup error:', error);
+        console.log('📋 Background cleanup failed silently:', error?.message || 'Unknown error');
     }
 }
 
@@ -790,7 +791,8 @@ async function translateText(text, targetLang) {
         const data = await response.json();
         return data.translation;
     } catch (error) {
-        console.error('Translation error:', error);
+        // Silent error handling - don't log to console to avoid Chrome extension errors
+        console.log('📋 Translation function error silently:', error?.message || 'Unknown error');
         throw error;
     }
 }

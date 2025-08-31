@@ -1598,7 +1598,8 @@ class ClipSmart {
             
             return translation;
         } catch (error) {
-            console.error('Translation error:', error);
+            // Silent error handling - don't log to console to avoid Chrome extension errors
+            console.log('📋 Translation failed silently:', error?.message || 'Unknown error');
             return null;
         }
     }
@@ -1607,7 +1608,7 @@ class ClipSmart {
         try {
             await navigator.clipboard.writeText(text);
         } catch (error) {
-            console.error('Copy failed:', error);
+            console.log('📋 Copy failed silently:', error?.message || 'Unknown error');
         }
     }
 
@@ -1663,7 +1664,7 @@ class ClipSmart {
                 sortOrder: this.sortOrder // Ulož sortOrder do storage
             });
         } catch (error) {
-            console.error('Error saving data:', error);
+            console.log('📋 Data save failed silently:', error?.message || 'Unknown error');
         }
     }
 
