@@ -379,7 +379,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "মাসিক পরিকল্পনা", 
+    "message": "মাসিক পরিকল্পনা",
     "description": "Monthly subscription plan name"
   },
   "plan": {
@@ -429,5 +429,13 @@
   "monthlyPrice": {
     "message": "€৩.৯৯/মাস",
     "description": "Monthly plan price"
+  },
+  "rateMe": {
+    "message": "রেটিং দিন",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Chrome Web Store এ আমাদের রেটিং দিন",
+    "description": "Rate Me button tooltip"
   }
 }

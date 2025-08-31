@@ -99,6 +99,14 @@
     "message": "Podpora",
     "description": "Support link"
   },
+  "rateMe": {
+    "message": "Ohodnotiť",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Ohodnoťte nás v Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
   "items": {
     "message": "položiek",
     "description": "Items count label"

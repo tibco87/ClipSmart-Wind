@@ -387,7 +387,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "Piano mensile", 
+    "message": "Piano mensile",
     "description": "Monthly subscription plan name"
   },
   "plan": {
@@ -437,5 +437,13 @@
   "monthlyPrice": {
     "message": "€3,99/mese",
     "description": "Monthly plan price"
+  },
+  "rateMe": {
+    "message": "Valuta",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Valutaci su Chrome Web Store",
+    "description": "Rate Me button tooltip"
   }
-} 
+}

@@ -379,7 +379,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "Havi csomag", 
+    "message": "Havi csomag",
     "description": "Monthly subscription plan name"
   },
   "plan": {
@@ -429,5 +429,13 @@
   "monthlyPrice": {
     "message": "€3,99/hónap",
     "description": "Monthly plan price"
+  },
+  "rateMe": {
+    "message": "Értékelés",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Értékeljen minket a Chrome Web Store-ban",
+    "description": "Rate Me button tooltip"
   }
 }

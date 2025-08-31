@@ -99,6 +99,14 @@
     "message": "Destek",
     "description": "Destek bağlantısı"
   },
+  "rateMe": {
+    "message": "Değerlendir",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Bizi Chrome Web Store'da değerlendirin",
+    "description": "Rate Me button tooltip"
+  },
   "upgradePro": {
     "message": "Pro'ya Yükselt",
     "description": "Pro'ya yükselt düğmesi metni"

@@ -99,6 +99,14 @@
     "message": "Hỗ trợ",
     "description": "Liên kết hỗ trợ"
   },
+  "rateMe": {
+    "message": "Đánh giá",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Đánh giá chúng tôi trên Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
   "items": {
     "message": "mục",
     "description": "Nhãn số lượng mục"

@@ -99,6 +99,14 @@
     "message": "Support",
     "description": "Support link"
   },
+  "rateMe": {
+    "message": "Bedøm",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Bedøm os på Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
   "upgradePro": {
     "message": "Opgrader til Pro",
     "description": "Opgrader til Pro knap tekst"

@@ -99,6 +99,14 @@
     "message": "Support",
     "description": "Lien support"
   },
+  "rateMe": {
+    "message": "Évaluer",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Évaluez-nous sur Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
   "upgradePro": {
     "message": "Passer à Pro",
     "description": "Bouton mise à niveau Pro"

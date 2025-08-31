@@ -99,6 +99,14 @@
     "message": "Support",
     "description": "Support länk"
   },
+  "rateMe": {
+    "message": "Betygsätt",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Betygsätt oss på Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
   "items": {
     "message": "objekt",
     "description": "Objekt antal etikett"

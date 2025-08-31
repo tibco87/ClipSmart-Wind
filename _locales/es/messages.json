@@ -181,5 +181,13 @@
   "monthlyPrice": {
     "message": "€3,99/mes",
     "description": "Monthly plan price"
+  },
+  "rateMe": {
+    "message": "Calificar",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Califícanos en Chrome Web Store",
+    "description": "Rate Me button tooltip"
   }
 } 

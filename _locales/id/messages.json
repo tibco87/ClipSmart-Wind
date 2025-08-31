@@ -379,7 +379,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "Paket Bulanan", 
+    "message": "Paket Bulanan",
     "description": "Monthly subscription plan name"
   },
   "plan": {
@@ -429,5 +429,13 @@
   "monthlyPrice": {
     "message": "€3,99/bulan",
     "description": "Monthly plan price"
+  },
+  "rateMe": {
+    "message": "Beri Rating",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Beri rating kami di Chrome Web Store",
+    "description": "Rate Me button tooltip"
   }
 }

@@ -99,6 +99,14 @@
     "message": "Suporte",
     "description": "Support link"
   },
+  "rateMe": {
+    "message": "Avaliar",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Avalie-nos na Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
   "items": {
     "message": "itens",
     "description": "Items count label"

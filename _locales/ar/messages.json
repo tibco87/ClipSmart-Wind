@@ -379,7 +379,7 @@
     "description": "Yearly subscription plan name"
   },
   "monthlyPlan": {
-    "message": "الخطة الشهرية", 
+    "message": "الخطة الشهرية",
     "description": "Monthly subscription plan name"
   },
   "plan": {
@@ -429,5 +429,13 @@
   "monthlyPrice": {
     "message": "€3.99/شهر",
     "description": "Monthly plan price"
+  },
+  "rateMe": {
+    "message": "قيم",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "قيمنا في Chrome Web Store",
+    "description": "Rate Me button tooltip"
   }
 }

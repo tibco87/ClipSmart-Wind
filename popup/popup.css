@@ -556,6 +556,53 @@ body {
     align-items: center;
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Rate Me Button */
+.rate-me-btn {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    color: #333;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.rate-me-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+    background: linear-gradient(45deg, #ffed4e, #ffd700);
+}
+
+.rate-me-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(255, 215, 0, 0.3);
+}
+
+/* Dark theme */
+[data-theme="dark"] .rate-me-btn {
+    background: linear-gradient(45deg, #ffa000, #ff8f00);
+    color: white;
+    box-shadow: 0 2px 8px rgba(255, 160, 0, 0.3);
+}
+
+[data-theme="dark"] .rate-me-btn:hover {
+    background: linear-gradient(45deg, #ff8f00, #ffa000);
+    box-shadow: 0 4px 12px rgba(255, 160, 0, 0.4);
+}
+
 .logo {
     display: flex;
     align-items: center;

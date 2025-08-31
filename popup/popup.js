@@ -57,6 +57,9 @@ class ClipSmart {
         // Initialize rating system
         this.initializeRatingSystem();
         
+        // Setup Rate Me button
+        this.setupRateMeButton();
+        
         if (!window.ExtPay) {
             console.error('❌ ExtensionPay failed to load after 10 retries');
             console.log('Available globals:', Object.keys(window).filter(key => key.includes('Ext')));
@@ -1698,6 +1701,9 @@ class ClipSmart {
         
         // Update premium mode checkbox
         this.updatePremiumModeCheckbox();
+        
+        // Update Rate Me button text
+        this.updateRateMeButtonText();
     }
 
     updateTranslationQuota() {
@@ -2564,6 +2570,53 @@ class ClipSmart {
                 sendResponse({ success: true });
             }
         });
+    }
+    
+    setupRateMeButton() {
+        console.log('⭐ Setting up Rate Me button...');
+        
+        // Wait for DOM to be ready
+        setTimeout(() => {
+            const rateMeBtn = document.getElementById('rateMeBtn');
+            if (rateMeBtn) {
+                rateMeBtn.addEventListener('click', () => {
+                    this.openChromeStoreForRating();
+                });
+                
+                // Update button text with localization
+                this.updateRateMeButtonText();
+                
+                console.log('✅ Rate Me button setup complete');
+            } else {
+                console.warn('⚠️ Rate Me button not found in DOM');
+            }
+        }, 100);
+    }
+    
+    updateRateMeButtonText() {
+        const rateMeText = document.getElementById('rateMeText');
+        if (rateMeText) {
+            rateMeText.textContent = this.getMessage('rateMe') || 'Rate Me';
+        }
+        
+        const rateMeBtn = document.getElementById('rateMeBtn');
+        if (rateMeBtn) {
+            rateMeBtn.title = this.getMessage('rateMeTooltip') || 'Rate us on Chrome Web Store';
+        }
+    }
+    
+    openChromeStoreForRating() {
+        console.log('⭐ Opening Chrome Store for rating...');
+        
+        const storeUrl = 'https://chrome.google.com/webstore/detail/clipsmart-smart-clipboard/nbpndheaoecmgnlmfpleeahoicpcbppj';
+        
+        // Open Chrome Store
+        chrome.tabs.create({ url: storeUrl });
+        
+        // Mark as rated to prevent modal from showing
+        this.handleRatingAction('completed', 5, 'Opened via Rate Me button');
+        
+        console.log('✅ Chrome Store opened for rating');
     }
     
     showRatingModal(config) {

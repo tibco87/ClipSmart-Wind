@@ -99,6 +99,22 @@
     "message": "Support",
     "description": "Support Link"
   },
+  "rateMe": {
+    "message": "Bewerten",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Bewerten Sie uns im Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
+  "rateMe": {
+    "message": "Bewerten",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Bewerten Sie uns im Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
   "upgradeProOld": {
     "message": "Pro-Version freischalten",
     "description": "Upgrade Pro Button-Beschriftung (deprecated)"

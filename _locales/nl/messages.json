@@ -99,6 +99,14 @@
     "message": "Ondersteuning",
     "description": "Ondersteuning link"
   },
+  "rateMe": {
+    "message": "Beoordelen",
+    "description": "Rate Me button text"
+  },
+  "rateMeTooltip": {
+    "message": "Beoordeel ons op Chrome Web Store",
+    "description": "Rate Me button tooltip"
+  },
   "items": {
     "message": "items",
     "description": "Items aantal label"
